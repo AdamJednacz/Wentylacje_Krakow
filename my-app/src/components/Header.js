@@ -11,7 +11,7 @@ const Header = () => {
                     <Link to="aboutus" smooth={true} duration={500}><p className="menu_item">O nas</p></Link>
                     <Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
                     <Link to="offer" smooth={true} duration={500}><p className="menu_item">Oferta</p></Link>
-                    <Link to="ceny" smooth={true} duration={500}><p className="menu_item">Ceny</p></Link>
+                    <Link to="ceny" smooth={true} duration={500}><p className="menu_item">Cennik</p></Link>
                     <Link to="certyfikaty" smooth={true} duration={500}><p className="menu_item">Certyfikaty</p></Link>
                     <Link to="kontakt"><p className="menu_item">Kontakt</p></Link>
                 </div>
