@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Price = () => {
+const Photos = () => {
     return (
-        <section className="price" id="ceny">
+        <section className="price" id="photos">
             <div className="container">
-            <h1>Cennik</h1>
+            <h1>Galeria</h1>
             </div>
         </section>
     );
 };
 
-export default Price;
+export default Photos;

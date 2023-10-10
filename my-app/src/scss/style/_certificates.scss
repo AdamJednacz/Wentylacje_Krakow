@@ -2,7 +2,7 @@
   text-align: center;
 
   h1 {
-
+    font-size: 4em;
   }
 
   .Certificates_items {
@@ -11,9 +11,9 @@
     justify-content: center;
     .Certificates_item {
       margin: 2em;
-      border: solid 2px red;
+      border: solid 2px black;
       width: 33%;
-      
+      border-radius: 4em;
 
     }
   }
@@ -30,6 +30,7 @@
   max-width: 80%;
   max-height: 80%;
   overflow: auto;
+
 }
 
 .ImageModalOverlay {

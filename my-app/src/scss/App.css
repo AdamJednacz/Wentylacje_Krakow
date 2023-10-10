@@ -139,6 +139,9 @@
 .Certificates {
   text-align: center;
 }
+.Certificates h1 {
+  font-size: 4em;
+}
 .Certificates .Certificates_items {
   display: flex;
   align-items: center;
@@ -146,8 +149,9 @@
 }
 .Certificates .Certificates_items .Certificates_item {
   margin: 2em;
-  border: solid 2px red;
+  border: solid 2px black;
   width: 33%;
+  border-radius: 4em;
 }
 
 .ImageModal {
