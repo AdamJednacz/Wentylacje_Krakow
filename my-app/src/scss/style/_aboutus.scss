@@ -1,0 +1,26 @@
+.about_us {
+
+  .about_us_items {
+    display: flex;
+    img {
+      position: relative;
+      top:10em;
+      opacity: 0.5;
+      border-radius:10em ;
+    }
+    .about_us_text_item {
+      position: relative;
+      top:10em;
+      left: 2em;
+      h1 {
+        font-size: 4em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5em;
+        text-align: center;
+      }
+    }
+  }
+}

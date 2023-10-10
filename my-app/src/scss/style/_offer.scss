@@ -1,0 +1,29 @@
+.offer{
+  margin-top:15em ;
+  h1{
+    text-align: center;
+    font-size: 4em;
+  }
+  .offer_items{
+    display: flex;
+
+    .offer_item{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 1em;
+      img{
+        width: 30em;
+        border-radius:5em ;
+
+      }
+      h2{
+        font-size: 2em;
+      }
+      p{
+        text-align: center;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
