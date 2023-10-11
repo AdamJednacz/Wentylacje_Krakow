@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            &copy; 2023 Klimatyzacje Kraków
+        </footer>
     );
 };
 
