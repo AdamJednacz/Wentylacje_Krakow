@@ -53,7 +53,7 @@
 }
 
 .offer {
-  margin-top: 4em;
+  padding: 2em 0;
 }
 .offer h1 {
   text-align: center;
@@ -89,6 +89,7 @@
   flex-direction: column;
   margin-top: 10em;
   background: #d8e3ed;
+  padding: 2em 0;
 }
 .plus .top {
   display: flex;
@@ -98,7 +99,6 @@
 }
 .plus .top h1 {
   font-size: 3em;
-  margin-top: 2em;
   margin-bottom: 1em;
   font-weight: bolder;
 }
@@ -140,7 +140,7 @@
 .plus .carousel_numbers .number {
   width: 40px;
   height: 50px;
-  margin: 1em 1em 2em 0em;
+  margin: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,6 +229,7 @@
 }
 .photos .container .photos_items {
   display: flex;
+  margin-left: 2em;
 }
 .photos .container .photos_items .photos_item {
   width: 14em;
