@@ -1,21 +1,26 @@
-.Certificates {
-  text-align: center;
-  h1 {
+.photos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1{
     font-size: 4em;
-  }
-  .Certificates_items {
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
-    .Certificates_item {
+  }
+  .photos_items{
+    display: flex;
+    .photos_item{
+      width: 30em;
+      height: 15em;
+      border: solid 2px red;
       margin: 2em;
-      border: solid 2px black;
-      width: 33%;
-      border-radius: 4em;
+      border-radius: 2em;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
   }
 }
+
 .ImageModal {
   position: absolute;
   top: 50%;
