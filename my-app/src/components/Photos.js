@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import img5 from "../assets/PEFC - logo.png";
+import img5 from "../assets/24831890-klimatyzacja-w-domu-czy-warto.jpeg";
 import ImageModal from "./ImageModal";
 
 const Photos = () => {
@@ -35,6 +35,7 @@ const Photos = () => {
              </div>
             </div>
             <ImageModal isOpen={isModalOpen} closeModal={closeModal} imageSrc={selectedImage} />
+
         </section>
     );
 };

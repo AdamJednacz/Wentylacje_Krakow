@@ -1,6 +1,7 @@
 .header {
-  background: yellow;
-  
+
+  color: #ffffff;
+  font-weight: bolder;
   .container {
     display: flex;
     justify-content: space-between;
@@ -9,8 +10,9 @@
       display: flex;
       align-items: center;
       .menu_item {
-        padding: 2em;
+        padding: 1.8em;
         margin: 0;
+        border-radius: 2em;
         &:hover {
           color: #ffff;
           background: aqua;
@@ -19,3 +21,10 @@
     }
   }
 }
+.header.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #09a9de;
+}
+

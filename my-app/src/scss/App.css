@@ -1,5 +1,6 @@
 .header {
-  background: yellow;
+  color: #ffffff;
+  font-weight: bolder;
 }
 .header .container {
   display: flex;
@@ -11,12 +12,20 @@
   align-items: center;
 }
 .header .container .menu .menu_item {
-  padding: 2em;
+  padding: 1.8em;
   margin: 0;
+  border-radius: 2em;
 }
 .header .container .menu .menu_item:hover {
   color: white;
   background: aqua;
+}
+
+.header.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #09a9de;
 }
 
 .about_us .about_us_items {
@@ -24,14 +33,14 @@
 }
 .about_us .about_us_items img {
   position: relative;
-  top: 10em;
-  opacity: 0.5;
+  top: 6em;
+  opacity: 0.6;
   border-radius: 10em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .about_us .about_us_items .about_us_text_item {
   position: relative;
-  top: 10em;
+  top: 6em;
   left: 2em;
 }
 .about_us .about_us_items .about_us_text_item h1 {
@@ -44,11 +53,12 @@
 }
 
 .offer {
-  margin-top: 8em;
+  margin-top: 4em;
 }
 .offer h1 {
   text-align: center;
   font-size: 4em;
+  margin: 0.5em 0;
 }
 .offer .offer_items {
   display: flex;
@@ -78,6 +88,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 10em;
+  background: #d8e3ed;
 }
 .plus .top {
   display: flex;
@@ -129,7 +140,7 @@
 .plus .carousel_numbers .number {
   width: 40px;
   height: 50px;
-  margin: 1em;
+  margin: 1em 1em 2em 0em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +163,7 @@
 .Certificates .Certificates_items .Certificates_item {
   margin: 2em;
   border: solid 2px black;
-  width: 33%;
+  width: 25%;
   border-radius: 4em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -198,21 +209,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #d8e3ed;
+  padding-bottom: 4em;
 }
-.photos h1 {
+.photos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photos .container h1 {
   font-size: 4em;
   display: flex;
-  align-self: center;
   justify-content: center;
 }
-.photos .photos_items {
+.photos .container .photos_items {
   display: flex;
 }
-.photos .photos_items .photos_item {
-  width: 30em;
-  height: 15em;
-  border: solid 2px red;
-  margin: 2em;
+.photos .container .photos_items .photos_item {
+  width: 25em;
+  height: 12.5em;
+  margin: 1.5em;
   border-radius: 2em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -250,7 +266,7 @@
   cursor: pointer;
   background: none;
   border: none;
-  color: #fff;
+  color: #000000;
   padding: 0;
 }
 

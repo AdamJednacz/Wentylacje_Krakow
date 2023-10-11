@@ -5,6 +5,8 @@ import Offer from "./Offer";
 import Plus from "./Plus";
 import Photos from "./Photos";
 import Certificates from "./Certificates";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <Offer/>
             <Photos/>
             <Certificates/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 };

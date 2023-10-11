@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-
-
 const Header = () => {
     return (
-        <section className="header">
+        <section className="header sticky">
             <div className="container">
                 <h1>Logo/Nazwa</h1>
                 <div className="menu">
@@ -23,5 +21,4 @@ const Header = () => {
         </section>
     );
 };
-
 export default Header;
