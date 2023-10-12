@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const Header = () => {
     return (
         <section className="header sticky">
@@ -13,10 +17,15 @@ const Header = () => {
                     <Link to="certyfikaty" smooth={true} duration={500}><p className="menu_item">Certyfikaty</p></Link>
                     <Link to="contact" smooth={true} duration={500}><p className="menu_item">Kontakt</p></Link>
                 </div>
-                <div className="contact">
-                    <p>Telefon: 500 500 500</p>
-                    <p>Email: adamjednacz4@gmail.com</p>
+                <div className="contact_header">
+                    <p>
+                        <FontAwesomeIcon icon={faPhone} /> Telefon: 500 500 500
+                    </p>
+                    <p>
+                        <FontAwesomeIcon icon={faEnvelope} /> Email: adamjednacz4@gmail.com
+                    </p>
                 </div>
+
             </div>
         </section>
     );

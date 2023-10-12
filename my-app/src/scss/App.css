@@ -151,9 +151,11 @@
 
 .Certificates {
   text-align: center;
+  padding: 2em 0;
 }
 .Certificates h1 {
   font-size: 4em;
+  margin: 0;
 }
 .Certificates .Certificates_items {
   display: flex;
@@ -163,7 +165,7 @@
 .Certificates .Certificates_items .Certificates_item {
   margin: 2em;
   border: solid 2px black;
-  width: 25%;
+  width: 20%;
   border-radius: 4em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -283,6 +285,28 @@ footer {
   background: #4c5761;
 }
 
+.contact {
+  background: #d8e3ed;
+  padding: 2em 0;
+}
+.contact .container {
+  display: flex;
+  flex-direction: column;
+}
+.contact .container h1 {
+  font-size: 2em;
+  margin: 0;
+}
+.contact .container .contact_text_container {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .container .contact_text_container .contact_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .container {
   margin: 0 auto;
   max-width: 1600px;

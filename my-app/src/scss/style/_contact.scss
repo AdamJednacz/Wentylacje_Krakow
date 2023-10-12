@@ -1,0 +1,33 @@
+.contact {
+  background: #d8e3ed;
+  padding: 2em 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .contact_text_container {
+      display: flex;
+      justify-content: space-around;
+      .map {
+
+      }
+      .contact_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h2 {
+
+        }
+
+        p {
+
+        }
+      }
+    }
+  }
+}
