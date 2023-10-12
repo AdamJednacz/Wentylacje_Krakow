@@ -160,6 +160,7 @@
   text-align: center;
   padding: 2em 0;
   font-family: "Open Sans", sans-serif;
+  background: #d8e3ed;
 }
 .Certificates h1 {
   font-size: 4em;
@@ -219,7 +220,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #d8e3ed;
   padding: 4em 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -318,6 +318,39 @@ footer {
   align-items: flex-start;
   justify-content: center;
 }
+.catalogues {
+  background: #d8e3ed;
+  font-family: "Open Sans", sans-serif;
+  padding: 4em 0;
+}
+.catalogues .container {
+  display: flex;
+  justify-content: space-between;
+}
+.catalogues .container .catalogues_items_container {
+  display: flex;
+}
+.catalogues .container .catalogues_items_container .catalogues_items p {
+  text-align: center;
+}
+.catalogues .container .catalogues_items_container .catalogues_items .catalogues_item {
+  width: 15em;
+  height: 10em;
+  border: solid red 2px;
+  margin: 2em;
+}
+.catalogues .container .catalogues_text {
+  width: 40%;
+}
+.catalogues .container .catalogues_text h1 {
+  font-size: 4em;
+  text-align: center;
+}
+.catalogues .container .catalogues_text p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1600px;

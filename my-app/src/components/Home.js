@@ -7,6 +7,7 @@ import Photos from "./Photos";
 import Certificates from "./Certificates";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Catalogues from "./Catalogues";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <AboutUs/>
             <Plus/>
             <Offer/>
+            <Catalogues/>
             <Photos/>
             <Certificates/>
             <Contact/>

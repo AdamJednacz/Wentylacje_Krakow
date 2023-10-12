@@ -1,0 +1,36 @@
+.catalogues{
+  background: #d8e3ed;
+  font-family: $font-base;
+  padding: 4em 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    .catalogues_items_container {
+      display: flex;
+      .catalogues_items {
+        p{
+          text-align: center;
+        }
+        .catalogues_item {
+          width: 15em;
+          height: 10em;
+          border: solid red 2px;
+          margin: 2em;
+        }
+      }
+    }
+    .catalogues_text{
+      width: 40%;
+      h1{
+        font-size: 4em;
+        text-align: center;
+      }
+      p{
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+    }
+  }
+
+}
