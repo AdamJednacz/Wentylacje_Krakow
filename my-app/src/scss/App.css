@@ -37,14 +37,14 @@
 }
 .about_us .about_us_items img {
   position: relative;
-  top: 6em;
+  top: 3em;
   opacity: 0.6;
   border-radius: 10em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .about_us .about_us_items .about_us_text_item {
   position: relative;
-  top: 6em;
+  top: 3em;
   left: 2em;
 }
 .about_us .about_us_items .about_us_text_item h1 {
@@ -57,7 +57,7 @@
 }
 
 .offer {
-  padding: 2em 0;
+  padding: 3em 0;
   font-family: "Open Sans", sans-serif;
 }
 .offer h1 {
@@ -92,9 +92,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10em;
+  margin-top: 7em;
   background: #d8e3ed;
-  padding: 2em 0;
+  padding: 5em 0;
   font-family: "Open Sans", sans-serif;
 }
 .plus .top {
@@ -105,6 +105,7 @@
 }
 .plus .top h1 {
   font-size: 3em;
+  margin-top: 0;
   margin-bottom: 1em;
   font-weight: bolder;
 }

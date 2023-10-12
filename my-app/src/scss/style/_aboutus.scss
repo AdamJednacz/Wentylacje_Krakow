@@ -1,18 +1,17 @@
 .about_us {
   font-family: $font-base;
-
   .about_us_items {
     display: flex;
     img{
       position: relative;
-      top:6em;
+      top:3em;
       opacity: 0.6;
       border-radius:10em ;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
     .about_us_text_item {
       position: relative;
-      top:6em;
+      top:3em;
       left: 2em;
       h1 {
         font-size: 4em;
