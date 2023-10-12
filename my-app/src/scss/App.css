@@ -1,6 +1,7 @@
 .header {
   color: #ffffff;
   font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
 }
 .header .container {
   display: flex;
@@ -28,6 +29,9 @@
   background: #09a9de;
 }
 
+.about_us {
+  font-family: "Open Sans", sans-serif;
+}
 .about_us .about_us_items {
   display: flex;
 }
@@ -54,6 +58,7 @@
 
 .offer {
   padding: 2em 0;
+  font-family: "Open Sans", sans-serif;
 }
 .offer h1 {
   text-align: center;
@@ -90,6 +95,7 @@
   margin-top: 10em;
   background: #d8e3ed;
   padding: 2em 0;
+  font-family: "Open Sans", sans-serif;
 }
 .plus .top {
   display: flex;
@@ -213,6 +219,7 @@
   justify-content: center;
   background: #d8e3ed;
   padding: 4em 0;
+  font-family: "Open Sans", sans-serif;
 }
 .photos .container {
   display: flex;
@@ -278,6 +285,7 @@
 }
 
 footer {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,6 +296,7 @@ footer {
 .contact {
   background: #d8e3ed;
   padding: 2em 0;
+  font-family: "Open Sans", sans-serif;
 }
 .contact .container {
   display: flex;

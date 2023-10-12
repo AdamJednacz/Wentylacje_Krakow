@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const center = [50.0647, 19.9450]; // Współrzędne geograficzne Krakowa
@@ -10,8 +10,6 @@ const Contact = () => {
     return (
         <section className="contact" id="contact">
             <div className="container">
-                <h1>Kontakt</h1>
-
                 <div className="contact_text_container">
                     <div className="contact_text">
                         <p>Kraków 31-004</p>
@@ -20,19 +18,19 @@ const Contact = () => {
                         <p>KRS: 0001005456</p>
                     </div>
 
-                        <MapContainer
-                            center={center}
-                            zoom={zoom}
-                            style={{ height: '300px', width: '30%' ,borderRadius:"3em" }}
-                            className="map"
-                        >
-                            <TileLayer
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                            />
-                            <Marker position={markerPosition}>
-                                <Popup>Marker na mapie</Popup>
-                            </Marker>
-                        </MapContainer>
+                    <MapContainer
+                        center={center}
+                        zoom={zoom}
+                        style={{height: '300px', width: '30%', borderRadius: "3em"}}
+                        className="map"
+                    >
+                        <TileLayer
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={markerPosition}>
+                            <Popup>Marker na mapie</Popup>
+                        </Marker>
+                    </MapContainer>
 
                     <div className="contact_text">
                         <h2>Masz pytania?</h2>

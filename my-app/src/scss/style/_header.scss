@@ -1,6 +1,8 @@
 .header {
   color: #ffffff;
   font-weight: bolder;
+  font-family: $font-base;
+
   .container {
     display: flex;
     justify-content: space-between;
