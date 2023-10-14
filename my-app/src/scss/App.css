@@ -43,7 +43,10 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .about_us .about_us_items .about_us_text_item {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  align-items: center;
   top: 3em;
   left: 2em;
 }
@@ -54,6 +57,18 @@
 .about_us .about_us_items .about_us_text_item p {
   font-size: 1.5em;
   text-align: center;
+}
+.about_us .about_us_items .about_us_text_item p:nth-of-type(2) {
+  font-weight: bolder;
+}
+.about_us .about_us_items .about_us_text_item button {
+  border: none;
+  padding: 2em 6em;
+  border-radius: 3em;
+  font-size: 1.5em;
+  background: #09a9de;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
 
 .offer {

@@ -1,3 +1,5 @@
+
+
 .about_us {
   font-family: $font-base;
   .about_us_items {
@@ -8,9 +10,13 @@
       opacity: 0.6;
       border-radius:10em ;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
     }
     .about_us_text_item {
+      display: flex;
+      flex-direction: column;
       position: relative;
+      align-items: center;
       top:3em;
       left: 2em;
       h1 {
@@ -20,6 +26,18 @@
       p {
         font-size: 1.5em;
         text-align: center;
+      }
+      p:nth-of-type(2){
+        font-weight: bolder;
+      }
+      button{
+        border: none;
+        padding: 2em 6em;
+        border-radius: 3em;
+        font-size: 1.5em;
+        background: #09a9de;
+        color: #ffffff;
+        font-family: $font-base;
       }
     }
   }
