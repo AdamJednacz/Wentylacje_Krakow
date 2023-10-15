@@ -37,6 +37,7 @@
 }
 .about_us .about_us_items img {
   position: relative;
+  right: 2em;
   top: 3em;
   opacity: 0.6;
   border-radius: 10em;
@@ -63,7 +64,7 @@
 }
 .about_us .about_us_items .about_us_text_item button {
   border: none;
-  padding: 2em 6em;
+  padding: 1.5em 6em;
   border-radius: 3em;
   font-size: 1.5em;
   background: #09a9de;
@@ -147,6 +148,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 1em;
 }
 .plus .examples .example .left_side h3 {
   font-size: 26px;
@@ -368,7 +370,7 @@ footer {
 
 .container {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1700px;
 }
 
 /*# sourceMappingURL=App.css.map */
