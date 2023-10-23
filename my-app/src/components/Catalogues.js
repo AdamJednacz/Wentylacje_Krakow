@@ -9,6 +9,7 @@ import Haier from "../assets/Haier.png"
 import Daikin from "../assets/Daikin.png"
 import Sinclair from "../assets/sinclair-002.png"
 import Rotenso from "../assets/46.jpg"
+import Aux from "../assets/klimatyzacja-aux1.png"
 const Catalogues = () => {
     return (
         <section className="catalogues" id="catalogues">
@@ -24,6 +25,7 @@ const Catalogues = () => {
                     <img className="catalogues_item"  src={Panasonic} alt={Panasonic}/>
                     <img className="catalogues_item"  src={Rotenso} alt={Rotenso}/>
                     <img className="catalogues_item"  src={Gree} alt={Gree}/>
+                    <img className="catalogues_item"  src={Aux} alt={Aux}/>
                 </div>
                 <div className="catalogues_items">
                     <img className="catalogues_item"  src={Haier} alt={Haier}/>

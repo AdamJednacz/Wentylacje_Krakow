@@ -36,6 +36,7 @@
         @include phone{
           padding: 1em;
         }
+
         &:hover {
           color: #ffff;
           background: aqua;
@@ -57,7 +58,7 @@
 .header.sticky {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 2;
   background: #09a9de;
 }
 

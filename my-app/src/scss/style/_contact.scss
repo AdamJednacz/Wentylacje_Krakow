@@ -18,6 +18,7 @@
       }
       .map {
         width: 30%;
+
         @include phone{
           width: 80%;
         }

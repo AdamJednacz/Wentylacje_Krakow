@@ -9,10 +9,12 @@ const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-            maxWidth: '70%', // Maksymalna szerokość modalu na desktopie
+            maxWidth: '60%', // Maksymalna szerokość modalu na desktopie
+            zIndex:"100",
         },
         overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.75)', // Przykrycie tła z poziomem przezroczystości
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            zIndex: "100"// Przykrycie tła z poziomem przezroczystości
         },
     };
     return (
@@ -28,7 +30,7 @@ const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
             <img
                 src={imageSrc}
                 alt="Powiększony obrazek"
-                style={{ width: '100%', height: 'auto' }} // Dostosowanie rozmiaru obrazka
+                style={{ width: '60%', height: 'auto',  }} // Dostosowanie rozmiaru obrazka
             />
         </Modal>
     );

@@ -54,7 +54,7 @@ const Header = () => {
                 )}
                 <div className="contact_header">
                     <p>
-                        <FontAwesomeIcon icon={faPhone} /> Telefon: 500 500 500
+                        <FontAwesomeIcon icon={faPhone} /> Telefon: +48 531 049 317
                     </p>
                     <p>
                         <FontAwesomeIcon icon={faEnvelope} /> Email: adamjednacz4@gmail.com
