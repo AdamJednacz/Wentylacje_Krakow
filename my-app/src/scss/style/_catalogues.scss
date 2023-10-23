@@ -5,17 +5,30 @@
   .container{
     display: flex;
     justify-content: space-between;
+    @include phone{
+      flex-direction:column-reverse;
+      flex-wrap: wrap;
+    }
     .catalogues_items_container {
+      flex-direction: column;
       display: flex;
       .catalogues_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         p{
           text-align: center;
         }
         .catalogues_item {
-          width: 15em;
-          height: 10em;
-          border: solid red 2px;
+          width: 12em;
+          height:auto;
           margin: 2em;
+          @include phone{
+            width: 6em;
+            height: 5em;
+            margin: 1em;
+          }
         }
       }
     }
@@ -24,13 +37,22 @@
       justify-content: center;
       flex-direction: column;
       width: 40%;
+      @include phone{
+        width: 100%;
+      }
       h1{
         font-size: 4em;
         text-align: center;
+        @include phone{
+          font-size: 2em;
+        }
       }
       p{
         font-size: 1.5em;
         text-align: center;
+        @include phone{
+          font-size: 1em;
+        }
       }
 
     }

@@ -40,6 +40,8 @@ const Header = () => {
                     </div>
                     </>
                 ) : (
+                    <>
+                    <h1>Logo/Nazwa</h1>
                     <div className="menu">
                         <Link to="aboutus" smooth={true} duration={500}><p className="menu_item">O nas</p></Link>
                         <Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
@@ -49,6 +51,7 @@ const Header = () => {
                         <Link to="certyfikaty" smooth={true} duration={500}><p className="menu_item">Certyfikaty</p></Link>
                         <Link to="contact" smooth={true} duration={500}><p className="menu_item">Kontakt</p></Link>
                     </div>
+                    </>
                 )}
                 <div className="contact_header">
                     <p>

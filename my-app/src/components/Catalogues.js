@@ -1,25 +1,34 @@
 import React from 'react';
-
+import Samsung from "../assets/Samsung.png"
+import Mitsubishi from "../assets/Mitsubishi.png"
+import Toshiba from "../assets/Toshiba.png"
+import Panasonic from "../assets/Panasonic.png"
+import LG from "../assets/LG.png"
+import Gree from "../assets/Gree.png"
+import Haier from "../assets/Haier.png"
+import Daikin from "../assets/Daikin.png"
+import Sinclair from "../assets/sinclair-001.jpg"
+import Rotenso from "../assets/46.jpg"
 const Catalogues = () => {
     return (
         <section className="catalogues" id="catalogues">
             <div className="container">
                 <div className="catalogues_items_container">
                 <div className="catalogues_items">
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 1/logo firmy klimatyzatorów</p>
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 2</p>
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 3</p>
+                    <img className="catalogues_item" src={Samsung} alt={Samsung}/>
+                    <img className="catalogues_item"  src={Mitsubishi} alt={Mitsubishi}/>
+                    <img className="catalogues_item"  src={Toshiba} alt={Toshiba}/>
                 </div>
                 <div className="catalogues_items">
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 4</p>
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 5</p>
-                    <div className="catalogues_item"></div>
-                    <p>Klimatyzatory 6</p>
+                    <img className="catalogues_item"  src={Panasonic} alt={Panasonic}/>
+                    <img className="catalogues_item"  src={LG} alt={LG}/>
+                    <img className="catalogues_item"  src={Gree} alt={Gree}/>
+                </div>
+                <div className="catalogues_items">
+                    <img className="catalogues_item"  src={Haier} alt={Haier}/>
+                    <img className="catalogues_item"  src={Daikin} alt={Daikin}/>
+                    <img className="catalogues_item"  src={Sinclair} alt={Sinclair}/>
+                    <img className="catalogues_item"  src={Rotenso} alt={Rotenso}/>
                 </div>
                 </div>
                 <div className="catalogues_text">

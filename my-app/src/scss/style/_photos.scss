@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 4em 0;
   font-family: $font-base;
 
@@ -11,25 +10,42 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @include phone{
+      flex-direction: column;
+    }
     .photos_text {
       h1 {
         font-size: 4em;
         display: flex;
         justify-content: center;
+        @include phone{
+          font-size: 2em;
+        }
       }
       p {
         font-size: 1.5em;
         text-align: center;
+        @include phone{
+          font-size: 1em;
+        }
       }
     }
       .photos_items {
         display: flex;
         margin-left: 2em;
+        @include phone{
+          flex-wrap: wrap;
+        }
         .photos_item {
           width: 14em;
           margin: 1em;
           border-radius: 2em;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          @include phone{
+            width: 7em;
+            margin: 0.5em;
+            border-radius: 1em;
+          }
       }
     }
   }
