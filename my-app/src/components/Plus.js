@@ -7,6 +7,7 @@ const Plus = () => {
 
     return (
         <section className="plus" id="plusy">
+            <div className="container">
             <div className="top">
                 <h1>Jakie są plusy korzystania z klimatyzacji ?</h1>
                 <div className="h2_help_container">
@@ -84,6 +85,7 @@ const Plus = () => {
                 <div onClick={() => handleChange(1)} style={{border: activeTab === 1 ? '1px solid #707070':'none', borderRadius: "1em"}} className="number">2</div>
                 <div onClick={() => handleChange(2)} style={{border: activeTab === 2 ? ' 1px solid #707070':'none' ,borderRadius: "1em"}} className="number">3</div>
             </div>
+         </div>
         </section>
     );
 };

@@ -20,6 +20,9 @@
       }
     }
     .catalogues_text{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       width: 40%;
       h1{
         font-size: 4em;

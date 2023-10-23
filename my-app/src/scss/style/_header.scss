@@ -7,18 +7,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phone{
+      align-items: center;
+      flex-direction: column;
+
+    }
+    .h1_hamburg{
+      width: 100%;
+      @include phone{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .hamburger-menu{
+
+      }
+    }
+
+    h1{
+      @include phone{
+        font-size: 2em;
+
+      }
+    }
     .menu {
       display: flex;
       align-items: center;
+      @include phone{
+       flex-direction: column;
+
+      }
       .menu_item {
         padding: 1.8em;
         margin: 0;
         border-radius: 2em;
+        @include phone{
+          padding: 1em;
+        }
         &:hover {
           color: #ffff;
           background: aqua;
         }
       }
+    }
+    .hamburger_menu_items{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+  }
+  .contact_header{
+    @include phone{
+      display: none;
     }
   }
 }

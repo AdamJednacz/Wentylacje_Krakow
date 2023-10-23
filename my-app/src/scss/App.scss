@@ -4,4 +4,7 @@
 .container {
   margin: 0 auto;
   max-width: 1700px;
+  @include phone{
+    max-width: 300px;
+  }
 }

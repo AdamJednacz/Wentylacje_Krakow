@@ -7,65 +7,113 @@
   background: #d8e3ed;
   padding: 5em 0;
   font-family: $font-base;
+  @include phone{
+    padding: 3em 0;
+  }
 
-  .top{
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    h1 {
-      font-size: 3em;
-      margin-top: 0;
-      margin-bottom: 1em;
-      font-weight: bolder;
-    }
-    .h2_help_container {
+    align-items: center;
+    .top {
       display: flex;
       align-items: center;
       justify-content: center;
-      h2 {
-        font-size: 24px;
-        padding: 1em;
-        margin:1em 2em;
+      flex-direction: column;
+
+      h1 {
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 1em;
         font-weight: bolder;
-        &:first-of-type {
-          border: 1px solid #707070;
-        }
-      }
-    }
-  }
-  .examples{
-    .example{
-      width: 30em;
-      display: flex;
-      justify-content: center;
-      .left_side{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 1em;
-        h3{
-          font-size: 26px;
-        }
-        p{
+        @include phone {
           font-size: 1.5em;
           text-align: center;
         }
       }
+
+      .h2_help_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          font-size: 24px;
+          padding: 1em;
+          margin: 1em 2em;
+          font-weight: bolder;
+          text-align: center;
+          @include phone {
+            font-size: 12px;
+            padding: 0.5em;
+            margin: 0.5em 1em;
+          }
+
+          &:first-of-type {
+            border: 1px solid #707070;
+          }
+        }
+      }
     }
-  }
-  .carousel_numbers{
-    display: flex;
-    position: relative;
-    .number{
-      width: 40px;
-      height: 50px;
-      margin: 1em;
+
+    .examples {
+      @include phone {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .example {
+        width: 30em;
+        display: flex;
+        justify-content: center;
+        @include phone {
+          width: 15em;
+        }
+
+        .left_side {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin: 0 1em;
+
+          h3 {
+            font-size: 26px;
+            @include phone {
+              font-size: 1em;
+              text-align: center;
+            }
+          }
+
+          p {
+            font-size: 1.5em;
+            text-align: center;
+            @include phone {
+              font-size: 1em;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel_numbers {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      &:first-of-type{
-        border: 1px solid #707070;
+      position: relative;
+      @include phone{
+        margin-top: 1em;
+      }
+
+      .number {
+        width: 40px;
+        height: 50px;
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-of-type {
+          border: 1px solid #707070;
+        }
       }
     }
   }

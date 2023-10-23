@@ -9,7 +9,7 @@ const AboutUs = () => {
                 <img src={img1} alt={img1}/>
                  <div className="about_us_text_item">
                 <h1>O nas</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Oto nasza nowa firma, która powstała z pasji do klimatyzacji i zaangażowania w dostarczanie najlepszych rozwiązań. Jesteśmy ekspertami w dziedzinie montażu, sprzedaży i serwisu urządzeń klimatyzacyjnych. Naszym celem jest zapewnienie Ci idealnego klimatu w Twoim otoczeniu, bez względu na porę roku.</p>
                      <p>Jeżeli masz już jakieś pytania to:</p>
 
                      <Link to="contact" smooth={true} duration={500}><button>Zadzwoń</button></Link>
