@@ -350,17 +350,33 @@
   font-size: 4em;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .Certificates h1 {
+    font-size: 2em;
+  }
+}
 .Certificates .Certificates_items {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .Certificates .Certificates_items {
+    flex-direction: row;
+  }
 }
 .Certificates .Certificates_items .Certificates_item {
   margin: 2em;
-  border: solid 2px black;
-  width: 15%;
+  width: 20%;
   border-radius: 4em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 767px) {
+  .Certificates .Certificates_items .Certificates_item {
+    border-radius: 2em;
+    width: 100%;
+  }
 }
 
 .ImageModal {
@@ -554,18 +570,23 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .catalogues .container .catalogues_items_container .catalogues_items {
+    flex-wrap: wrap;
+  }
+}
 .catalogues .container .catalogues_items_container .catalogues_items p {
   text-align: center;
 }
 .catalogues .container .catalogues_items_container .catalogues_items .catalogues_item {
-  width: 12em;
+  width: 13em;
   height: auto;
   margin: 2em;
 }
 @media (max-width: 767px) {
   .catalogues .container .catalogues_items_container .catalogues_items .catalogues_item {
     width: 6em;
-    height: 5em;
+    height: auto;
     margin: 1em;
   }
 }

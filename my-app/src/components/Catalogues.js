@@ -18,17 +18,17 @@ const Catalogues = () => {
                     <img className="catalogues_item" src={Samsung} alt={Samsung}/>
                     <img className="catalogues_item"  src={Mitsubishi} alt={Mitsubishi}/>
                     <img className="catalogues_item"  src={Toshiba} alt={Toshiba}/>
+                    <img className="catalogues_item"  src={LG} alt={LG}/>
                 </div>
                 <div className="catalogues_items">
                     <img className="catalogues_item"  src={Panasonic} alt={Panasonic}/>
-                    <img className="catalogues_item"  src={LG} alt={LG}/>
+                    <img className="catalogues_item"  src={Rotenso} alt={Rotenso}/>
                     <img className="catalogues_item"  src={Gree} alt={Gree}/>
                 </div>
                 <div className="catalogues_items">
                     <img className="catalogues_item"  src={Haier} alt={Haier}/>
                     <img className="catalogues_item"  src={Daikin} alt={Daikin}/>
                     <img className="catalogues_item"  src={Sinclair} alt={Sinclair}/>
-                    <img className="catalogues_item"  src={Rotenso} alt={Rotenso}/>
                 </div>
                 </div>
                 <div className="catalogues_text">

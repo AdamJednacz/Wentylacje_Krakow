@@ -2,18 +2,36 @@ import React from 'react';
 import Modal from 'react-modal';
 
 const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
+    const customStyles = {
+        content: {
+            top: '54%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            maxWidth: '70%', // Maksymalna szerokość modalu na desktopie
+        },
+        overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.75)', // Przykrycie tła z poziomem przezroczystości
+        },
+    };
+
     return (
         <Modal
             isOpen={isOpen}
             onRequestClose={closeModal}
             contentLabel="Image Modal"
-            className="ImageModal"
-            overlayClassName="ImageModalOverlay"
+            style={customStyles} // Stosowanie niestandardowych stylów
         >
             <button className="ImageModalClose" onClick={closeModal}>
                 &#x2715;
             </button>
-            <img src={imageSrc} alt="Powiększony obrazek" />
+            <img
+                src={imageSrc}
+                alt="Powiększony obrazek"
+                style={{ width: '100%', height: 'auto' }} // Dostosowanie rozmiaru obrazka
+            />
         </Modal>
     );
 };

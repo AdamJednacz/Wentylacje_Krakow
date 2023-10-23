@@ -6,17 +6,28 @@
   h1 {
     font-size: 4em;
     margin: 0;
+    @include phone{
+      font-size: 2em;
+    }
   }
   .Certificates_items {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    @include phone{
+
+      flex-direction: row;
+    }
     .Certificates_item {
       margin: 2em;
-      border: solid 2px black;
-      width: 15%;
+      width: 20%;
       border-radius: 4em;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      @include phone{
+        border-radius: 2em;
+        width:100%;
+      }
     }
   }
 }

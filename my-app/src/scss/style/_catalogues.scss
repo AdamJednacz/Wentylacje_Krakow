@@ -12,21 +12,25 @@
     .catalogues_items_container {
       flex-direction: column;
       display: flex;
+
       .catalogues_items {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        @include phone{
+          flex-wrap: wrap;
+        }
         p{
           text-align: center;
         }
         .catalogues_item {
-          width: 12em;
+          width: 13em;
           height:auto;
           margin: 2em;
           @include phone{
             width: 6em;
-            height: 5em;
+            height: auto;
             margin: 1em;
           }
         }
