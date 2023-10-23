@@ -7,7 +7,7 @@ import LG from "../assets/LG.png"
 import Gree from "../assets/Gree.png"
 import Haier from "../assets/Haier.png"
 import Daikin from "../assets/Daikin.png"
-import Sinclair from "../assets/sinclair-001.jpg"
+import Sinclair from "../assets/sinclair-002.png"
 import Rotenso from "../assets/46.jpg"
 const Catalogues = () => {
     return (
