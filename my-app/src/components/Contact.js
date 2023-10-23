@@ -2,8 +2,8 @@ import React from 'react';
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const center = [50.0647, 19.9450]; // Współrzędne geograficzne Krakowa
-const markerPosition = [50.0647, 19.9450]; // Współrzędne geograficzne markera
+const center = [50.022270, 19.926915]; // Współrzędne geograficzne Krakowa
+const markerPosition = [50.022270, 19.926915]; // Współrzędne geograficzne markera
 const zoom = 15; // Poziom przybliżenia
 
 const Contact = () => {
@@ -12,17 +12,16 @@ const Contact = () => {
             <div className="container">
                 <div className="contact_text_container">
                     <div className="contact_text">
-                        <p>Kraków 31-004</p>
-                        <p>ul. Zbrojarzy 4</p>
-                        <p>Nip: 5252934414</p>
-                        <p>KRS: 0001005456</p>
+                        <h2>Masz pytania?</h2>
+                        <p>Tel. +48 531 049 317</p>
+                        <p>pon. - pt: 08:00 - 17:00</p>
+                        <p>adresemail@gmail.com</p>
                     </div>
-
+                    <div className="map">
                     <MapContainer
                         center={center}
                         zoom={zoom}
-                        style={{height: '300px', width: '30%', borderRadius: "3em"}}
-                        className="map"
+                        style={{height: '300px', width: 'auto', borderRadius: "3em"}}
                     >
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -31,12 +30,12 @@ const Contact = () => {
                             <Popup>Marker na mapie</Popup>
                         </Marker>
                     </MapContainer>
-
+                    </div>
                     <div className="contact_text">
-                        <h2>Masz pytania?</h2>
-                        <p>+48 500 100 544</p>
-                        <p>pon. - pt: 08:00 - 17:00</p>
-                        <p>adresemail@gmail.com</p>
+                        <p>F.H.U Frozer Paweł Adamczak</p>
+                        <p>30-412 Kraków</p>
+                        <p>ul. Zbrojarzy 30</p>
+                        <p>NIP:9441604737</p>
                     </div>
                 </div>
             </div>

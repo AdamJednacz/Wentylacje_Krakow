@@ -16,7 +16,6 @@
     justify-content: center;
     flex-wrap: wrap;
     @include phone{
-
       flex-direction: row;
     }
     .Certificates_item {

@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
-
 const Header = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const [isMenuVisible, setMenuVisible] = useState(false);
@@ -16,7 +15,7 @@ const Header = () => {
                 {isMobile ? (
                     <>
                         <div className="h1_hamburg">
-                        <h1>Logo/Nazwa</h1>
+                        <h1>Frozer</h1>
                         <div className="hamburger-menu" onClick={toggleMenu}>
                             {isMenuVisible ? (
                                 <FontAwesomeIcon icon={faTimes} style={{ fontSize: "2em" }} />
@@ -41,7 +40,7 @@ const Header = () => {
                     </>
                 ) : (
                     <>
-                    <h1>Logo/Nazwa</h1>
+                    <h1>Frozer</h1>
                     <div className="menu">
                         <Link to="aboutus" smooth={true} duration={500}><p className="menu_item">O nas</p></Link>
                         <Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
