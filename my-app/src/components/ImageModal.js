@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from 'react-modal';
-
 const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
     const customStyles = {
         content: {
@@ -16,7 +15,6 @@ const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
             backgroundColor: 'rgba(0, 0, 0, 0.75)', // Przykrycie tła z poziomem przezroczystości
         },
     };
-
     return (
         <Modal
             isOpen={isOpen}

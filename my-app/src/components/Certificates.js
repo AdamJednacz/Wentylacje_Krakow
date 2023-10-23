@@ -11,7 +11,6 @@ import Sinclair from "../assets/Sinclair_montaż_i_serwis_certyfikat.jpg";
 import Mitsubishi from "../assets/Mitsubishi_montaż_i_serwis_certyfikat.jpg";
 import LG from "../assets/LG_certyfikat.jpg";
 import ImageModal from './ImageModal';
-
 const Certificates = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -65,14 +64,12 @@ const Certificates = () => {
                         className="Certificates_item"
                         onClick={() => openModal(GreeS)}
                     />
-
                     <img
                         src={Sinclair}
                         alt={Sinclair}
                         className="Certificates_item"
                         onClick={() => openModal(Sinclair)}
                     />
-
                     <img
                         src={LG}
                         alt={LG}
@@ -103,5 +100,4 @@ const Certificates = () => {
         </section>
     );
 };
-
 export default Certificates;

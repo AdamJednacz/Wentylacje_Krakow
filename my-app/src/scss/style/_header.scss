@@ -2,7 +2,6 @@
   color: #ffffff;
   font-weight: bolder;
   font-family: $font-base;
-
   .container {
     display: flex;
     justify-content: space-between;
@@ -10,7 +9,6 @@
     @include phone{
       align-items: center;
       flex-direction: column;
-
     }
     .h1_hamburg{
       width: 100%;
@@ -19,15 +17,10 @@
         align-items: center;
         justify-content: space-between;
       }
-      .hamburger-menu{
-
-      }
     }
-
     h1{
       @include phone{
         font-size: 2em;
-
       }
     }
     .menu {
@@ -35,7 +28,6 @@
       align-items: center;
       @include phone{
        flex-direction: column;
-
       }
       .menu_item {
         padding: 1.8em;
@@ -54,7 +46,6 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-
     }
   }
   .contact_header{

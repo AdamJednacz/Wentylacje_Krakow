@@ -19,5 +19,4 @@ const AboutUs = () => {
         </section>
     );
 };
-
 export default AboutUs;

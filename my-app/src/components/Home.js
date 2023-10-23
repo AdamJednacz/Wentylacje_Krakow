@@ -8,7 +8,6 @@ import Certificates from "./Certificates";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Catalogues from "./Catalogues";
-
 const Home = () => {
     return (
         <div>

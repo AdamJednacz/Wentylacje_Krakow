@@ -10,7 +10,6 @@
   @include phone{
     padding: 3em 0;
   }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -20,7 +19,6 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
       h1 {
         font-size: 3em;
         margin-top: 0;
@@ -31,7 +29,6 @@
           text-align: center;
         }
       }
-
       .h2_help_container {
         display: flex;
         align-items: center;
@@ -48,20 +45,17 @@
             padding: 0.5em;
             margin: 0.5em 1em;
           }
-
           &:first-of-type {
             border: 1px solid #707070;
           }
         }
       }
     }
-
     .examples {
       @include phone {
         display: flex;
         flex-direction: column;
       }
-
       .example {
         width: 30em;
         display: flex;
@@ -69,13 +63,11 @@
         @include phone {
           width: 15em;
         }
-
         .left_side {
           display: flex;
           align-items: center;
           flex-direction: column;
           margin: 0 1em;
-
           h3 {
             font-size: 26px;
             @include phone {
@@ -83,7 +75,6 @@
               text-align: center;
             }
           }
-
           p {
             font-size: 1.5em;
             text-align: center;
@@ -95,14 +86,12 @@
         }
       }
     }
-
     .carousel_numbers {
       display: flex;
       position: relative;
       @include phone{
         margin-top: 1em;
       }
-
       .number {
         width: 40px;
         height: 50px;
@@ -110,7 +99,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         &:first-of-type {
           border: 1px solid #707070;
         }
