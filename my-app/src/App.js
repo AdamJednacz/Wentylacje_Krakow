@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs';
 import Offer from './components/Offer';
 import Contact from './components/Contact';
 import Plus from './components/Plus';
+import Certificates from "./components/Certificates";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/plusy" element={<Plus />} />
                 <Route path="/oferta" element={<Offer />} />
+                <Route path="/certyfikaty" element={<Certificates />} />
             </Routes>
         </BrowserRouter>
     );

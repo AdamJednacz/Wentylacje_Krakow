@@ -29,26 +29,32 @@
         }
       }
     }
+
       .photos_items {
         display: flex;
         margin-left: 2em;
-        @include phone{
+        @include phone {
           flex-wrap: wrap;
+          margin: 0;
+          justify-content: center;
         }
+
         .photos_item {
           width: 14em;
           margin: 1em;
           border-radius: 2em;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-          @include phone{
+          @include phone {
             width: 7em;
             margin: 0.5em;
             border-radius: 1em;
           }
+        }
       }
     }
   }
-}
+
+
 .ImageModal {
   position: absolute;
   top: 50%;

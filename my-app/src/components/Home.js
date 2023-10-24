@@ -4,10 +4,11 @@ import AboutUs from "./AboutUs";
 import Offer from "./Offer";
 import Plus from "./Plus";
 import Photos from "./Photos";
-import Certificates from "./Certificates";
+
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Catalogues from "./Catalogues";
+import CertificatesSite from "./CertificatesSite";
 const Home = () => {
     return (
         <div>
@@ -17,7 +18,7 @@ const Home = () => {
             <Offer/>
             <Catalogues/>
             <Photos/>
-            <Certificates/>
+            <CertificatesSite/>
             <Contact/>
             <Footer/>
         </div>
