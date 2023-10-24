@@ -3,7 +3,7 @@ import {Link } from 'react-router-dom';
 import LG from "../assets/LG_certyfikat.jpg";
 const CertificatesSite = () => {
     return (
-        <section className="CertyficatesSite">
+        <section className="CertyficatesSite" id="CertyficatesSite">
             <div className="container">
 
                 <div className="certyficatesSite_text_container">

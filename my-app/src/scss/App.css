@@ -669,7 +669,7 @@ footer {
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container .certyficatesSite_text_container {
-    width: 70%;
+    width: 100%;
   }
 }
 .CertyficatesSite .container .certyficatesSite_text_container h1 {
