@@ -4,6 +4,9 @@
   justify-content: center;
   padding: 4em 0;
   font-family: $font-base;
+  @include phone{
+    padding: 2em 0;
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -29,7 +32,6 @@
         }
       }
     }
-
       .photos_items {
         display: flex;
         margin-left: 2em;
