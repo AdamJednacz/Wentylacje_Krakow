@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import img2 from "../assets/wykalifikowany.jpg"
 import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-import img5 from "../assets/24831890-klimatyzacja-w-domu-czy-warto.jpeg";
+
 import ImageModal from "./ImageModal";
 
 const Photos = () => {
@@ -21,7 +21,7 @@ const Photos = () => {
         setIsModalOpen(false);
     };
 
-    const images = [img2,img3,img4,img5]; // Lista obrazków do przeglądania
+    const images = [img2,img3,img4]; // Lista obrazków do przeglądania
 
     return (
         <section className="photos" id="photos">

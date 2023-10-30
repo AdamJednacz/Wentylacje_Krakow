@@ -28,7 +28,7 @@ const Certificates = () => {
         setIsModalOpen(false);
     };
 
-    const images = [dyplom1, RotensoH2, RotensoS5, RotensoI3, RotensoP4, GreeP6, GreeS7, Gazy8, Sinclair9, Mitsubishi10, LG11];
+    const images = [RotensoH2, RotensoS5, RotensoI3, RotensoP4, GreeP6, GreeS7, Sinclair9, LG11 ,dyplom1,Gazy8, Mitsubishi10, ];
 
     return (
         <section className="Certificates" id="certyfikaty">
