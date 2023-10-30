@@ -2,14 +2,14 @@
 import './scss/App.scss';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Offer from './components/Offer';
 import Contact from './components/Contact';
 import Plus from './components/Plus';
 import Certificates from "./components/Certificates";
-
+import Modal from 'react-modal';
 
 function App() {
 

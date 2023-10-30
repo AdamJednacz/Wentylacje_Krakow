@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
 import LG from "../assets/LG_certyfikat.jpg";
+
 const CertificatesSite = () => {
     return (
         <section className="CertyficatesSite" id="CertyficatesSite">

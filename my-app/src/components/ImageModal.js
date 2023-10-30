@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
-const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
+const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCurrentIndex }) => {
     const customStyles = {
         content: {
             top: '54%',
@@ -9,29 +12,44 @@ const ImageModal = ({ isOpen, closeModal, imageSrc }) => {
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-            maxWidth: '60%', // Maksymalna szerokość modalu na desktopie
-            zIndex:"100",
+            maxWidth: '95%',
+            zIndex: "100",
+            padding: "0",
         },
         overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            zIndex: "100"// Przykrycie tła z poziomem przezroczystości
+            zIndex: "100"
         },
     };
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    };
+
     return (
         <Modal
             isOpen={isOpen}
             onRequestClose={closeModal}
             contentLabel="Image Modal"
-            style={customStyles} // Stosowanie niestandardowych stylów
+            style={customStyles}
+            appElement={document.getElementById('root')}
         >
             <button className="ImageModalClose" onClick={closeModal}>
                 &#x2715;
             </button>
-            <img
-                src={imageSrc}
-                alt="Powiększony obrazek"
-                style={{ width: '60%', height: 'auto',  }} // Dostosowanie rozmiaru obrazka
-            />
+            <div className="modal_img_arrow_container">
+                <FontAwesomeIcon icon={faAngleLeft} className="modal_icons" onClick={handlePrev} />
+                <img
+                    src={images[currentIndex]}
+                    alt="Powiększony obrazek"
+                    style={{ width: '100%', height: 'auto' }}
+                />
+                <FontAwesomeIcon icon={faAngleRight} className="modal_icons" onClick={handleNext} />
+            </div>
         </Modal>
     );
 };

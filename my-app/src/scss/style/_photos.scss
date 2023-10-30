@@ -68,6 +68,18 @@
   max-width: 80%;
   max-height: 80%;
   overflow: auto;
+  @include phone{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    padding: 10px; /* Dostosuj wielkość paddingu do preferencji */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+  }
 }
 .ImageModalOverlay {
   position: fixed;
@@ -79,6 +91,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include phone{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .ImageModalClose {
   position: absolute;
@@ -90,4 +108,26 @@
   border: none;
   color: #000000;
   padding: 0;
+  z-index: 2;
+  @include phone{
+    top: 10px;
+    right: 10px;
+  }
+}
+.modal_img_arrow_container{
+  display: flex;
+  align-items: center;
+  width: auto;
+  position: relative;
+  right: 1.9em;
+  .modal_icons{
+    position: relative;
+    font-size: 3em;
+    &:nth-of-type(1){
+      left:0.7em;
+    }
+    &:nth-of-type(2){
+      right:0.7em;
+    }
+  }
 }

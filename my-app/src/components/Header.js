@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faBars, faTimes, } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
 const Header = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });

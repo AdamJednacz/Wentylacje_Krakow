@@ -21,6 +21,7 @@
     h1{
       @include phone{
         font-size: 2em;
+        margin: 0.5em 0;
       }
     }
     .menu {
