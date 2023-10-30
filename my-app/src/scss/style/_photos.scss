@@ -113,27 +113,25 @@
     right: 10px;
   }
 }
-
-
   .modal_icons {
-    position: relative;
+    position: absolute;
     font-size: 3em;
-    bottom: 10em;
+    bottom: 50%;
     @include phone{
-      bottom: 2.5em;
+      bottom: 40%;
     }
     &:nth-of-type(1) {
-      left: 0.2em;
+      left:1%;
       @include phone {
-      left: 0.01em;
+      left: 0.1%;
 
       }
     }
     &:nth-of-type(2) {
-      left: 33em;
+      left: 95%;
       @include phone {
 
-        left: 4.4em;
+        left:85%;
       }
     }
   }

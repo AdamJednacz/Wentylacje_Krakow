@@ -4,7 +4,7 @@
   font-family: $font-base;
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     @include phone{
       align-items: center;
