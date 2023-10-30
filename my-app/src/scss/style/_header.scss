@@ -4,18 +4,19 @@
   font-family: $font-base;
   .container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     @include phone{
       align-items: center;
       flex-direction: column;
     }
     .h1_hamburg{
       width: 100%;
+      justify-content: space-between;
       @include phone{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     }
     h1{

@@ -6,8 +6,8 @@
 }
 .header .container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .header .container {
@@ -17,12 +17,13 @@
 }
 .header .container .h1_hamburg {
   width: 100%;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .header .container .h1_hamburg {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media (max-width: 767px) {
