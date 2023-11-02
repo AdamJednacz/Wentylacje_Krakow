@@ -3,6 +3,7 @@
   font-family: $font-base;
   padding: 4em 0;
   .container{
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
     @include phone{
@@ -44,10 +45,10 @@
         width: 100%;
       }
       h1{
-        font-size: 4em;
+        font-size: 4rem;
         text-align: center;
         @include phone{
-          font-size: 2em;
+          font-size: 2rem;
         }
       }
       p{

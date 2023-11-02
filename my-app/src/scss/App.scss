@@ -1,5 +1,27 @@
 @import "settings/_all.scss";
 @import "style/_all.scss";
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.about_us{
+  animation-name: appear;
+  animation-duration:5s ;
+}
+
+.example{
+  animation-name: appear;
+  animation-duration:3s ;
+}
+.plus {
+  animation-name: appear;
+  animation-duration:3s ;
+}
 
 .container {
   margin: 0 auto;
@@ -8,3 +30,4 @@
     max-width: 300px;
   }
 }
+

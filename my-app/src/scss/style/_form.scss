@@ -1,6 +1,6 @@
 .Form{
   font-family: $font-base;
-  background: #d8e3ed;
+  background: #ffffff;
   padding: 4em 0;
   .container{
     display: flex;
@@ -27,11 +27,11 @@
         width: 100%;
       }
       h1 {
-        font-size: 3em;
+        font-size: 3rem;
         text-align: center;
         margin-bottom: 0.5em;
         @include phone {
-          font-size: 2em;
+          font-size: 2rem;
         }
       }
       .form_item{

@@ -16,7 +16,7 @@ const Plus = () => {
                         <h2
                             onClick={() => handleChange(0)}
                             style={{
-                                border: activeTab === 0 ? ' 1px solid #707070' : 'none',
+                                border: activeTab === 0 ? ' 2px solid #707070' : 'none',
                                 borderRadius: '1em',
                             }}
                         >
@@ -25,7 +25,7 @@ const Plus = () => {
                         <h2
                             onClick={() => handleChange(1)}
                             style={{
-                                border: activeTab === 1 ? ' 1px solid #707070' : 'none',
+                                border: activeTab === 1 ? ' 2px solid #707070' : 'none',
                                 borderRadius: '1em',
                             }}
                         >
@@ -34,7 +34,7 @@ const Plus = () => {
                         <h2
                             onClick={() => handleChange(2)}
                             style={{
-                                border: activeTab === 2 ? ' 1px solid #707070' : 'none',
+                                border: activeTab === 2 ? ' 2px solid #707070' : 'none',
                                 borderRadius: '1em',
                             }}
                         >
@@ -141,7 +141,7 @@ const Plus = () => {
                     <div
                         onClick={() => handleChange(0)}
                         style={{
-                            border: activeTab === 0 ? '1px solid #707070' : 'none',
+                            border: activeTab === 0 ? '2px solid #707070' : 'none',
                             borderRadius: '1em',
                         }}
                         className="number"
@@ -151,7 +151,7 @@ const Plus = () => {
                     <div
                         onClick={() => handleChange(1)}
                         style={{
-                            border: activeTab === 1 ? '1px solid #707070' : 'none',
+                            border: activeTab === 1 ? '2px solid #707070' : 'none',
                             borderRadius: '1em',
                         }}
                         className="number"
@@ -161,7 +161,7 @@ const Plus = () => {
                     <div
                         onClick={() => handleChange(2)}
                         style={{
-                            border: activeTab === 2 ? '1px solid #707070' : 'none',
+                            border: activeTab === 2 ? '2px solid #707070' : 'none',
                             borderRadius: '1em',
                         }}
                         className="number"

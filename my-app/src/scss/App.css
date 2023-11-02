@@ -116,7 +116,7 @@
   }
 }
 .about_us .about_us_items .about_us_text_item h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -125,7 +125,7 @@
   }
 }
 .about_us .about_us_items .about_us_text_item p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -138,11 +138,12 @@
   font-weight: bolder;
 }
 .about_us .about_us_items .about_us_text_item button {
+  margin-top: 1em;
   border: none;
   padding: 1.5em 6em;
   border-radius: 3em;
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   background: #09a9de;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
@@ -171,7 +172,7 @@
 }
 .offer h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
   margin: 0.5em 0;
 }
 @media (max-width: 767px) {
@@ -211,7 +212,7 @@
   }
 }
 .offer .offer_items .offer_item h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 @media (max-width: 767px) {
   .offer .offer_items .offer_item h2 {
@@ -256,14 +257,14 @@
   flex-direction: column;
 }
 .plus .container .top h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 1em;
   font-weight: bolder;
 }
 @media (max-width: 767px) {
   .plus .container .top h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -273,7 +274,7 @@
   justify-content: center;
 }
 .plus .container .top .h2_help_container h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 1em;
   margin: 1em 2em;
   font-weight: bolder;
@@ -281,7 +282,7 @@
 }
 @media (max-width: 767px) {
   .plus .container .top .h2_help_container h2 {
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 0.5em;
     margin: 0.5em 1em;
   }
@@ -320,7 +321,7 @@
   margin: 0 1em;
 }
 .plus .container .examples .example .left_side h3 {
-  font-size: 26px;
+  font-size: 2em;
 }
 @media (max-width: 767px) {
   .plus .container .examples .example .left_side h3 {
@@ -348,25 +349,13 @@
   }
 }
 .plus .container .carousel_numbers .number {
+  font-weight: bolder;
   width: 40px;
   height: 50px;
   margin: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.plus .container .carousel_numbers .number:first-of-type {
-  border: 1px solid #707070;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in.active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .Certificates {
@@ -432,13 +421,13 @@
   }
 }
 .photos .container .photos_text h1 {
-  font-size: 4em;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
 }
 @media (max-width: 767px) {
   .photos .container .photos_text h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 .photos .container .photos_text p {
@@ -622,6 +611,7 @@ footer {
   padding: 4em 0;
 }
 .catalogues .container {
+  max-width: 2000px;
   display: flex;
   justify-content: space-between;
 }
@@ -673,12 +663,12 @@ footer {
   }
 }
 .catalogues .container .catalogues_text h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
 }
 @media (max-width: 767px) {
   .catalogues .container .catalogues_text h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 .catalogues .container .catalogues_text p {
@@ -725,12 +715,12 @@ footer {
   }
 }
 .CertyficatesSite .container .certyficatesSite_text_container h1 {
-  font-size: 4em;
+  font-size: 4rem;
   margin: 1em;
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container .certyficatesSite_text_container h1 {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0.5em;
   }
 }
@@ -791,7 +781,7 @@ footer {
 
 .Form {
   font-family: "Open Sans", sans-serif;
-  background: #d8e3ed;
+  background: #ffffff;
   padding: 4em 0;
 }
 .Form .container {
@@ -827,13 +817,13 @@ footer {
   }
 }
 .Form .container form h1 {
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 0.5em;
 }
 @media (max-width: 767px) {
   .Form .container form h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 .Form .container form .form_item {
@@ -900,6 +890,29 @@ footer {
 }
 .Form .container form .form_btn:hover {
   opacity: 0.4;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about_us {
+  animation-name: appear;
+  animation-duration: 5s;
+}
+
+.example {
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+.plus {
+  animation-name: appear;
+  animation-duration: 3s;
 }
 
 .container {

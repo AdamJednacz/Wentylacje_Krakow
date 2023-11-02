@@ -23,10 +23,10 @@
           width: 100%;
         }
       h1 {
-        font-size: 4em;
+        font-size: 4rem;
         margin: 1em;
         @include phone{
-          font-size: 2em;
+          font-size: 2rem;
           margin: 0.5em;
         }
       }

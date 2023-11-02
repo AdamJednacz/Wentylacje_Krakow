@@ -21,11 +21,8 @@ const Form = () => {
 
     return (
         <section className="Form" id="form">
-
             <div className="container">
-
                 <div className="form_text">
-
                     <img src={question} alt={question}/>
                 </div>
                 <form onSubmit={handleSubmit}>
@@ -48,7 +45,6 @@ const Form = () => {
                         value={message}
                         onChange={handleWiadomoscChange}
                     />
-
                 </div>
                     <button className="form_btn" type="submit">Wyślij</button>
                 </form>
