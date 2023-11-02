@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Catalogues from "./Catalogues";
 import CertificatesSite from "./CertificatesSite";
+import Form from "./Form";
 const Home = () => {
     return (
         <div>
@@ -19,6 +20,7 @@ const Home = () => {
             <Catalogues/>
             <Photos/>
             <CertificatesSite/>
+            <Form/>
             <Contact/>
             <Footer/>
         </div>

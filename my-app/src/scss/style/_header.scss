@@ -19,9 +19,8 @@
         justify-content: space-around;
       }
     }
-    h1{
+    h1{font-size: 2em;
       @include phone{
-        font-size: 2em;
         margin: 0.5em 0;
       }
     }

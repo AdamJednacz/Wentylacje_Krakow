@@ -1,0 +1,99 @@
+.Form{
+  font-family: $font-base;
+  background: #d8e3ed;
+  padding: 4em 0;
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include phone{
+      flex-direction: column;
+    }
+    .form_text{
+      width: 55%;
+      @include phone{
+        width: 100%;
+      }
+      img{
+      width: 100%;
+      }
+    }
+    form{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include phone{
+        width: 100%;
+      }
+      h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        @include phone {
+          font-size: 2em;
+        }
+      }
+      .form_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        label{
+          width: 52%;
+          font-size: 1.2em;
+          margin: 1em 0 0.5em 0;
+          font-weight: bolder;
+
+        }
+        input{
+          font-family: $font-base;
+          font-size: 1.5em;
+          padding: 0 0.5em;
+          width: 50%;
+          height: 3em;
+          border-radius: 1em;
+          border: solid 3px #D3D3D3;
+          @include phone{
+            width: 70%;
+            font-size:1em ;
+          }
+        }
+        .message{
+          font-family: $font-base;
+          font-size: 1.5em;
+          padding: 0.5em;
+          width: 50%;
+          height: 15em;
+          border-radius: 1em;
+          border: solid 3px #D3D3D3;
+          @include phone{
+            font-size:1em ;
+            width: 70%;
+          }
+        }
+      }
+      .form_btn{
+        margin:  2em ;
+        border: none;
+        padding: 1em 6em;
+        border-radius: 3em;
+        font-weight: bolder;
+        font-size: 1.5em;
+        background: #09a9de;
+        color: #ffffff;
+        font-family: $font-base;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        transition: opacity ease-in-out 0.3s;
+        @include phone{
+          padding: 0.75em 3em;
+          font-size: 1.5em;
+          margin-top: 1em;
+        }
+        &:hover{
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}
