@@ -9,6 +9,7 @@
     @include phone{
       flex-direction:column-reverse;
       flex-wrap: wrap;
+      max-width: 300px;
     }
     .catalogues_items_container {
       flex-direction: column;

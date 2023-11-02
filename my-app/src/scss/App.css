@@ -619,6 +619,7 @@ footer {
   .catalogues .container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    max-width: 300px;
   }
 }
 .catalogues .container .catalogues_items_container {
