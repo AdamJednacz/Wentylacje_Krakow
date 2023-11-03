@@ -730,7 +730,7 @@ footer {
 .CertyficatesSite .container {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container {
@@ -752,7 +752,7 @@ footer {
 }
 .CertyficatesSite .container .certyficatesSite_text_container h1 {
   font-size: 4rem;
-  margin: 1em;
+  margin: 0.5em;
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container .certyficatesSite_text_container h1 {
