@@ -37,6 +37,7 @@
 .header .container .menu {
   display: flex;
   align-items: center;
+  height: 4em;
 }
 @media (max-width: 767px) {
   .header .container .menu {
@@ -56,6 +57,7 @@
 }
 .header .container .menu .menu_item:hover {
   opacity: 0.4;
+  font-size: 1.5em;
 }
 .header .container .hamburger_menu_items {
   display: flex;
@@ -67,6 +69,9 @@
     display: none;
   }
 }
+.header .contact_header p:hover {
+  color: yellow;
+}
 
 .header.sticky {
   position: sticky;
@@ -77,6 +82,7 @@
 
 .about_us {
   font-family: "Open Sans", sans-serif;
+  height: 55vh;
 }
 .about_us .about_us_items {
   display: flex;
@@ -87,20 +93,24 @@
     align-items: center;
   }
 }
-.about_us .about_us_items img {
+.about_us .about_us_items .img1 {
   position: relative;
   right: 2em;
   top: 3em;
   opacity: 0.6;
   border-radius: 10em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
-  .about_us .about_us_items img {
+  .about_us .about_us_items .img1 {
     width: 100%;
     right: 0;
     border-radius: 4em;
   }
+}
+.about_us .about_us_items .img1:hover {
+  transform: scale(1.05);
 }
 .about_us .about_us_items .about_us_text_item {
   display: flex;
@@ -194,11 +204,15 @@
   align-items: center;
   flex-direction: column;
   margin: 1em;
+  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
   .offer .offer_items .offer_item {
     margin: 0.5em;
   }
+}
+.offer .offer_items .offer_item:hover {
+  transform: scale(1.1);
 }
 .offer .offer_items .offer_item img {
   width: 30em;
@@ -279,6 +293,7 @@
   margin: 1em 2em;
   font-weight: bolder;
   text-align: center;
+  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
   .plus .container .top .h2_help_container h2 {
@@ -290,6 +305,9 @@
 .plus .container .top .h2_help_container h2:first-of-type {
   border: 1px solid #707070;
 }
+.plus .container .top .h2_help_container h2:hover {
+  transform: scale(1.2);
+}
 .plus .container .examples {
   display: flex;
   justify-content: center;
@@ -300,7 +318,7 @@
 @media (max-width: 767px) {
   .plus .container .examples {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
   }
 }
@@ -322,6 +340,8 @@
 }
 .plus .container .examples .example .left_side h3 {
   font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 @media (max-width: 767px) {
   .plus .container .examples .example .left_side h3 {
@@ -352,10 +372,14 @@
   font-weight: bolder;
   width: 40px;
   height: 50px;
-  margin: 1em;
+  margin: 2em 1em;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s;
+}
+.plus .container .carousel_numbers .number:hover {
+  transform: scale(1.5);
 }
 
 .Certificates {
@@ -455,6 +479,7 @@
   margin: 1em;
   border-radius: 2em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 1s;
 }
 @media (max-width: 767px) {
   .photos .container .photos_items .photos_item {
@@ -462,6 +487,9 @@
     margin: 0.5em;
     border-radius: 1em;
   }
+}
+.photos .container .photos_items .photos_item:hover {
+  transform: scale(2);
 }
 
 .ImageModal {
@@ -637,13 +665,14 @@ footer {
     flex-wrap: wrap;
   }
 }
-.catalogues .container .catalogues_items_container .catalogues_items p {
+.catalogues .container .catalogues_items_container .catalogues_items .text {
   text-align: center;
 }
 .catalogues .container .catalogues_items_container .catalogues_items .catalogues_item {
   width: 13em;
   height: auto;
   margin: 2em;
+  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
   .catalogues .container .catalogues_items_container .catalogues_items .catalogues_item {
@@ -651,6 +680,9 @@ footer {
     height: auto;
     margin: 1em;
   }
+}
+.catalogues .container .catalogues_items_container .catalogues_items .catalogues_item:hover {
+  transform: scale(1.5);
 }
 .catalogues .container .catalogues_text {
   display: flex;
@@ -751,11 +783,15 @@ footer {
   width: 80%;
   border-radius: 4em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container .certyficatesSite_items_container img {
     border-radius: 2em;
   }
+}
+.CertyficatesSite .container .certyficatesSite_items_container img:hover {
+  transform: scale(1.05);
 }
 .CertyficatesSite .container .certyficatesSite_items_container button {
   border: none;

@@ -23,17 +23,23 @@
       align-items: center;
       flex-direction: column;
       margin: 1em;
+      transition: transform 0.5s;
       @include phone{
         margin: 0.5em;
+      }
+      &:hover{
+        transform: scale(1.1);
       }
       img{
         width: 30em;
         border-radius:5em ;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
         @include phone{
           width: 15em;
           border-radius: 3em;
         }
+
       }
       h2{
         font-size: 2rem;

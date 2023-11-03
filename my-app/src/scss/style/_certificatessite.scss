@@ -53,8 +53,12 @@
         width: 80%;
         border-radius: 4em;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.5s;
         @include phone{
           border-radius: 2em;
+        }
+        &:hover{
+          transform: scale(1.05);
         }
       }
       button{

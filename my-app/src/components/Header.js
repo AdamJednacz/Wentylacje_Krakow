@@ -56,10 +56,10 @@ const Header = () => {
                 )}
                 <div className="contact_header">
                     <p>
-                        <FontAwesomeIcon icon={faPhone} /> Telefon: +48 531 049 317
+                        <FontAwesomeIcon className="icon_header" icon={faPhone} /> Telefon: +48 531 049 317
                     </p>
                     <p>
-                        <FontAwesomeIcon icon={faEnvelope} /> Email: adamjednacz4@gmail.com
+                        <FontAwesomeIcon className="icon_header"  icon={faEnvelope} /> Email: adamjednacz4@gmail.com
                     </p>
                 </div>
             </div>

@@ -22,17 +22,22 @@
         @include phone{
           flex-wrap: wrap;
         }
-        p{
+        .text{
           text-align: center;
+
         }
         .catalogues_item {
           width: 13em;
           height:auto;
           margin: 2em;
+          transition: transform 0.5s;
           @include phone{
             width: 6em;
             height: auto;
             margin: 1em;
+          }
+          &:hover{
+            transform: scale(1.5);
           }
         }
       }
