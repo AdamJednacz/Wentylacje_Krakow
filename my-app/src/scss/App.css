@@ -48,7 +48,7 @@
   padding: 1.8em;
   margin: 0;
   border-radius: 2em;
-  transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s, transform 0.5s;
 }
 @media (max-width: 767px) {
   .header .container .menu .menu_item {
@@ -57,7 +57,7 @@
 }
 .header .container .menu .menu_item:hover {
   opacity: 0.4;
-  font-size: 1.5em;
+  transform: scale(1.5);
 }
 .header .container .hamburger_menu_items {
   display: flex;
@@ -150,7 +150,7 @@
 .about_us .about_us_items .about_us_text_item button {
   margin-top: 1em;
   border: none;
-  padding: 1.5em 6em;
+  padding: 1.5em 5em;
   border-radius: 3em;
   font-weight: bolder;
   font-size: 1.5rem;
@@ -158,7 +158,7 @@
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s, transform 0.5s;
 }
 @media (max-width: 767px) {
   .about_us .about_us_items .about_us_text_item button {
@@ -169,6 +169,7 @@
 }
 .about_us .about_us_items .about_us_text_item button:hover {
   opacity: 0.4;
+  transform: scale(1.1);
 }
 
 .offer {
@@ -437,17 +438,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 767px) {
   .photos .container {
     flex-direction: column;
   }
 }
+.photos .container .photos_text {
+  width: 40%;
+}
 .photos .container .photos_text h1 {
   font-size: 4rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .photos .container .photos_text h1 {
@@ -795,7 +798,7 @@ footer {
 }
 .CertyficatesSite .container .certyficatesSite_items_container button {
   border: none;
-  padding: 1.5em 6em;
+  padding: 1.5em 4em;
   border-radius: 3em;
   font-size: 1.5em;
   font-weight: bolder;
@@ -803,7 +806,7 @@ footer {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s, transform 0.5s;
 }
 @media (max-width: 767px) {
   .CertyficatesSite .container .certyficatesSite_items_container button {
@@ -814,6 +817,7 @@ footer {
 }
 .CertyficatesSite .container .certyficatesSite_items_container button:hover {
   opacity: 0.4;
+  transform: scale(1.1);
 }
 
 .Form {
@@ -916,7 +920,7 @@ footer {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s, transform 0.5s;
 }
 @media (max-width: 767px) {
   .Form .container form .form_btn {
@@ -927,6 +931,7 @@ footer {
 }
 .Form .container form .form_btn:hover {
   opacity: 0.4;
+  transform: scale(1.1);
 }
 
 @keyframes appear {
@@ -954,7 +959,7 @@ footer {
 
 .container {
   margin: 0 auto;
-  max-width: 1700px;
+  max-width: 1800px;
 }
 @media (max-width: 767px) {
   .container {
