@@ -84,6 +84,11 @@
   font-family: "Open Sans", sans-serif;
   height: 55vh;
 }
+@media (max-width: 767px) {
+  .about_us {
+    height: 75vh;
+  }
+}
 .about_us .about_us_items {
   display: flex;
 }
@@ -129,6 +134,7 @@
 .about_us .about_us_items .about_us_text_item h1 {
   font-size: 4rem;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 @media (max-width: 767px) {
   .about_us .about_us_items .about_us_text_item h1 {
@@ -824,7 +830,7 @@ footer {
 .Form {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
-  padding: 4em 0;
+  padding: 6em 0;
 }
 .Form .container {
   display: flex;

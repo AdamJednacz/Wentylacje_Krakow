@@ -1,6 +1,9 @@
 .about_us {
   font-family: $font-base;
   height: 55vh;
+  @include phone{
+    height: 75vh;
+  }
   .about_us_items {
     display: flex;
     @include phone{
@@ -38,6 +41,7 @@
       h1 {
         font-size: 4rem;
         text-align: center;
+        margin-bottom: 0.5em;
         @include phone{
           font-size: 2em;
         }
