@@ -17,6 +17,9 @@
     }
     .photos_text {
       width: 40%;
+      @include phone{
+        width: 100%;
+      }
       h1 {
         font-size: 4rem;
         text-align: center;
