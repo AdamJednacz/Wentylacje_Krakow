@@ -837,6 +837,11 @@ footer {
   background: #ffffff;
   padding: 6em 0;
 }
+@media (max-width: 767px) {
+  .Form {
+    padding-bottom: 1em;
+  }
+}
 .Form .container {
   display: flex;
   flex-direction: row;
