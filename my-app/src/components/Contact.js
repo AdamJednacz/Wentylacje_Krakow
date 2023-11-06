@@ -13,7 +13,7 @@ const Contact = () => {
                         <h2>Kontakt</h2>
                         <p>Tel. +48 531 049 317</p>
                         <p>pon. - pt: 08:00 - 17:00</p>
-                        <p>adresemail@gmail.com</p>
+                        <p>frozer.pa@gmail.com</p>
                     </div>
                     <div className="map">
                     <MapContainer

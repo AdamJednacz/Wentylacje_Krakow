@@ -59,7 +59,7 @@ const Header = () => {
                         <FontAwesomeIcon className="icon_header" icon={faPhone} /> Telefon: +48 531 049 317
                     </p>
                     <p>
-                        <FontAwesomeIcon className="icon_header"  icon={faEnvelope} /> Email: adamjednacz4@gmail.com
+                        <FontAwesomeIcon className="icon_header"  icon={faEnvelope} /> Email: frozer.pa@gmail.com
                     </p>
                 </div>
             </div>

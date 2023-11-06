@@ -13,10 +13,7 @@ const Form = () => {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        alert("Wiadomość wysłana")
-        console.log('Adres e-mail:', email);
-        console.log('Wiadomość:', message);
+        
     }
 
     return (
@@ -25,7 +22,8 @@ const Form = () => {
                 <div className="form_text">
                     <img src={question} alt={question}/>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} action="https://formsubmit.io/send/
+                frozer.pa@gmail.com" method="POST">
                     <h1>Masz pytania ?</h1>
                 <div className="form_item">
                     <label htmlFor="email">Adres e-mail:</label>
