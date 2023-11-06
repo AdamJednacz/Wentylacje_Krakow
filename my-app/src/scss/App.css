@@ -82,7 +82,7 @@
 
 .about_us {
   font-family: "Open Sans", sans-serif;
-  height: 55vh;
+  height: auto;
 }
 @media (max-width: 767px) {
   .about_us {

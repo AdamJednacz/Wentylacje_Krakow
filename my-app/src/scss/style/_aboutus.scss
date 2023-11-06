@@ -1,6 +1,6 @@
 .about_us {
   font-family: $font-base;
-  height: 55vh;
+  height: auto;
   @include phone{
     height: 75vh;
   }
