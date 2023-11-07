@@ -870,11 +870,28 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .Form .container .thank_you {
+    width: 100%;
+  }
+}
 .Form .container .thank_you .thank_you_h1 {
   font-size: 3rem;
 }
+@media (max-width: 767px) {
+  .Form .container .thank_you .thank_you_h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 .Form .container .thank_you p {
   font-size: 2rem;
+}
+@media (max-width: 767px) {
+  .Form .container .thank_you p {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 .Form .container form {
   width: 40%;
