@@ -21,6 +21,20 @@
       width: 100%;
       }
     }
+    .thank_you{
+      display: flex;
+      width: 55%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .thank_you_h1{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 2rem;
+      }
+    }
     form{
       width: 40%;
       display: flex;
@@ -61,6 +75,10 @@
             width: 70%;
             font-size:1em ;
           }
+        }
+        .error-message{
+          font-size: 1.2em;
+          font-weight: bolder;
         }
         .message{
           font-family: $font-base;

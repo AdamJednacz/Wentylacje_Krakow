@@ -863,6 +863,19 @@ footer {
 .Form .container .form_text img {
   width: 100%;
 }
+.Form .container .thank_you {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Form .container .thank_you .thank_you_h1 {
+  font-size: 3rem;
+}
+.Form .container .thank_you p {
+  font-size: 2rem;
+}
 .Form .container form {
   width: 40%;
   display: flex;
@@ -910,6 +923,10 @@ footer {
     width: 70%;
     font-size: 1em;
   }
+}
+.Form .container form .form_item .error-message {
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 .Form .container form .form_item .message {
   font-family: "Open Sans", sans-serif;
@@ -960,6 +977,11 @@ footer {
   }
 }
 .about_us {
+  animation-name: appear;
+  animation-duration: 5s;
+}
+
+.thank_you, .like {
   animation-name: appear;
   animation-duration: 5s;
 }
