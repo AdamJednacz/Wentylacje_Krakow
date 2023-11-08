@@ -1,0 +1,41 @@
+import React, { useState, useEffect } from 'react';
+import like from "../assets/pngwing.com (12).png";
+import question from "../assets/pngwing.com (11).png";
+
+const LoadingPage = () => {
+    const [showFrozer, setShowFrozer] = useState(true);
+    const [showWitamy, setShowWitamy] = useState(false);
+
+    useEffect(() => {
+        // Po 4 sekundach zmień widoczność elementów
+        const timeout = setTimeout(() => {
+            setShowFrozer(false);
+            setShowWitamy(true);
+        }, 4000);
+
+        // Oczyść timer w przypadku odmontowania komponentu
+        return () => {
+            clearTimeout(timeout);
+        };
+    }, []);
+
+    return (
+
+        <section className="loadingpage">
+            <div className="container">
+                {showFrozer && (
+                    <h1 className="h1_Frozer" datatype="Frozer...">
+                        Frozer...
+                    </h1>
+                )}
+                {showWitamy && (
+                    <h1 className="h1_Witamy" datatype="Witamy">
+                        Witamy
+                    </h1>
+                )}
+            </div>
+        </section>
+    );
+};
+
+export default LoadingPage;

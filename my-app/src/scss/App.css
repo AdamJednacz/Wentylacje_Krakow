@@ -985,6 +985,73 @@ footer {
   transform: scale(1.1);
 }
 
+.loadingpage {
+  background: #252839;
+}
+.loadingpage .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadingpage .container .h1_Frozer {
+  position: relative;
+  font-size: 14vh;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
+  line-height: 1em;
+  outline: none;
+}
+.loadingpage .container .h1_Frozer::before {
+  content: attr(datatype);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #09a9de;
+  -webkit-text-stroke: 0 #383d52;
+  border-right: 4px solid #09a9de;
+  overflow: hidden;
+  animation: animate 4s linear infinite;
+}
+.loadingpage .container .h1_Witamy {
+  display: flex;
+  position: relative;
+  font-size: 14vh;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+  animation-name: appear;
+  animation-duration: 4s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
+  line-height: 1em;
+  outline: none;
+}
+.loadingpage .container .h1_Witamy::before {
+  content: attr(datatype);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #09a9de;
+  -webkit-text-stroke: 0 #383d52;
+  overflow: hidden;
+}
+
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+    opacity: 0;
+  }
+  70%, 90% {
+    width: 100%;
+    opacity: 1;
+  }
+}
 @keyframes appear {
   from {
     opacity: 0;
@@ -993,24 +1060,9 @@ footer {
     opacity: 1;
   }
 }
-.about_us {
+.home {
   animation-name: appear;
   animation-duration: 5s;
-}
-
-.thank_you, .like {
-  animation-name: appear;
-  animation-duration: 5s;
-}
-
-.example {
-  animation-name: appear;
-  animation-duration: 3s;
-}
-
-.plus {
-  animation-name: appear;
-  animation-duration: 3s;
 }
 
 .container {

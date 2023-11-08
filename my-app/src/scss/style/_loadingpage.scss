@@ -1,0 +1,70 @@
+.loadingpage{
+  background: #252839;
+  .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .h1_Frozer{
+      position: relative;
+      font-size: 14vh;
+      color: #252839;
+      -webkit-text-stroke: 0.3vw #383d52;
+      text-transform: uppercase;
+      -webkit-box-reflect: below 1px linear-gradient(transparent , #0004);
+      line-height: 1em;
+      outline: none;
+      &::before{
+        content: attr(datatype);
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color:#09a9de ;
+        -webkit-text-stroke: 0 #383d52;
+        border-right: 4px solid #09a9de ;
+        overflow: hidden;
+        animation: animate 4s linear infinite;
+      }
+
+    }
+    .h1_Witamy {
+      display: flex;
+      position: relative;
+      font-size: 14vh;
+      color: #252839;
+      -webkit-text-stroke: 0.3vw #383d52;
+      text-transform: uppercase;
+      animation-name: appear;
+      animation-duration:4s ;
+      -webkit-box-reflect: below 1px linear-gradient(transparent , #0004);
+      line-height: 1em;
+      outline: none;
+      &::before {
+        content: attr(datatype);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #09a9de;
+        -webkit-text-stroke: 0 #383d52;
+        overflow: hidden;
+      }
+    }
+  }
+}
+@keyframes animate {
+  0%,10%,100%{
+    width: 0;
+    opacity: 0;
+  }
+  70%,90%{
+  width: 100%;
+    opacity: 1;
+  }
+
+
+}

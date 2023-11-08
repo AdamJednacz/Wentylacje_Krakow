@@ -16,7 +16,9 @@ const Catalogues = () => {
             <div className="container">
                 <div className="catalogues_items_container">
                 <div className="catalogues_items">
+                    <a href="">
                     <img className="catalogues_item" src={Samsung} alt={Samsung}/>
+                    </a>
                     <img className="catalogues_item"  src={Mitsubishi} alt={Mitsubishi}/>
                     <img className="catalogues_item"  src={Toshiba} alt={Toshiba}/>
                     <img className="catalogues_item"  src={LG} alt={LG}/>

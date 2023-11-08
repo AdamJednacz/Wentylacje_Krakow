@@ -12,7 +12,7 @@ import CertificatesSite from "./CertificatesSite";
 import Form from "./Form";
 const Home = () => {
     return (
-        <div>
+        <section className="home">
             <Header/>
             <AboutUs/>
             <Plus/>
@@ -23,7 +23,7 @@ const Home = () => {
             <Form/>
             <Contact/>
             <Footer/>
-        </div>
+        </section>
     );
 };
 
