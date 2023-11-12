@@ -91,7 +91,7 @@
 @media (max-width: 767px) {
   .about_us {
     padding-bottom: 3em;
-    height: 75vh;
+    height: 80vh;
   }
 }
 .about_us .about_us_items {
@@ -862,6 +862,7 @@ footer {
 @media (max-width: 767px) {
   .Form {
     padding-bottom: 1em;
+    height: auto;
   }
 }
 .Form .container {
@@ -1039,6 +1040,11 @@ footer {
   overflow: hidden;
   animation: animate 4s linear infinite;
 }
+@media (max-width: 767px) {
+  .loadingpage .container .h1_Frozer {
+    font-size: 7vh;
+  }
+}
 .loadingpage .container .h1_Witamy {
   display: flex;
   position: relative;
@@ -1062,6 +1068,11 @@ footer {
   color: #09a9de;
   -webkit-text-stroke: 0 #383d52;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .loadingpage .container .h1_Witamy {
+    font-size: 7vh;
+  }
 }
 
 @keyframes animate {

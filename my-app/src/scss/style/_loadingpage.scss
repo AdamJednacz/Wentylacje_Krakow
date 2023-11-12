@@ -28,7 +28,9 @@
         overflow: hidden;
         animation: animate 4s linear infinite;
       }
-
+      @include phone{
+        font-size: 7vh;
+      }
     }
     .h1_Witamy {
       display: flex;
@@ -52,6 +54,9 @@
         color: #09a9de;
         -webkit-text-stroke: 0 #383d52;
         overflow: hidden;
+      }
+      @include phone{
+        font-size: 7vh;
       }
     }
   }
