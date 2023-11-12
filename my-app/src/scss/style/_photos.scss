@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4em 0;
   font-family: $font-base;
+  height: 50vh;
   @include phone{
     padding: 2em 0;
   }

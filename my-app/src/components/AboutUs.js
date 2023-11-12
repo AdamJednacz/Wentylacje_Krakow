@@ -1,9 +1,12 @@
 import React from 'react';
 import img1 from "../assets/AdobeStock_206545192-1024x711.jpeg"
 import {Link} from "react-scroll";
+
 const AboutUs = () => {
 
+
     return (
+
         <section id="aboutus" className="about_us"  >
             <div className="container">
                 <div className="about_us_items">
@@ -18,6 +21,7 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
+
     );
 };
 export default AboutUs;

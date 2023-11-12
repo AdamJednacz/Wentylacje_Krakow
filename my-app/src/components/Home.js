@@ -10,9 +10,13 @@ import Footer from "./Footer";
 import Catalogues from "./Catalogues";
 import CertificatesSite from "./CertificatesSite";
 import Form from "./Form";
+import background from "../assets/pexels-robert-șerban-11279737.jpg";
 const Home = () => {
-    return (
-        <section className="home">
+
+        return (
+
+
+        <section className="home" >
             <Header/>
             <AboutUs/>
             <Plus/>

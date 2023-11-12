@@ -1,5 +1,6 @@
 .header {
-  color: #ffffff;
+  color: #000000;
+  background: #ffffff;
   font-weight: bolder;
   font-family: $font-base;
   .container {
@@ -67,6 +68,6 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #09a9de;
+
 }
 

@@ -1,7 +1,8 @@
 .CertyficatesSite{
-  background: #d8e3ed;
-  padding: 4em 0;
+  display: flex;
+  align-items: center;
   font-family: $font-base;
+  height: 80vh;
   @include phone{
     padding: 2em 0;
   }

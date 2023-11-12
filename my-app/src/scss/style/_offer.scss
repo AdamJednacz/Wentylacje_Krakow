@@ -1,6 +1,9 @@
 .offer{
   padding: 3em 0;
   font-family: $font-base;
+  height: 75vh;
+  display: flex;
+  align-items: center;
   @include phone{
     padding: 1.5em 0;
   }

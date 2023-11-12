@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .header {
-  color: #ffffff;
+  color: #000000;
+  background: #ffffff;
   font-weight: bolder;
   font-family: "Open Sans", sans-serif;
 }
@@ -77,12 +78,13 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #09a9de;
 }
 
 .about_us {
   font-family: "Open Sans", sans-serif;
-  height: auto;
+  height: 82vh;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .about_us {
@@ -182,6 +184,9 @@
 .offer {
   padding: 3em 0;
   font-family: "Open Sans", sans-serif;
+  height: 75vh;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .offer {
@@ -257,10 +262,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 7em;
-  background: #d8e3ed;
-  padding: 5em 0;
+  padding: 8em 0;
   font-family: "Open Sans", sans-serif;
+  height: 70vh;
 }
 @media (max-width: 767px) {
   .plus {
@@ -318,7 +322,7 @@
 }
 .plus .container .examples {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 120%;
   align-items: center;
   height: 326px;
@@ -433,8 +437,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4em 0;
   font-family: "Open Sans", sans-serif;
+  height: 50vh;
 }
 @media (max-width: 767px) {
   .photos {
@@ -649,7 +653,9 @@ footer {
 }
 
 .catalogues {
-  background: #d8e3ed;
+  display: flex;
+  align-items: center;
+  height: 80vh;
   font-family: "Open Sans", sans-serif;
   padding: 4em 0;
 }
@@ -730,9 +736,10 @@ footer {
 }
 
 .CertyficatesSite {
-  background: #d8e3ed;
-  padding: 4em 0;
+  display: flex;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
+  height: 80vh;
 }
 @media (max-width: 767px) {
   .CertyficatesSite {
@@ -836,6 +843,9 @@ footer {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   padding: 6em 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .Form {
@@ -986,7 +996,7 @@ footer {
 }
 
 .loadingpage {
-  background: #252839;
+  background: #ffffff;
 }
 .loadingpage .container {
   height: 100vh;
@@ -997,8 +1007,8 @@ footer {
 .loadingpage .container .h1_Frozer {
   position: relative;
   font-size: 14vh;
-  color: #252839;
-  -webkit-text-stroke: 0.3vw #383d52;
+  color: #ffffff;
+  -webkit-text-stroke: 0.3vw #09a9de;
   text-transform: uppercase;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
   line-height: 1em;
@@ -1021,8 +1031,8 @@ footer {
   display: flex;
   position: relative;
   font-size: 14vh;
-  color: #252839;
-  -webkit-text-stroke: 0.3vw #383d52;
+  color: #09a9de;
+  -webkit-text-stroke: 0.3vw #09a9de;
   text-transform: uppercase;
   animation-name: appear;
   animation-duration: 4s;
@@ -1063,6 +1073,11 @@ footer {
 .home {
   animation-name: appear;
   animation-duration: 5s;
+}
+
+.example {
+  animation-name: appear;
+  animation-duration: 3s;
 }
 
 .container {

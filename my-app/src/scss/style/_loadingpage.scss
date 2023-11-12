@@ -1,5 +1,5 @@
 .loadingpage{
-  background: #252839;
+  background: #ffffff;
   .container{
     height: 100vh;
     display: flex;
@@ -9,8 +9,8 @@
     .h1_Frozer{
       position: relative;
       font-size: 14vh;
-      color: #252839;
-      -webkit-text-stroke: 0.3vw #383d52;
+      color: #ffffff;
+      -webkit-text-stroke: 0.3vw #09a9de ;
       text-transform: uppercase;
       -webkit-box-reflect: below 1px linear-gradient(transparent , #0004);
       line-height: 1em;
@@ -34,8 +34,8 @@
       display: flex;
       position: relative;
       font-size: 14vh;
-      color: #252839;
-      -webkit-text-stroke: 0.3vw #383d52;
+      color: #09a9de;
+      -webkit-text-stroke: 0.3vw #09a9de;
       text-transform: uppercase;
       animation-name: appear;
       animation-duration:4s ;

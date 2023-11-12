@@ -3,11 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 7em;
-  background: #d8e3ed;
-  padding: 5em 0;
+  padding: 8em 0;
   font-family: $font-base;
-
+  height: 70vh;
   @include phone{
     padding: 3em 0;
   }
@@ -60,7 +58,7 @@
     }
     .examples {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       width: 120%;
       align-items: center;
       height: 326px;

@@ -1,5 +1,7 @@
 .catalogues{
-  background: #d8e3ed;
+  display: flex;
+  align-items: center;
+  height: 80vh;
   font-family: $font-base;
   padding: 4em 0;
   .container{

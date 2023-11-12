@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import like from "../assets/pngwing.com (12).png";
-import question from "../assets/pngwing.com (11).png";
+
 
 const LoadingPage = () => {
     const [showFrozer, setShowFrozer] = useState(true);
