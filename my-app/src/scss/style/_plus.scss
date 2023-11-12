@@ -7,7 +7,8 @@
   font-family: $font-base;
   height: 70vh;
   @include phone{
-    padding: 3em 0;
+    padding: 3em 0 0 0;
+    height: auto;
   }
   .container {
     display: flex;

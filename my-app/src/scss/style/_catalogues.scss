@@ -4,6 +4,10 @@
   height: 80vh;
   font-family: $font-base;
   padding: 4em 0;
+  @include phone{
+    height: auto;
+   padding: 0;
+  }
   .container{
     max-width: 2000px;
     display: flex;

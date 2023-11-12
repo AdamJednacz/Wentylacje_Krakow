@@ -5,6 +5,7 @@
   font-family: $font-base;
   height: 50vh;
   @include phone{
+    height: auto;
     padding: 2em 0;
   }
   .container {

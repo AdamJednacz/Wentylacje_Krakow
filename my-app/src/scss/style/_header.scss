@@ -28,7 +28,8 @@
     .menu {
       display: flex;
       align-items: center;
-      height: 4em;
+      height: auto;
+      z-index: 3;
       @include phone{
        flex-direction: column;
       }
@@ -52,6 +53,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      background: #ffffff;
     }
   }
   .contact_header{

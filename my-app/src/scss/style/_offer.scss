@@ -6,6 +6,7 @@
   align-items: center;
   @include phone{
     padding: 1.5em 0;
+    height: auto;
   }
 
   h1{

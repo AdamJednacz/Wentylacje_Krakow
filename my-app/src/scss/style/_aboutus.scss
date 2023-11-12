@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   @include phone{
+    padding-bottom:3em ;
     height: 75vh;
   }
   .about_us_items {

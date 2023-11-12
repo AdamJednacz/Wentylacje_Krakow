@@ -38,7 +38,8 @@
 .header .container .menu {
   display: flex;
   align-items: center;
-  height: 4em;
+  height: auto;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .header .container .menu {
@@ -64,6 +65,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: #ffffff;
 }
 @media (max-width: 767px) {
   .header .contact_header {
@@ -88,6 +90,7 @@
 }
 @media (max-width: 767px) {
   .about_us {
+    padding-bottom: 3em;
     height: 75vh;
   }
 }
@@ -191,6 +194,7 @@
 @media (max-width: 767px) {
   .offer {
     padding: 1.5em 0;
+    height: auto;
   }
 }
 .offer h1 {
@@ -268,7 +272,8 @@
 }
 @media (max-width: 767px) {
   .plus {
-    padding: 3em 0;
+    padding: 3em 0 0 0;
+    height: auto;
   }
 }
 .plus .container {
@@ -442,6 +447,7 @@
 }
 @media (max-width: 767px) {
   .photos {
+    height: auto;
     padding: 2em 0;
   }
 }
@@ -658,6 +664,12 @@ footer {
   height: 80vh;
   font-family: "Open Sans", sans-serif;
   padding: 4em 0;
+}
+@media (max-width: 767px) {
+  .catalogues {
+    height: auto;
+    padding: 0;
+  }
 }
 .catalogues .container {
   max-width: 2000px;
