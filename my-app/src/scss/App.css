@@ -614,6 +614,7 @@ footer {
   justify-content: center;
   padding: 2em;
   background: #4c5761;
+  font-weight: bolder;
 }
 @media (max-width: 767px) {
   footer {
