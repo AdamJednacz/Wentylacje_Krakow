@@ -30,7 +30,7 @@ const Contact = () => {
                     </MapContainer>
                     </div>
                     <div className="contact_text">
-                        <p>F.H.U Frozer Paweł Adamczak</p>
+                        <p>F.H.U Frozeko Paweł Adamczak</p>
                         <p>30-412 Kraków</p>
                         <p>ul. Zbrojarzy 30</p>
                         <p>NIP:9441604737</p>

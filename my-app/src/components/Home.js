@@ -10,13 +10,19 @@ import Footer from "./Footer";
 import Catalogues from "./Catalogues";
 import CertificatesSite from "./CertificatesSite";
 import Form from "./Form";
-import background from "../assets/pexels-robert-șerban-11279737.jpg";
-const Home = () => {
+import imgTlo from "../assets/43258.jpg"
 
+const Home = () => {
+    const stylTla = {
+        backgroundImage: `url(${imgTlo})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: "fixed"
+    };
         return (
 
 
-        <section className="home" >
+        <section className="home" style={stylTla}  >
             <Header/>
             <AboutUs/>
             <Plus/>

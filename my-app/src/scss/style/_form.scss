@@ -1,6 +1,6 @@
 .Form{
   font-family: $font-base;
-  background: #ffffff;
+
   padding: 6em 0;
   height: 100vh;
   display: flex;
@@ -85,6 +85,7 @@
           height: 3em;
           border-radius: 1em;
           border: solid 3px #D3D3D3;
+
           @include phone{
             width: 70%;
             font-size:1em ;

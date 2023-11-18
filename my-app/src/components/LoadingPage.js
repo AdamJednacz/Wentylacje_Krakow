@@ -23,8 +23,8 @@ const LoadingPage = () => {
         <section className="loadingpage">
             <div className="container">
                 {showFrozer && (
-                    <h1 className="h1_Frozer" datatype="Frozer...">
-                        Frozer...
+                    <h1 className="h1_Frozer" datatype="Frozeko...">
+                        Frozeko...
                     </h1>
                 )}
                 {showWitamy && (

@@ -5,4 +5,7 @@ footer{
   justify-content: center;
   padding: 2em;
   background:#4c5761;
+  @include phone{
+    padding: 1em;
+  }
 }

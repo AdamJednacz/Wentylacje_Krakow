@@ -15,7 +15,7 @@ const Header = () => {
                 {isMobile ? (
                     <>
                         <div className="h1_hamburg">
-                        <h1>Frozer</h1>
+                        <h1>Frozeko</h1>
                         <div className="hamburger-menu" onClick={toggleMenu}>
                             {isMenuVisible ? (
                                 <FontAwesomeIcon icon={faTimes} style={{ fontSize: "2em" }} />
@@ -41,7 +41,7 @@ const Header = () => {
                     </>
                 ) : (
                     <>
-                    <h1>Frozer</h1>
+                    <h1>Frozeko</h1>
                     <div className="menu">
                         <Link to="aboutus" smooth={true} duration={500}><p className="menu_item">O nas</p></Link>
                         <Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
