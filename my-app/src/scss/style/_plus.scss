@@ -3,34 +3,46 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 8em 0;
   font-family: $font-base;
-  height: 70vh;
-  @include phone{
-    padding: 3em 0 0 0;
+
+  padding: 20vh; // Dostosuj wartość padding dla różnych urządzeń
+  @include phone {
+    padding: 10vh 0; // Dostosuj wartość padding dla telefonów
     height: auto;
   }
+
+  @include tablet {
+    padding: 10vh 0; // Dostosuj wartość padding dla tabletów, w tym iPad Air
+    height: auto;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     .top {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 0;
         margin-bottom: 1em;
         font-weight: bolder;
+        text-align: center;
+
         @include phone {
-          font-size: 1.5rem;
-          text-align: center;
+          font-size: 2rem;
+        }
+
+        @include tablet {
+          font-size: 3rem;
         }
       }
+
       .h2_help_container {
         display: flex;
         align-items: center;
@@ -43,38 +55,57 @@
           font-weight: bolder;
           text-align: center;
           transition: transform 0.5s;
+
           @include phone {
             font-size: 0.8em;
             padding: 0.5em;
             margin: 0.5em 1em;
           }
+
+          @include tablet {
+            font-size: 1.5rem;
+            padding: 0.5em;
+            margin: 0.5em 1em;
+          }
+
           &:first-of-type {
             border: 1px solid #707070;
           }
-          &:hover{
+
+          &:hover {
             transform: scale(1.2);
           }
         }
       }
     }
+
     .examples {
       display: flex;
       justify-content: space-evenly;
       width: 120%;
       align-items: center;
-      height: 326px;
-        @include phone {
+      height: auto;
+
+      @include phone {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
+      @include tablet {
         display: flex;
         flex-wrap: wrap;
         height: auto;
+        width: 100%;
       }
+
       .example {
-        width: 30em;
+        width: 90%; // Dostosuj szerokość przykładu do różnych urządzeń
         display: flex;
         justify-content: center;
 
         @include phone {
-          width: 15em;
+          width: 100%; // Ustaw pełną szerokość na telefonach
         }
 
         .left_side {
@@ -82,33 +113,52 @@
           align-items: center;
           flex-direction: column;
           margin: 0 1em;
-                 
+
           h3 {
             font-size: 2em;
             text-align: center;
             margin-bottom: 0.5em;
+
             @include phone {
               font-size: 1em;
               text-align: center;
             }
+
+            @include tablet {
+              font-size: 1.5rem;
+            }
           }
+
           p {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             text-align: center;
+
             @include phone {
               font-size: 1em;
+              margin: 0;
+            }
+
+            @include tablet {
+              font-size: 1.5rem;
               margin: 0;
             }
           }
         }
       }
     }
+
     .carousel_numbers {
       display: flex;
       position: relative;
-      @include phone{
+
+      @include phone {
         margin-top: 1em;
       }
+
+      @include tablet {
+        font-size: 2em;
+      }
+
       .number {
         font-weight: bolder;
         width: 40px;
@@ -118,8 +168,14 @@
         align-items: center;
         justify-content: center;
         transition: transform 0.5s;
-        &:hover{
+
+        &:hover {
           transform: scale(1.5);
+        }
+
+        @include tablet {
+          width: 50px;
+          height: 70px;
         }
       }
     }

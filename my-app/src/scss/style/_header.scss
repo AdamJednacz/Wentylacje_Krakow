@@ -1,75 +1,126 @@
+
+
 .header {
   color: #000000;
   backdrop-filter: blur(60px);
   font-weight: bolder;
   font-family: $font-base;
+
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    @include phone{
+    justify-content: space-evenly;
+
+    @include phone {
       align-items: center;
       flex-direction: column;
     }
-    .h1_hamburg{
-      width: 100%;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .h1_hamburg {
       justify-content: space-between;
-      @include phone{
+      width: 100%;
+
+      @include phone {
         display: flex;
         align-items: center;
         justify-content: space-around;
       }
-    }
-    h1{font-size: 2em;
-      @include phone{
-        margin: 0.5em 0;
+
+      @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .hamburger-menu {
+        @include phone {
+          font-size: 1em;
+        }
+        @include tablet {
+          font-size: 1.5em;
+        }
       }
     }
+
+    h1 {
+      font-size: 2em;
+
+      @include phone {
+        font-size: 2em;
+        margin: 0.5em 0;
+      }
+
+      @include tablet {
+        font-size: 3em;
+        margin: 0.5em;
+      }
+    }
+
     .menu {
       display: flex;
       align-items: center;
       height: auto;
       z-index: 3;
-      @include phone{
-       flex-direction: column;
+
+      @include phone {
+        flex-direction: column;
       }
+
+      @include tablet {
+        flex-direction: column;
+      }
+
       .menu_item {
         padding: 1.8em;
         margin: 0;
         border-radius: 2em;
         transition: opacity ease-in-out 0.3s, transform 0.5s;
-        @include phone{
+
+        @include phone {
           padding: 1em;
         }
 
-        &:hover{
+        @include tablet {
+          font-size: 2em;
+          padding: 1em;
+        }
+
+        &:hover {
           opacity: 0.4;
           transform: scale(1.5);
         }
-
       }
     }
-    .hamburger_menu_items{
+
+    .hamburger_menu_items {
       display: flex;
       align-items: center;
       flex-direction: column;
+    }
 
+    .contact_header {
+      @include phone {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+
+      p:hover {
+        color: yellow;
+      }
     }
   }
-  .contact_header{
-    @include phone{
-      display: none;
-    }
-    p:hover{
-      color:yellow;
 
-    }
+  &.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 }
-.header.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-
-}
-

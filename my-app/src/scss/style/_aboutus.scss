@@ -1,70 +1,113 @@
+
+
 .about_us {
   font-family: $font-base;
-  height: 82vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  @include phone{
-    padding-bottom:3em ;
-    height: 80vh;
+  padding: 15vh;
+
+  @include phone {
+    height: auto;
+
+    padding: 3vh;
   }
+
+  @include tablet {
+    height: auto;
+    padding: 2vh;
+  }
+
   .about_us_items {
     display: flex;
 
-    @include phone{
+    @include phone {
       flex-direction: column;
       align-items: center;
     }
-    .img1{
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img1 {
       position: relative;
-      right: 2em;
-      top:3em;
-      width:60em ;
+      right: 0;
+      top: 0;
+      width: 100%;
+      max-width: 50%;
       opacity: 1;
-      border-radius:10em ;
+      border-radius: 10em;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.5s;
-      @include phone{
-        width: 100%;
-        right: 0;
+
+      @include phone {
         border-radius: 4em;
       }
-      &:hover{
+
+      @include tablet {
+        border-radius: 6em;
+        max-width: 100%;
+      }
+
+      &:hover {
         transform: scale(1.05);
       }
     }
+
     .about_us_text_item {
       display: flex;
       flex-direction: column;
       position: relative;
       align-items: center;
-      top:3em;
+      top: 3em;
       left: 2em;
-      @include phone{
+
+      @include phone {
         left: 0;
       }
+
+      @include tablet {
+        left: 0;
+      }
+
       h1 {
         font-size: 4rem;
         text-align: center;
-        margin-bottom: 0.5em;
-        @include phone{
-          font-size: 2em;
+        margin-bottom: 0;
+
+        @include phone {
+          font-size: 2rem;
+        }
+
+        @include tablet {
+         margin-top: 0;
+          font-size: 3rem;
         }
       }
+
       p {
         font-size: 1.5rem;
         text-align: center;
 
-        @include phone{
-          margin:0.5em ;
-          font-size:1em;
+        @include phone {
+          margin: 0.5em;
+          font-size: 1rem;
         }
 
+        @include tablet {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
       }
-      p:nth-of-type(2){
+
+      p:nth-of-type(2) {
         font-weight: bolder;
       }
-      button{
-        margin:1em 0;
+
+      button {
+        margin: 1em 0;
         border: none;
         padding: 1em 4em;
         border-radius: 3em;
@@ -75,12 +118,20 @@
         font-family: $font-base;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         transition: opacity ease-in-out 0.3s, transform 0.5s;
-        @include phone{
+
+        @include phone {
           padding: 0.75em 3em;
           font-size: 1.5em;
           margin-top: 1em;
         }
-        &:hover{
+
+        @include tablet {
+          padding: 1.25em 5em;
+          font-size: 2em;
+          margin-top: 1em;
+        }
+
+        &:hover {
           opacity: 0.4;
           transform: scale(1.1);
         }

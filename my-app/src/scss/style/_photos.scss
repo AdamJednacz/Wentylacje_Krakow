@@ -3,10 +3,14 @@
   align-items: center;
   justify-content: center;
   font-family: $font-base;
-  height: 50vh;
+  padding-top: 5vh;
   @include phone{
     height: auto;
     padding: 2em 0;
+  }
+  @include tablet{
+    height: auto;
+    padding: 0;
   }
   .container {
     display: flex;
@@ -16,10 +20,16 @@
     @include phone{
       flex-direction: column;
     }
+    @include tablet{
+      flex-direction: column;
+    }
     .photos_text {
       width: 40%;
       @include phone{
         width: 100%;
+      }
+      @include tablet{
+        width: 80%;
       }
       h1 {
         font-size: 4rem;
@@ -27,13 +37,18 @@
         @include phone{
           font-size: 2rem;
         }
+        @include tablet{
+          font-size: 3rem;
+        }
       }
       p {
-
-        font-size: 1.5em;
+        font-size: 1.5rem;
         text-align: center;
         @include phone{
-          font-size: 1em;
+          font-size: 1rem;
+        }
+        @include tablet{
+          font-size: 1.5rem;
         }
       }
     }
@@ -45,16 +60,27 @@
           margin: 0;
           justify-content: center;
         }
+        @include tablet{
+          flex-wrap: wrap;
+          margin: 0;
+          justify-content: center;
+        }
         .photos_item {
-          width: 14em;
+          width: 100%;
+          max-width: 14em;
           margin: 1em;
           border-radius: 2em;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
           transition: transform 1s;
           @include phone {
-            width: 7em;
+            max-width: 7em;
             margin: 0.5em;
             border-radius: 1em;
+          }
+          @include tablet{
+            max-width: 25em;
+            margin: 2em;
+            border-radius: 3em;
           }
           &:hover{
             transform: scale(2);
@@ -63,8 +89,6 @@
       }
     }
   }
-
-
 .ImageModal {
   position: absolute;
   top: 50%;

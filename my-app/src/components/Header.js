@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faBars, faTimes, } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
 const Header = () => {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobile = useMediaQuery({ maxWidth:1439});
     const [isMenuVisible, setMenuVisible] = useState(false);
     const toggleMenu = () => {
         setMenuVisible(!isMenuVisible);
@@ -18,9 +18,9 @@ const Header = () => {
                         <h1>Frozeko</h1>
                         <div className="hamburger-menu" onClick={toggleMenu}>
                             {isMenuVisible ? (
-                                <FontAwesomeIcon icon={faTimes} style={{ fontSize: "2em" }} />
+                                <FontAwesomeIcon className="icon" icon={faTimes} style={{ fontSize: "2em" }} />
                             ) : (
-                                <FontAwesomeIcon icon={faBars} style={{ fontSize: "2em" }} />
+                                <FontAwesomeIcon className="icon" icon={faBars} style={{ fontSize: "2em" }} />
                             )}
                         </div>
                             </div>
@@ -54,14 +54,16 @@ const Header = () => {
                     </div>
                     </>
                 )}
-                <div className="contact_header">
-                    <p>
-                        <FontAwesomeIcon className="icon_header" icon={faPhone} /> Telefon: +48 531 049 317
-                    </p>
-                    <p>
-                        <FontAwesomeIcon className="icon_header"  icon={faEnvelope} /> Email: frozer.pa@gmail.com
-                    </p>
-                </div>
+                {!isMobile && (
+                    <div className="contact_header">
+                        <p>
+                            <FontAwesomeIcon className="icon_header" icon={faPhone} /> Telefon: +48 531 049 317
+                        </p>
+                        <p>
+                            <FontAwesomeIcon className="icon_header" icon={faEnvelope} /> Email: frozer.pa@gmail.com
+                        </p>
+                    </div>
+                )}
             </div>
         </section>
     );
