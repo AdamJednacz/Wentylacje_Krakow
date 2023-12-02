@@ -1,12 +1,12 @@
 
 
 .CertyficatesSite {
-  padding-top: 4em;
+
   display: flex;
   align-items: center;
   font-family: $font-base;
   height: 80vh;
-
+  padding: 10vh 0;
   @include phone {
     padding: 2em 0;
   }
@@ -32,29 +32,29 @@
       width: 100%; // Changed width to 100% for phones
 
       h1 {
-        font-size: 4rem;
+        font-size: $font-size-desktop-h1;
         margin: 0.5em;
 
         @include phone {
-          font-size: 2rem;
+          font-size: $font-size-phone-h1;
           margin: 0.5em;
         }
 
         @include tablet {
-          font-size: 3rem;
+          font-size: $font-size-tablet-h1;
         }
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: $font-size-desktop-p;
         text-align: center;
 
         @include phone {
-          font-size: 1rem;
+          font-size: $font-size-phone-p;
         }
 
         @include tablet {
-          font-size: 1.5rem;
+          font-size: $font-size-tablet-p;
         }
       }
     }

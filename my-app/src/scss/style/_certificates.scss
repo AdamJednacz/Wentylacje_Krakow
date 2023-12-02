@@ -1,13 +1,16 @@
 .Certificates {
   text-align: center;
-  padding: 2em 0;
+  padding: 2vh 0;
   font-family: $font-base;
   background: #d8e3ed;
   h1 {
-    font-size: 4em;
+    font-size: $font-size-desktop-h1;
     margin: 0;
     @include phone{
-      font-size: 2em;
+      font-size: $font-size-phone-h1;
+    }
+    @include tablet{
+      font-size: $font-size-tablet-h1;
     }
   }
   .Certificates_items {

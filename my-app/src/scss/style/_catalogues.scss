@@ -17,6 +17,7 @@
     max-width: 1800px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     @include phone {
       flex-direction: column-reverse;
@@ -27,8 +28,6 @@
     @include tablet {
       flex-direction: column-reverse;
       flex-wrap: wrap;
-
-      align-items: flex-start;
     }
 
     .catalogues_items_container {
@@ -105,28 +104,28 @@
       }
 
       h1 {
-        font-size: 4rem;
+        font-size: $font-size-desktop-h1;
         text-align: center;
 
         @include phone {
-          font-size: 2rem;
+          font-size: $font-size-phone-h1;
         }
 
         @include tablet {
-          font-size: 3rem;
+          font-size: $font-size-tablet-h1;
         }
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: $font-size-desktop-p;
         text-align: center;
 
         @include phone {
-          font-size: 1rem;
+          font-size: $font-size-phone-p;
         }
 
         @include tablet {
-          font-size: 1.5rem;
+          font-size: $font-size-tablet-p;
         }
       }
     }

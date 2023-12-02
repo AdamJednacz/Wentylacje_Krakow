@@ -11,7 +11,7 @@
     height: auto;
   }
   @include tablet{
-    padding-bottom: 0;
+
   }
   .container {
     display: flex;
@@ -51,11 +51,14 @@
       }
 
       p {
-        font-size: 2rem;
+        font-size: $font-size-desktop-p;
 
         @include phone {
-          font-size: 1rem;
+          font-size: $font-size-phone-p;
           text-align: center;
+        }
+        @include tablet{
+          font-size: $font-size-tablet-p;
         }
       }
     }
@@ -69,12 +72,15 @@
         width: 50%;
       }
       h1 {
-        font-size: 3rem;
+        font-size: $font-size-desktop-h1;
         text-align: center;
         margin-bottom: 0.5em;
 
         @include phone {
-          font-size: 2rem;
+          font-size: $font-size-phone-h1;
+        }
+        @include tablet{
+          font-size: $font-size-tablet-h1;
         }
       }
 
@@ -88,7 +94,8 @@
           width: 100%;
         }
         @include tablet{
-          width: 100%;
+          width: 90%;
+
         }
         label {
           width: 100%; // Changed width to 100% for phones
@@ -138,6 +145,9 @@
           @include phone {
             font-size: 1em;
             width: 70%;
+          }
+          @include tablet{
+            height: 10em;
           }
         }
       }

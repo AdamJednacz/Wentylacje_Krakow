@@ -6,11 +6,24 @@
     display: flex;
     flex-direction: column;
     h2{
-      font-size: 2em;
+      font-size: $font-size-desktop-h2;
       margin: 0;
+      @include phone{
+        font-size: $font-size-phone-h2;
+      }
+      @include tablet{
+        font-size: $font-size-tablet-h2;
+      }
     }
     p{
+      font-size: $font-size-desktop-p;
       font-weight: bolder;
+      @include phone{
+        font-size: $font-size-phone-p;
+      }
+      @include tablet{
+        font-size: $font-size-tablet-p;
+      }
     }
     .contact_text_container {
       display: flex;
