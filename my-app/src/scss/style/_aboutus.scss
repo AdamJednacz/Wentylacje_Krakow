@@ -1,22 +1,18 @@
 
-
 .about_us {
   font-family: $font-base;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 2vh;
-
   @include phone {
     height: auto;
     padding: 3vh;
   }
-
   @include tablet {
     height: auto;
     padding: 2vh;
   }
-
   .about_us_items {
     display: flex;
     justify-content: space-between;
@@ -24,12 +20,10 @@
       flex-direction: column;
       align-items: center;
     }
-
     @include tablet {
       flex-direction: column;
       align-items: center;
     }
-
     .img1 {
       position: relative;
       right: 0;
@@ -41,22 +35,18 @@
       border-radius: 10em;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.5s;
-
       @include phone {
         border-radius: 4em;
         max-width: 100%;
       }
-
       @include tablet {
         border-radius: 6em;
         max-width: 60%;
       }
-
       &:hover {
         transform: scale(1.05);
       }
     }
-
     .about_us_text_item {
       display: flex;
       flex-direction: column;
@@ -69,49 +59,40 @@
         max-width: 100%;
         left: 0;
       }
-
       @include tablet {
         left: 0;
         max-width: 100%;
       }
-
       h1 {
         font-size: $font-size-desktop-h1;
         text-align: center;
         margin-bottom: 0;
-
         @include phone {
           font-size: $font-size-phone-h1;
         }
-
         @include tablet {
          margin-top: 0;
           font-size: $font-size-tablet-h1;
         }
       }
-
       p {
         width: 80%;
         font-size: $font-size-desktop-p;
         text-align: center;
-
         @include phone {
           margin: 0.5em;
           font-size:$font-size-phone-p;
           width: 100%;
         }
-
         @include tablet {
           width: 100%;
           font-size: $font-size-tablet-p;
           margin-bottom: 0;
         }
       }
-
       p:nth-of-type(2) {
         font-weight: bolder;
       }
-
       button {
         margin: 1em 0;
         border: none;
@@ -124,19 +105,16 @@
         font-family: $font-base;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         transition: opacity ease-in-out 0.3s, transform 0.5s;
-
         @include phone {
           padding: 0.75em 3em;
           font-size: 1.5em;
           margin-top: 1em;
         }
-
         @include tablet {
           padding: 1.25em 5em;
           font-size: 1.5em;
           margin-top: 1em;
         }
-
         &:hover {
           opacity: 0.4;
           transform: scale(1.1);

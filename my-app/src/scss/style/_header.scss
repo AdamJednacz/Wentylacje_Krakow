@@ -48,7 +48,7 @@
     }
 
     h1 {
-      font-size: $font-size-desktop-h1;
+      font-size: $font-size-desktop-h1-header;
 
       @include phone {
         font-size: $font-size-phone-h1;
