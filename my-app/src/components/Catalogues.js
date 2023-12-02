@@ -28,6 +28,12 @@ const Catalogues = () => {
                     <a href="https://www.lg.com/pl/business/klimatyzacja?utm_source=google&utm_medium=cpc&utm_campaign=2023HQSEM_HA_PL_Google_AS-HVAC-HVAC-Brand-LC&utm_content=Broad-HVAC-LC-RSA&gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZhj1GzwNPeLsYQpEG05seDsXIBwaw6JEo6kVs5OQqwIubJCFwu1J_xoCNpsQAvD_BwE">
                     <img className="catalogues_item"  src={LG} alt={LG}/>
                     </a>
+                    <a href="https://www.daikin.pl/pl_pl/strona.html?gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZuZw94Hcerko1CD3eclkSW8MQBjXcKs0QykFnHG3IK22kiBdis9TNhoCOFAQAvD_BwE">
+                        <img className="catalogues_item"  src={Daikin} alt={Daikin}/>
+                    </a>
+                    <a href="https://www.haier-europe.com/pl_PL/">
+                        <img className="catalogues_item"  src={Haier} alt={Haier}/>
+                    </a>
                 </div>
                 <div className="catalogues_items">
                     <a href="https://www.aircon.panasonic.eu/PL_pl/ranges/domestic/">
@@ -42,18 +48,11 @@ const Catalogues = () => {
                     <a href="https://auxcool.pl/">
                     <img className="catalogues_item"  src={Aux} alt={Aux}/>
                     </a>
-                </div>
-                <div className="catalogues_items">
-                    <a href="https://www.haier-europe.com/pl_PL/">
-                    <img className="catalogues_item"  src={Haier} alt={Haier}/>
-                    </a>
-                    <a href="https://www.daikin.pl/pl_pl/strona.html?gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZuZw94Hcerko1CD3eclkSW8MQBjXcKs0QykFnHG3IK22kiBdis9TNhoCOFAQAvD_BwE">
-                    <img className="catalogues_item"  src={Daikin} alt={Daikin}/>
-                    </a>
                     <a href="https://www.sinclair.pl/">
-                    <img className="catalogues_item"  src={Sinclair} alt={Sinclair}/>
+                        <img className="catalogues_item"  src={Sinclair} alt={Sinclair}/>
                     </a>
                 </div>
+
                 </div>
                 <div className="catalogues_text">
                 <h1>Oferta Klimatyzatorów</h1>

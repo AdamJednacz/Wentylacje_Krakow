@@ -6,7 +6,7 @@
 
   @include phone {
     height: auto;
-    padding: 5vh 0; // Dostosuj wartość padding dla telefonów
+    padding: 5vh 0;
   }
 
   @include tablet {
@@ -14,39 +14,47 @@
   }
 
   .container {
-    max-width: 2000px;
+    max-width: 1800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     @include phone {
       flex-direction: column-reverse;
-      flex-wrap: wrap;
-      max-width: 300px;
+
+      align-items: center;
     }
 
     @include tablet {
       flex-direction: column-reverse;
       flex-wrap: wrap;
-      max-width: 1000px;
-      align-items: center;
+
+      align-items: flex-start;
     }
 
     .catalogues_items_container {
-      flex-direction: column;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include phone {
+        flex-direction: column;
+      }
+
+      @include tablet {
+        flex-direction: column;
+      }
 
       .catalogues_items {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
-
+        justify-content: center;
+        flex-wrap: wrap;
         @include phone {
-          flex-wrap: wrap;
+          margin: 1em;
         }
 
         @include tablet {
-          flex-wrap: wrap;
+          margin: 2em;
         }
 
         .text {
@@ -54,13 +62,13 @@
         }
 
         .catalogues_item {
-          width: 13em;
+          max-width: 12em;
           height: auto;
           margin: 2em;
           transition: transform 0.5s;
 
           @include phone {
-            width: 6em;
+            max-width: 6em;
             height: auto;
             margin: 1em;
           }
@@ -80,16 +88,20 @@
 
     .catalogues_text {
       display: flex;
-      justify-content: center;
       flex-direction: column;
+      align-items: center;
       width: 40%;
-
+      padding: 2em;
       @include phone {
-        width: 100%;
+        padding: 0;
+        width: 80%;
+       margin-top: 1em; // Dodaj margines na dole dla lepszego odstępu
       }
 
       @include tablet {
+        padding: 0;
         width: 80%;
+        margin-top: 0; // Usuń margines dla tabletu
       }
 
       h1 {
