@@ -9,7 +9,12 @@ const CertificatesSite = () => {
 
                 <div className="certyficatesSite_text_container">
                     <h1>Certyfikaty</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                        Jesteśmy dumni z licznych certyfikatów, które potwierdzają najwyższą jakość naszych produktów
+                        i usług. Każdy z tych certyfikatów reprezentuje nasze zobowiązanie do satysfakcji klienta
+                        i stałego doskonalenia naszych standardów. Wspieramy się licznymi rekomendacjami i wyróżnieniami,
+                        które zdobyliśmy dzięki ciężkiej pracy i pasji, jaką wkładamy w naszą działalność.
+                    </p>
                 </div>
                 <div className="certyficatesSite_items_container">
                     <img src={LG} alt={LG}/>
