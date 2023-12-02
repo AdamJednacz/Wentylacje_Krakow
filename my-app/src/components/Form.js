@@ -27,7 +27,7 @@ const Form = () => {
         }
 
         if (email && message) {
-            emailjs.sendForm('service_emoq7as', 'template_qmmwebm', form.current, 'a5RyIbETp88pDI5YT')
+            emailjs.sendForm('service_rcjmzdo', 'template_7x3bq3c', form.current, 'tEednpm6egOrAf3CJ')
                 .then((result) => {
                     console.log(result.text);
                     console.log("message sent");
