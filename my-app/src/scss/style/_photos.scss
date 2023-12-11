@@ -24,11 +24,21 @@
       flex-direction: column;
     }
     .photos_text {
+      backdrop-filter: blur(160px);
+      border-radius: 10em;
+      padding: 2em;
       width: 40%;
       @include phone{
+        margin: 1em 0 0 0 ;
+        padding: 1em;
+        border-radius: 5em;
         width: 100%;
+
       }
       @include tablet{
+        margin: 1em 0 0 0 ;
+        padding: 1em;
+        border-radius: 5em;
         width: 80%;
       }
       h1 {

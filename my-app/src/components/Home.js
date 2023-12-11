@@ -13,10 +13,11 @@ import Form from "./Form";
 import imgTlo from "../assets/43258.jpg"
 import imgTlo1 from "../assets/tło1.jpg"
 import imgTlo2 from "../assets/tło2.jpg"
+import imgTlo3 from "../assets/tło3.jpg"
 
 const Home = () => {
     const stylTla = {
-        backgroundImage: `url(${imgTlo2})`,
+        backgroundImage: `url(${imgTlo3})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: "fixed"

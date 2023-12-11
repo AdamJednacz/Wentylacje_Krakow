@@ -16,6 +16,7 @@
   .about_us_items {
     display: flex;
     justify-content: space-between;
+
     @include phone {
       flex-direction: column;
       align-items: center;
@@ -41,25 +42,34 @@
       }
       @include tablet {
         border-radius: 6em;
-        max-width: 60%;
+        max-width: 100%;
       }
       &:hover {
         transform: scale(1.05);
       }
     }
     .about_us_text_item {
+      backdrop-filter: blur(160px);
+
+      border-radius: 10em;
       display: flex;
       flex-direction: column;
       position: relative;
       align-items: center;
-      top: 3em;
+      justify-content: space-evenly;
       left: 2em;
       max-width: 50%;
       @include phone {
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 5em;
         max-width: 100%;
         left: 0;
       }
       @include tablet {
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 5em;
         left: 0;
         max-width: 100%;
       }

@@ -90,17 +90,23 @@
       flex-direction: column;
       align-items: center;
       width: 40%;
-      padding: 2em;
+      padding: 4em;
+      backdrop-filter: blur(160px);
+      border-radius: 10em;
       @include phone {
-        padding: 0;
+        margin: 1em 0 0 0 ;
+        padding: 1em;
+        border-radius: 5em;
         width: 80%;
-       margin-top: 1em; // Dodaj margines na dole dla lepszego odstępu
       }
 
       @include tablet {
-        padding: 0;
+        margin: 1em 0 0 0 ;
+        padding: 1em;
+        border-radius: 5em;
+
         width: 80%;
-        margin-top: 0; // Usuń margines dla tabletu
+
       }
 
       h1 {
