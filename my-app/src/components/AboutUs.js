@@ -17,7 +17,6 @@ const AboutUs = () => {
                         src={img1}
                         height={img1.height}
                         widht={img1.width}
-                        effect="blur"
                     />
 
                 <div className="about_us_text_item">
