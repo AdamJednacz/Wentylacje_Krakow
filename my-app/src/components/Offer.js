@@ -5,57 +5,44 @@ import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
  const Offer = () =>{
-     const offerItems = [
-         {
-             title: "Montaż",
-             image: {
-                 alt: "Montaż Image Alt",
-                 src: img2,
-                 height: img2.height,
-                 width: img2.width
-             },
-             description: "Zaufaj naszemu doświadczeniu i ekspertyzie. Oferujemy kompleksowy montaż klimatyzacji, zapewniając optymalną wydajność i niezawodność."
-         },
-         {
-             title: "Serwis",
-             image: {
-                 alt: "Serwis Image Alt",
-                 src: img3,
-                 height: img3.height,
-                 width: img3.width
-             },
-             description: "Nasi wykwalifikowani technicy stoją są do Twojej dyspozycji. Gwarantujemy fachowy i szybki serwis klimatyzacji, aby utrzymać ją w doskonałej formie. Twój komfort jest naszym priorytetem."
-         },
-         {
-             title: "Sprzedaż",
-             image: {
-                 alt: "Sprzedaż Image Alt",
-                 src: img4,
-                 height: img4.height,
-                 width: img4.width
-             },
-             description: "Oferujemy najnowocześniejsze urządzenia klimatyzacyjne od renomowanych producentów. Nasz zespół doradców pomoże Ci znaleźć idealny model, spełniający Twoje potrzeby. Daj nam szansę dostarczenia Ci komfortu przez cały rok."
-         }
-     ];
-
-     return (
+    return (
         <section className="offer" id="offer">
             <div className="container">
                 <h1>Oferta</h1>
                 <div className="offer_items">
-                    {offerItems.map((item, index) => (
-                        <div className="offer_item" key={index}>
-                            <h2>{item.title}</h2>
-                            <LazyLoadImage
-                                alt={item.image.alt}
-                                src={item.image.src}
-                                height={item.image.height}
-                                width={item.image.width}
-                                effect="blur"
-                            />
-                            <p>{item.description}</p>
-                        </div>
-                    ))}
+                    <div className="offer_item">
+                        <h2>Montaż</h2>
+                        <LazyLoadImage
+                            alt={img2.alt}
+                            src={img2}
+                            height={img2.height}
+                            widht={img2.width}
+                            effect="blur"
+                        />
+                        <p>Zaufaj naszemu doświadczeniu i ekspertyzie. Oferujemy kompleksowy montaż klimatyzacji, zapewniając optymalną wydajność i niezawodność. Daj nam zadanie, a stworzymy idealne warunki klimatyczne w Twoim otoczeniu.</p>
+                    </div>
+                    <div className="offer_item">
+                        <h2>Serwis</h2>
+                        <LazyLoadImage
+                            alt={img3.alt}
+                            height={img3.height}
+                            widht={img3.width}
+                            src={img3}
+                            effect="blur"
+                        />
+                        <p>Nasi wykwalifikowani technicy stoją są do Twojej dyspozycji. Gwarantujemy fachowy i szybki serwis klimatyzacji, aby utrzymać ją w doskonałej formie. Twój komfort jest naszym priorytetem.</p>
+                    </div>
+                    <div className="offer_item">
+                        <h2>Sprzedaż</h2>
+                        <LazyLoadImage
+                            alt={img4.alt}
+                            height={img4.height}
+                            widht={img4.width}
+                            src={img4}
+                            effect="blur"
+                        />
+                        <p>Oferujemy najnowocześniejsze urządzenia klimatyzacyjne od renomowanych producentów. Nasz zespół doradców pomoże Ci znaleźć idealny model, spełniający Twoje potrzeby. Daj nam szansę dostarczenia Ci komfortu przez cały rok.</p>
+                    </div>
                 </div>
             </div>
         </section>
