@@ -116,12 +116,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
       }
       .menu_item {
         padding: 1.8em;
         margin: 0;
         border-radius: 2em;
-
+        transition: transform 0.3s ease, opacity 0.3s ease;
 
         @include phone {
           padding: 1em;
