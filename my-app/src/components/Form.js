@@ -2,7 +2,8 @@ import React, { useRef, useState } from 'react';
 import question from "../assets/pngwing.com (11).png";
 import emailjs from '@emailjs/browser';
 import like from "../assets/pngwing.com (12).png";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 const Form = () => {
     const [submitted, setSubmitted] = useState(false);
     const [emailError, setEmailError] = useState(false);
@@ -44,9 +45,9 @@ const Form = () => {
             <div className="container">
                 <div className="form_text">
                     {submitted ? (
-                        <img className="like" src={like} alt={like} />
+                        <LazyLoadImage width={like.width} height={like.height} className="like" src={like} alt={like} />
                     ) : (
-                        <img src={question} alt={question} />
+                        <LazyLoadImage width={like.width} height={like.height} src={question} alt={question} />
                     )}
                 </div>
                 {submitted ? (

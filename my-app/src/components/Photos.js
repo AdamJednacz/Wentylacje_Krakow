@@ -4,7 +4,8 @@ import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 
 import ImageModal from "./ImageModal";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -38,7 +39,10 @@ const Photos = () => {
                 <div className="photos_items_container">
                     <div className="photos_items">
                         {images.map((image, index) => (
-                            <img
+                            <LazyLoadImage
+                                height={image.height}
+                                width={image.width}
+                                effect="blur"
                                 key={index}
                                 src={image}
                                 alt={image}
