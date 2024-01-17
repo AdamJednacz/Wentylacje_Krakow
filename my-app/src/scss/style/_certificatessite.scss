@@ -24,12 +24,13 @@
       align-items: center;
     }
     .certyficatesSite_text_container {
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 60%;
-      backdrop-filter: blur(160px);
+      background-color: #005e78;
       border-radius: 7em;
       padding: 2em;
       @include phone{

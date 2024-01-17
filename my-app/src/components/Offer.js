@@ -9,7 +9,7 @@ const Offer = () => {
     return (
         <section className="offer" id="offer">
             <div className="container">
-                <img alt={logo} src={logo}/>
+                <img className="logo" alt={logo} src={logo}/>
                 <h1>Oferta</h1>
                 <div className="offer_items">
                     <div className="offer_item">

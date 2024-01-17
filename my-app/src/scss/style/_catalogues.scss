@@ -3,7 +3,7 @@
   align-items: center;
   font-family: $font-base;
   padding: 15vh 0;
-
+  color: #ffffff;
   @include phone {
     height: auto;
     padding: 5vh 0;
@@ -91,7 +91,7 @@
       align-items: center;
       width: 40%;
       padding: 4em;
-      backdrop-filter: blur(160px);
+      background-color: #005e78;
       border-radius: 7em;
       @include phone {
         margin: 1em 0 0 0 ;

@@ -20,7 +20,7 @@
 
     img {
       width: 50%;
-
+      border-radius: 0 2em 2em 0;
     }
 
     img.fade-in,
@@ -44,6 +44,9 @@
       width: 50%;
 
       .plus_site_text_box {
+        background-color: #005e78;
+        border-radius: 2em;
+        color: #ffffff;
         font-size: 1.3rem;
         display: flex;
         align-items: center;
@@ -51,7 +54,7 @@
         flex-direction: column;
         text-align: center;
         margin: 2em;
-        padding: 1em;
+        padding: 2em;
 
 
         width: 33%;
