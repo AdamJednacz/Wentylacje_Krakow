@@ -4,8 +4,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: $font-base;
-
-  padding: 20vh; // Dostosuj wartość padding dla różnych urządzeń
+  padding: 20vh 0; // Dostosuj wartość padding dla różnych urządzeń
   @include phone {
     padding: 10vh 0; // Dostosuj wartość padding dla telefonów
     height: auto;
@@ -16,168 +15,58 @@
     height: auto;
   }
 
-  .container {
+  .plus_site {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    .top {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+    img {
+      width: 50%;
 
-      h1 {
-        font-size: $font-size-desktop-h1;
-        margin-top: 0;
-        margin-bottom: 1em;
-        font-weight: bolder;
-        text-align: center;
-
-        @include phone {
-          font-size: $font-size-phone-h1;
-        }
-
-        @include tablet {
-          font-size: $font-size-tablet-h1;
-        }
-      }
-      .h2_help_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h2 {
-          font-size: $font-size-desktop-h2;
-          padding: 1em;
-          margin: 1em 2em;
-          font-weight: bolder;
-          text-align: center;
-          transition: transform 0.5s;
-
-          @include phone {
-            font-size: $font-size-phone-h2-plus;
-            padding: 0.25em;
-            margin: 0.5em 1em;
-          }
-
-          @include tablet {
-            font-size: $font-size-tablet-h2;
-            padding: 0.5em;
-            margin: 0.5em 1em;
-          }
-
-          &:first-of-type {
-            border: 1px solid #707070;
-          }
-
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-      }
     }
 
-    .examples {
+    img.fade-in,
+    .plus_site_text_container.fade-in {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    img,
+    .plus_site_text_container {
+      opacity: 1;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .plus_site_text_container {
+
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
-      width: 120%;
-      align-items: center;
-      height: auto;
 
-      @include phone {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-      }
+      width: 50%;
 
-      @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        width: 100%;
-      }
-
-      .example {
-        width: 90%; // Dostosuj szerokość przykładu do różnych urządzeń
-        display: flex;
-        justify-content: center;
-
-        @include phone {
-          width: 100%; // Ustaw pełną szerokość na telefonach
-        }
-
-        .left_side {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          margin: 0 1em;
-
-          h3 {
-            font-size: 2em;
-            text-align: center;
-            margin-bottom: 0.5em;
-
-            @include phone {
-              font-size: 1em;
-              text-align: center;
-            }
-
-            @include tablet {
-              font-size: 1.5rem;
-            }
-          }
-
-          p {
-            font-size: $font-size-desktop-p;
-            text-align: center;
-
-            @include phone {
-              font-size: $font-size-phone-p;
-              margin: 0;
-            }
-
-            @include tablet {
-              font-size:$font-size-tablet-p;
-              margin: 0;
-            }
-          }
-        }
-      }
-    }
-
-    .carousel_numbers {
-      display: flex;
-      position: relative;
-
-      @include phone {
-        margin-top: 1em;
-      }
-
-      @include tablet {
-        font-size: 2em;
-      }
-
-      .number {
-        font-weight: bolder;
-        width: 40px;
-        height: 50px;
-        margin: 2em 1em;
+      .plus_site_text_box {
+        font-size: 1.3rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.5s;
+        flex-direction: column;
+        text-align: center;
+        margin: 2em;
+        padding: 1em;
 
-        &:hover {
-          transform: scale(1.5);
+
+        width: 33%;
+        height: 33%;
+
+        h1 {
+
         }
 
-        @include tablet {
-          width: 50px;
-          height: 70px;
+        p {
+
         }
       }
     }
   }
+
+
 }

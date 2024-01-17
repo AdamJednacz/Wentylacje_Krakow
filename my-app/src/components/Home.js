@@ -25,7 +25,7 @@ const Home = () => {
         return (
 
 
-        <section className="home" style={stylTla}  >
+        <section className="home"  >
             <Header/>
             <AboutUs/>
             <Plus/>

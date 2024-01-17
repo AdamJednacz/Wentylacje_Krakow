@@ -1,7 +1,6 @@
 
 
 .CertyficatesSite {
-
   display: flex;
   align-items: center;
   font-family: $font-base;
@@ -43,6 +42,9 @@
         margin: 1em 0 0 0 ;
         padding: 2em;
         border-radius: 5em;
+      }
+      img{
+        width: 24.8%;
       }
       h1 {
         font-size: $font-size-desktop-h1;
@@ -107,7 +109,7 @@
         border-radius: 3em;
         font-size: 1.5em;
         font-weight: bolder;
-        background: #09a9de;
+        background: #05b2e2;
         color: #ffffff;
         font-family: $font-base;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);

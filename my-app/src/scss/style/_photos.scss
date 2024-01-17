@@ -24,6 +24,9 @@
       flex-direction: column;
     }
     .photos_text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       backdrop-filter: blur(160px);
       border-radius:7em;
       padding: 2em;
@@ -40,6 +43,9 @@
         padding: 1em;
         border-radius: 5em;
         width: 80%;
+      }
+      img{
+        width: 22.5%;
       }
       h1 {
         font-size:$font-size-desktop-h1;
