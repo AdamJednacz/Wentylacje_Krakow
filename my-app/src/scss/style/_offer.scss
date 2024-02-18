@@ -49,6 +49,7 @@
     justify-content: space-evenly;
     @include phone {
       flex-direction: column;
+      align-items: center;
     }
 
     @include tablet {
@@ -69,8 +70,8 @@
       @include phone {
         margin: 1em 0 0 0 ;
         padding: 1em;
-        border-radius: 5em;
-        width: auto;
+        border-radius: 1em;
+        width: 60%;
       }
       @include tablet{
 
@@ -90,7 +91,7 @@
 
         @include phone {
           max-width: 15em;
-          border-radius: 3em;
+          border-radius: 1em;
         }
 
         @include tablet {
