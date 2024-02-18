@@ -6,23 +6,23 @@
     display: flex;
     flex-direction: column;
     h2{
-      font-size: $font-size-desktop-h2;
+      font-size:calc( $font-size-desktop-h2 - 0.5em) ;
       margin: 0;
       @include phone{
-        font-size: $font-size-phone-h2;
+        font-size:calc( $font-size-phone-h2 - 0.5em);
       }
       @include tablet{
-        font-size: $font-size-tablet-h2;
+        font-size: calc($font-size-tablet-h2 - 0.5em);
       }
     }
     p{
-      font-size: $font-size-desktop-p;
+      font-size: calc($font-size-desktop-p - 0.5em);
       font-weight: bolder;
       @include phone{
-        font-size: $font-size-phone-p;
+        font-size: calc($font-size-phone-p - 0.5em );
       }
       @include tablet{
-        font-size: $font-size-tablet-p;
+        font-size: calc($font-size-tablet-p - 0.5em);
       }
     }
     .contact_text_container {

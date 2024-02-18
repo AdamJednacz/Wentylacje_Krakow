@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: $font-base;
-  padding: 20vh 0; // Dostosuj wartość padding dla różnych urządzeń
+  padding: 15vh 0vh; // Dostosuj wartość padding dla różnych urządzeń
   @include phone {
     padding: 10vh 0; // Dostosuj wartość padding dla telefonów
     height: auto;
@@ -15,61 +15,67 @@
     height: auto;
   }
 
-  .plus_site {
-    display: flex;
-
-    img {
-      width: 50%;
-      border-radius: 0 2em 2em 0;
-    }
-
-    img.fade-in,
-    .plus_site_text_container.fade-in {
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    img,
-    .plus_site_text_container {
-      opacity: 1;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .plus_site_text_container {
-
+  .container {
+    max-width: 2200px;
+    .plus_site {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
 
-      width: 50%;
+      img {
+        scale: (5/6);
+        width: 50%;
+        height: auto;
 
-      .plus_site_text_box {
-        background-color: #005e78;
         border-radius: 2em;
-        color: #ffffff;
-        font-size: 1.3rem;
+      }
+
+      img.fade-in,
+      .plus_site_text_container.fade-in {
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+      }
+
+      img,
+      .plus_site_text_container {
+        opacity: 1;
+        transition: opacity 1.5s ease-in-out;
+      }
+
+      .plus_site_text_container {
+
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 2em;
-        padding: 2em;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        width: 50%;
+
+        .plus_site_text_box {
+          background-color: #005e78;
+          border-radius: 2em;
+          color: #ffffff;
+          font-size: 1.3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: 2em;
+          padding: 2em;
 
 
-        width: 33%;
-        height: 33%;
+          width: 33%;
+          height: 33%;
 
-        h1 {
+          h1 {
 
-        }
+          }
 
-        p {
+          p {
 
+          }
         }
       }
     }
+
+
   }
-
-
 }

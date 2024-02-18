@@ -63,6 +63,7 @@ const Plus = () => {
 
     return (
         <section className="plus" id="plusy">
+            <div className="container">
             <div className={`plus_site ${fadeIn ? 'fade-in' : ''}`}>
                 <LazyLoadImage
                     className={fadeIn ? 'fade-in' : ''}
@@ -86,6 +87,7 @@ const Plus = () => {
                         <p>{text3}</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );
