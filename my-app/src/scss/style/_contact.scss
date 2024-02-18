@@ -9,7 +9,7 @@
       font-size:calc( $font-size-desktop-h2 - 0.5em) ;
       margin: 0;
       @include phone{
-        font-size:calc( $font-size-phone-h2 - 0.5em);
+        font-size:calc( $font-size-phone-h2);
       }
       @include tablet{
         font-size: calc($font-size-tablet-h2 - 0.5em);
@@ -19,7 +19,7 @@
       font-size: calc($font-size-desktop-p - 0.5em);
       font-weight: bolder;
       @include phone{
-        font-size: calc($font-size-phone-p - 0.5em );
+        font-size: calc($font-size-phone-p );
       }
       @include tablet{
         font-size: calc($font-size-tablet-p - 0.5em);
