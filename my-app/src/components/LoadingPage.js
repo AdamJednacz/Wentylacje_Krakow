@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import logo from "../assets/frozeko logo-shading.svg"
 
 const LoadingPage = () => {
     const [showFrozer, setShowFrozer] = useState(true);
@@ -21,7 +21,9 @@ const LoadingPage = () => {
     return (
 
         <section className="loadingpage">
+
             <div className="container">
+                <img alt={logo} src={logo}/>
                 {showFrozer && (
                     <h1 className="h1_Frozer" datatype="Frozeko...">
                         Frozeko...

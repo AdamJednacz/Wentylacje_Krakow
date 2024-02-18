@@ -5,16 +5,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    img{
+      width: 10%;
+      filter: drop-shadow(30px 10px 4px rgba(66, 68, 90, 1));
+    }
     .h1_Frozer{
       position: relative;
       font-size: 14vh;
       color: #ffffff;
-      -webkit-text-stroke: 0.3vw #09a9de ;
+      -webkit-text-stroke: 0.3vw #005e78 ;
       text-transform: uppercase;
       -webkit-box-reflect: below 1px linear-gradient(transparent , #0004);
       line-height: 1em;
       outline: none;
+      margin: 0;
       &::before{
         content: attr(datatype);
         position: absolute;
@@ -22,9 +27,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        color:#09a9de ;
+        color:#005e78 ;
         -webkit-text-stroke: 0 #383d52;
-        border-right: 4px solid #09a9de ;
+        border-right: 4px solid #005e78 ;
         overflow: hidden;
         animation: animate 4s linear infinite;
       }
@@ -33,11 +38,12 @@
       }
     }
     .h1_Witamy {
+      margin: 0;
       display: flex;
       position: relative;
       font-size: 14vh;
-      color: #09a9de;
-      -webkit-text-stroke: 0.3vw #09a9de;
+      color: #005e78;
+      -webkit-text-stroke: 0.3vw #005e78;
       text-transform: uppercase;
       animation-name: appear;
       animation-duration:5s ;
@@ -51,7 +57,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        color: #09a9de;
+        color: #005e78;
         -webkit-text-stroke: 0 #383d52;
         overflow: hidden;
       }
