@@ -20,13 +20,14 @@ const Header = () => {
                             <div className="h1_logo">
                             <img alt={logo} src={logo}/>
                             <h1>Frozeko</h1>
-                            </div>
+
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
                                     <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "2em"}}/>
                                 ) : (
                                     <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2em"}}/>
                                 )}
+                            </div>
                             </div>
                         </div>
 
