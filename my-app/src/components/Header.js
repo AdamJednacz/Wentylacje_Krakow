@@ -33,7 +33,7 @@ const Header = () => {
 
 
                         <ul className={`menu ${isMenuVisible ? 'open' : ''}`}>
-                            <li><Link to="aboutus" smooth={true} duration={500}><p className="menu_item">O nas</p>
+                            <li><Link to="aboutus" smooth={true} duration={500}><p className="  menu_item">O nas</p>
                             </Link></li>
                             <li><Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
                             </li>
