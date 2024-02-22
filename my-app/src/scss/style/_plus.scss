@@ -4,17 +4,15 @@
   justify-content: center;
   flex-direction: column;
   font-family: $font-base;
-  padding: 15vh 0vh; // Dostosuj wartość padding dla różnych urządzeń
+  padding: 20vh 0 10vh 0;
   @include phone {
-    padding: 10vh 0; // Dostosuj wartość padding dla telefonów
-    height: auto;
-  }
+    padding: 10vh 0;
 
+  }
   @include tablet {
-    padding: 10vh 0; // Dostosuj wartość padding dla tabletów, w tym iPad Air
-    height: auto;
-  }
+    padding: 10vh 0;
 
+  }
   .container {
     max-width: 2200px;
     @include phone {
@@ -24,7 +22,36 @@
       justify-content: center;
 
     }
+    .slick-arrow {
+      color: black;
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      @include phone {
+        width: 25px;
+        height: 25px;
+      }
+    }
 
+    .slick-dots {
+      bottom: 20px;
+
+      li {
+        button {
+          font-size: 50px;
+          @include phone {
+            font-size: 10px;
+          }
+          &::before {
+            color: black;
+            line-height: 80px;
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
     .plus_site_container {
       @include phone{
         display: flex;
@@ -33,14 +60,11 @@
       .plus_site {
         display: flex;
         flex-direction: row;
-
         @include phone {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-
         }
-
         img {
           scale: (5/6);
           width: 50%;
@@ -50,7 +74,6 @@
            display: none;
           }
         }
-
         .plus_site_text_container {
           display: flex;
           flex-wrap: wrap;
@@ -63,12 +86,10 @@
             width: auto;
             padding:2vh;
           }
-
           .plus_site_text_box {
             background-color: #005e78;
             border-radius: 2em;
             color: #ffffff;
-            font-size: 1.3rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,14 +107,14 @@
               padding: 0.5em;
             }
           }
-
           h1 {
+            font-size: calc($font-size-desktop-h1 - 1.5rem);
             @include phone {
               font-size: $font-size-phone-h2-plus;
             }
           }
-
           p {
+            font-size:calc( $font-size-desktop-p - 0.3rem);
             @include phone {
               font-size: $font-size-phone-p;
             }
@@ -101,38 +122,7 @@
         }
       }
 
-      .slick-arrow {
-        color: black; // Ustaw kolor strzałek
-        width: 50px; // Ustaw szerokość strzałek
-        height: 50px; // Ustaw wysokość strzałek
-        z-index: 1; // Ustaw indeks warstwy z dla strzałek
-        @include phone {
-          width: 25px;
-          height: 25px;
-        }
-      }
 
-      .slick-dots {
-        bottom: 20px; // Ustaw odstęp od dołu
-
-        li {
-          button {
-
-            font-size: 20px; // Ustaw rozmiar kropek
-            @include phone {
-              font-size: 10px;
-            }
-
-            &::before {
-              color: black; // Ustaw kolor kropek
-              line-height: 80px;
-              width: 40px;
-              height: 40px;
-              font-size: 15px;
-            }
-          }
-        }
-      }
     }
   }
 }

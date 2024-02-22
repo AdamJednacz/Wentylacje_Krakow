@@ -1,4 +1,13 @@
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Przezroczystość na początku animacji */
+  }
+  to {
+    opacity: 1; /* Pełna widoczność na końcu animacji */
+  }
+}
+
 .Form {
   font-family: $font-base;
   padding: 12vh 0 10vh 0;
@@ -21,14 +30,23 @@
       align-items: center;
     }
 
-    .form_text {
+    .form_img {
       width: 100%;
+      animation: fadeIn 3s ease forwards;
       @include tablet{
         display: flex;
         align-items: center;
       }
-      img {
+       .like {
         width: 80%;
+
+        @include phone{
+          display: none;
+        }
+      }
+      .question_img {
+        width: 80%;
+
         @include phone{
           display: none;
         }
@@ -41,28 +59,35 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
+      opacity: 0; /* Ustawienie początkowej przezroczystości */
 
-      .thank_you_h1 {
-        font-size: 3rem;
+      /* Animacja pojawiania się */
+      animation: fadeIn 3s ease forwards;
+    }
 
-        @include phone {
-          text-align: center;
-          font-size: 2rem;
-        }
-      }
 
-      p {
-        font-size: $font-size-desktop-p;
 
-        @include phone {
-          font-size: $font-size-phone-p;
-          text-align: center;
-        }
-        @include tablet{
-          font-size: $font-size-tablet-p;
-        }
+    .thank_you_h1 {
+      font-size: 3rem;
+
+      @include phone {
+        text-align: center;
+        font-size: 2rem;
       }
     }
+
+    p {
+      font-size: $font-size-desktop-p;
+
+      @include phone {
+        font-size: $font-size-phone-p;
+        text-align: center;
+      }
+      @include tablet{
+        font-size: $font-size-tablet-p;
+      }
+    }
+
 
     form {
       padding: 2em 0;

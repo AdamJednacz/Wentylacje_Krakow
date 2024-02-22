@@ -44,11 +44,11 @@ const Form = () => {
     return (
         <section className="Form" id="form">
             <div className="container">
-                <div className="form_text">
+                <div className="form_img">
                     {submitted ? (
-                        <LazyLoadImage width={like.width} height={like.height} className="like" src={like} alt={like} />
+                        <LazyLoadImage width={like.width} height={like.height}  className="like" src={like} alt={like} />
                     ) : (
-                        <LazyLoadImage width={like.width} height={like.height} src={question} alt={question} />
+                        <LazyLoadImage width={like.width} height={like.height} className="question_img" src={question} alt={question} />
                     )}
                 </div>
                 {submitted ? (
