@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../assets/frozeko logo-shading.svg"
+import logo from "../assets/frozekologo-shading.svg"
 
 const LoadingPage = () => {
     const [showFrozer, setShowFrozer] = useState(true);

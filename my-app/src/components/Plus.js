@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 import feather from "../assets/feather.jpg";
 import health from "../assets/health1.jpg";
 import saivings from "../assets/saivings.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight , faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
+
 const Plus = () => {
     const carouselData = [
         {
@@ -58,44 +59,46 @@ const Plus = () => {
         speed: 600,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <FontAwesomeIcon className="Arrow" icon={faAngleLeft} />, // Użyj ikony strzałki w lewo
-        nextArrow: <FontAwesomeIcon className="Arrow" icon={faAngleRight}  />,
+        prevArrow: <FontAwesomeIcon className="Arrow" icon={faAngleLeft}/>,
+        nextArrow: <FontAwesomeIcon className="Arrow" icon={faAngleRight}/>,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        cssEase: "linear",
+
     };
 
-
-
-    const { image, heading1, heading2, heading3, text1, text2, text3 } = carouselData[currentIndex];
+    const {image, heading1, heading2, heading3, text1, text2, text3} = carouselData[currentIndex];
 
     return (
         <section className="plus" id="plusy">
             <div className="container">
                 <Slider {...settings}>
                     {carouselData.map((item, index) => (
-                      <div key={index}>
-                        <div className="plus_site" key={index}>
-                            <LazyLoadImage
-
-                                alt={item.heading1}
-                                src={item.image}
-                                height={image.height}
-                                width={image.width}
-                            />
-                            <div className="plus_site_text_container">
-                            <div className="plus_site_text_box">
-                                <h1>{item.heading1}</h1>
-                                <p>{item.text1}</p>
-                            </div>
-                            <div className="plus_site_text_box">
-                                <h1>{item.heading2}</h1>
-                                <p>{item.text2}</p>
-                            </div>
-                            <div className="plus_site_text_box" >
-                                <h1>{item.heading3}</h1>
-                                <p>{item.text3}</p>
-                            </div>
+                        <div className="plus_site_container" key={index}>
+                            <div className="plus_site" key={index}>
+                                <LazyLoadImage
+                                    alt={item.heading1}
+                                    src={item.image}
+                                    height={image.height}
+                                    width={image.width}
+                                />
+                                <div className="plus_site_text_container">
+                                    <div className="plus_site_text_box">
+                                        <h1>{item.heading1}</h1>
+                                        <p>{item.text1}</p>
+                                    </div>
+                                    <div className="plus_site_text_box">
+                                        <h1>{item.heading2}</h1>
+                                        <p>{item.text2}</p>
+                                    </div>
+                                    <div className="plus_site_text_box">
+                                        <h1>{item.heading3}</h1>
+                                        <p>{item.text3}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      </div>
                     ))}
                 </Slider>
             </div>

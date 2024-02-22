@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import img2 from "../assets/wykalifikowany.jpg"
 import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-
+import img5 from "../assets/wykalifikowany.jpg"
+import img6 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
+import img7 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
+import img8 from "../assets/wykalifikowany.jpg"
+import img9 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
+import img10 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import ImageModal from "./ImageModal";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo from "../assets/frozeko logo-shading.svg";
+import logo from "../assets/frozekologo-shading.svg";
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -17,19 +22,17 @@ const Photos = () => {
         setIsModalOpen(true);
 
     };
-
     const closeModal = () => {
         setSelectedImage(null);
         setIsModalOpen(false);
     };
-
-    const images = [img2,img3,img4]; // Lista obrazków do przeglądania
-
+    const images = [img2,img3,img4,img5,img6,img7,img8,img9,img10]; // Lista obrazków do przeglądania
     return (
         <section className="photos" id="photos">
             <div className="container">
+
                 <div className="photos_text">
-                    <img alt={logo} src={logo}/>
+                    <img className="photos_logo" alt={logo} src={logo}/>
                     <h1>Galeria</h1>
                     <p>
                         Odkryj niezwykłe chwile z naszej codziennej pracy w naszej galerii. Przejrzyj zdjęcia,

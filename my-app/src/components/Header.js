@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone, faEnvelope, faBars, faTimes,} from '@fortawesome/free-solid-svg-icons';
 import {useMediaQuery} from 'react-responsive';
-import logo from "../assets/frozeko logo-shading.svg"
+import logo from "../assets/frozekologo-shading.svg"
 
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 1439});

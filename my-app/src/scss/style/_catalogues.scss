@@ -6,7 +6,8 @@
   color: #ffffff;
   @include phone {
     height: auto;
-    padding: 5vh 0;
+    padding-top: 10vh;
+    padding-bottom: 0;
   }
 
   @include tablet {
@@ -93,11 +94,13 @@
       padding: 2em;
       background-color: #005e78;
       border-radius: 2em;
+      position: relative;
       @include phone {
         margin: 1em 0 0 0 ;
         padding: 1em;
         border-radius: 1em;
         width: 80%;
+        position: static;
       }
 
       @include tablet {
@@ -108,8 +111,14 @@
         width: 80%;
 
       }
-      img{
-        width: 34%;
+      .catalogues_logo{
+        position: absolute;
+        width: 20%;
+        top:-7em;
+        @include phone{
+        position: static;
+        width: 15%;
+      }
       }
       h1 {
         font-size: $font-size-desktop-h1;
@@ -117,6 +126,7 @@
 
         @include phone {
           font-size: $font-size-phone-h1;
+          margin: 0;
         }
 
         @include tablet {

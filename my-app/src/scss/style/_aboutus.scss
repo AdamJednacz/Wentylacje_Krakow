@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15vh 2vh;
+  padding: 23vh 2vh 15vh 2vh;
 
   @include phone {
     height: auto;
@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+
     @include phone {
       flex-direction: column;
       align-items: center;
@@ -32,9 +33,7 @@
     }
     .about_us_img{
       transform: scaleX(-1);
-      position: relative;
-      right: 0;
-      top: 0;
+
       width: 100%;
       max-width:50% ;
       height: auto;
@@ -52,31 +51,36 @@
 
     }
     .about_us_text_item {
+      position: relative;
       color: white;
       background-color: #005e78;
       border-radius: 2em;
       display: flex;
       flex-direction: column;
-      position: relative;
       align-items: center;
       justify-content: space-evenly;
-      left: 2em;
       max-width: 40%;
       padding: 2em 0;
       @include phone {
         margin-top: 2em;
         padding: 1em;
         max-width: 100%;
-        left: 0;
+        position: static;
       }
       @include tablet {
         margin-top: 1em;
         padding: 1em;
-        left: 0;
+
         max-width: 100%;
       }
-      .logo{
+      .about_us_logo{
+        position: absolute;
+        width: 20%;
+        top:-9em;
+        @include phone {
+        position: static;
         width: 15%;
+      }
       }
       h1 {
         font-size: $font-size-desktop-h1;
@@ -84,6 +88,7 @@
         margin-bottom: 0;
         @include phone {
           font-size: $font-size-phone-h1;
+          margin: 0;
         }
         @include tablet {
          margin-top: 0;

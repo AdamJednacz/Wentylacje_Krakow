@@ -12,7 +12,7 @@ import Rotenso from "../assets/46.jpg"
 import Aux from "../assets/klimatyzacja-aux1.png"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo from "../assets/frozeko logo-shading.svg";
+import logo from "../assets/frozekologo-shading.svg";
 
 const CatalogueItem = ({ imageUrl, link }) => (
     <a href={link}>
@@ -47,7 +47,7 @@ const Catalogues = () => {
                     </div>
                 </div>
                 <div className="catalogues_text">
-                    <img className="logo" alt={logo} src={logo}/>
+                    <img className="catalogues_logo" alt={logo} src={logo}/>
                     <h1>Oferta Klimatyzatorów</h1>
                     <p className="text">
                         Zanurz się w świat komfortu klimatycznego z naszą ofertą najnowocześniejszych klimatyzatorów

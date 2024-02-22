@@ -4,13 +4,11 @@
   align-items: center;
   justify-content: center;
   font-family: $font-base;
-  padding-top: 15vh;
+  padding-top: 20vh;
   @include phone{
-    height: auto;
-    padding: 2em 0;
+    padding-top: 10vh;
   }
   @include tablet{
-    height: auto;
     padding: 0;
   }
   .container {
@@ -18,13 +16,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
+
     @include phone{
       flex-direction: column;
     }
     @include tablet{
       flex-direction: column;
     }
+
     .photos_text {
+      position: relative;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -33,11 +35,11 @@
       padding: 2em;
       width: 40%;
       @include phone{
-        margin: 1em 0 0 0 ;
+
         padding: 1em;
         border-radius: 2em;
         width: 100%;
-
+        position: static;
       }
       @include tablet{
         margin: 1em 0 0 0 ;
@@ -45,13 +47,21 @@
         border-radius: 5em;
         width: 80%;
       }
-      img{
-        width: 22.5%;
+      .photos_logo{
+        position: absolute;
+        top: -6em;
+        width: 20%;
+        z-index: 1;
+        @include phone{
+          position: static;
+        }
       }
       h1 {
         font-size:$font-size-desktop-h1;
         text-align: center;
+        margin-bottom:0.5em ;
         @include phone{
+          margin: 0;
           font-size: $font-size-phone-h1;
         }
         @include tablet{
