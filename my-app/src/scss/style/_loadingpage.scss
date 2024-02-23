@@ -13,6 +13,11 @@
         width: 30%;
         filter: drop-shadow(10px 1px 1px rgba(66, 68, 90, 1));
       }
+      @include tablet{
+        width: 40%;
+        filter: drop-shadow(20px 4px 2px rgba(66, 68, 90, 1));
+      }
+
     }
     .h1_Frozer{
       position: relative;
@@ -39,6 +44,9 @@
       }
       @include phone{
         font-size: 7vh;
+      }
+      @include tablet{
+        font-size: 10vh;
       }
     }
     .h1_Witamy {
@@ -67,6 +75,9 @@
       }
       @include phone{
         font-size: 7vh;
+      }
+      @include tablet{
+        font-size: 10vh;
       }
     }
   }

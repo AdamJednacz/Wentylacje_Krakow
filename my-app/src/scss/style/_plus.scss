@@ -7,20 +7,18 @@
   padding: 20vh 0 10vh 0;
   @include phone {
     padding: 10vh 0;
-
   }
   @include tablet {
     padding: 10vh 0;
-
   }
   .container {
-    max-width: 2200px;
+    max-width: 90%; /* Dostosowanie do szerokości karuzeli */
+    margin: 0 auto;
     @include phone {
       max-width: 340px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
     }
     .slick-arrow {
       color: black;
@@ -32,10 +30,8 @@
         height: 25px;
       }
     }
-
     .slick-dots {
       bottom: 20px;
-
       li {
         button {
           font-size: 50px;
@@ -78,7 +74,7 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
-          width: 50%;
+
           @include phone {
             align-items: center;
             flex-wrap: nowrap;
@@ -121,8 +117,6 @@
           }
         }
       }
-
-
     }
   }
 }

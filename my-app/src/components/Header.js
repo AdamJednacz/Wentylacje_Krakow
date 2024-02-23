@@ -17,7 +17,7 @@ const Header = () => {
                 {isMobile ? (
                     <>
                         <div className="h1_hamburg">
-                            <div className="h1_logo">
+
                             <img alt={logo} src={logo}/>
                             <h1>Frozeko</h1>
 
@@ -28,7 +28,7 @@ const Header = () => {
                                     <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2em"}}/>
                                 )}
                             </div>
-                            </div>
+
                         </div>
 
 

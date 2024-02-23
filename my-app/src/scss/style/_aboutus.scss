@@ -12,11 +12,12 @@
   }
   @include tablet {
     height: auto;
-    padding: 4vh 0;
+    padding-top:14vh;
   }
   .container{
     max-width: 2100px;
     justify-content: space-between;
+
   }
   .about_us_items {
     display: flex;
@@ -33,7 +34,6 @@
     }
     .about_us_img{
       transform: scaleX(-1);
-
       width: 100%;
       max-width:50% ;
       height: auto;
@@ -41,12 +41,10 @@
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.5s ease,opacity 0.3s;
       @include phone {
-
         max-width: 100%;
       }
       @include tablet {
-        border-radius: 6em;
-        max-width: 100%;
+        max-width: 90%;
       }
 
     }
@@ -70,8 +68,8 @@
       @include tablet {
         margin-top: 1em;
         padding: 1em;
-
-        max-width: 100%;
+        max-width: 87%;
+        position: static;
       }
       .about_us_logo{
         position: absolute;
@@ -81,6 +79,10 @@
         position: static;
         width: 15%;
       }
+        @include tablet{
+          position: static;
+          width: 15%;
+        }
       }
       h1 {
         font-size: $font-size-desktop-h1;
@@ -106,7 +108,7 @@
         }
         @include tablet {
           width: 100%;
-          font-size: $font-size-tablet-p;
+          font-size:calc( $font-size-tablet-p + 0.5rem);
           margin-bottom: 0;
         }
       }

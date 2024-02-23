@@ -65,7 +65,24 @@ const Plus = () => {
         autoplay: true,
         autoplaySpeed: 10000,
         cssEase: "linear",
-
+        responsive: [
+            {
+                breakpoint: 768, // dla tabletów
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false // Ukryj strzałki dla tabletów
+                }
+            },
+            {
+                breakpoint: 480, // dla telefonów
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true // Ukryj strzałki dla telefonów
+                }
+            }
+        ]
     };
 
     const {image, heading1, heading2, heading3, text1, text2, text3} = carouselData[currentIndex];
@@ -105,5 +122,6 @@ const Plus = () => {
         </section>
     );
 };
+
 
 export default Plus;
