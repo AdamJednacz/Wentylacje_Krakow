@@ -100,36 +100,41 @@
         padding: 1em;
         border-radius: 1em;
         width: 80%;
-        position: static;
       }
-
       @include tablet {
         margin: 1em 0 0 0 ;
-        padding: 1em;
+        padding: 2em;
         border-radius: 5em;
-
         width: 80%;
-
       }
       .catalogues_logo{
         position: absolute;
         width: 20%;
-        top:-7em;
+        top: -4% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
         @include phone{
         position: static;
         width: 15%;
+        transform: none;
       }
+        @include tablet{
+          position: static;
+          width: 15%;
+          transform: none;
+        }
       }
       h1 {
         font-size: $font-size-desktop-h1;
         text-align: center;
-
+        margin-bottom: 0;
         @include phone {
           font-size: $font-size-phone-h1;
           margin: 0;
         }
 
         @include tablet {
+          margin: 0;
           font-size: $font-size-tablet-h1;
         }
       }

@@ -63,25 +63,27 @@
         margin-top: 2em;
         padding: 1em;
         max-width: 100%;
-        position: static;
       }
       @include tablet {
-        margin-top: 1em;
+        margin-top: 2em;
         padding: 1em;
         max-width: 87%;
-        position: static;
       }
       .about_us_logo{
         position: absolute;
         width: 20%;
-        top:-9em;
+        top: -5% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
         @include phone {
         position: static;
         width: 15%;
+        transform: none;
       }
         @include tablet{
           position: static;
           width: 15%;
+          transform: none;
         }
       }
       h1 {
@@ -108,7 +110,7 @@
         }
         @include tablet {
           width: 100%;
-          font-size:calc( $font-size-tablet-p + 0.5rem);
+          font-size:calc( $font-size-tablet-p );
           margin-bottom: 0;
         }
       }

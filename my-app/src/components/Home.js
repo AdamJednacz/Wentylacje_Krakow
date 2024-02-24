@@ -18,10 +18,12 @@ const HomeSection = styled.section`
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center; // Ustawienie tła na środku w poziomie i pionie
-    @media (min-width: 768px) {
+    @media (min-width: 1381px) {
         background-position: 135em 10em; // Ustawienie dla większych ekranów
         background-size: 30%;
     }
+
+  
 `;
 
 const Home = () => {

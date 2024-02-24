@@ -9,6 +9,10 @@
     padding-top: 10vh;
     padding-bottom: 2vh;
   }
+  @include tablet{
+    padding-top: 16vh;
+    padding-bottom: 0;
+  }
 
   .container {
     display: flex;
@@ -41,21 +45,29 @@
         width: 100%;
       }
       @include tablet{
+        width: 80%;
         margin: 1em 0 0 0 ;
         padding: 2em;
         border-radius: 2em;
       }
       .certyficatesSite_logo{
         position: absolute;
-        top:-7em;
+        top: -5% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 15%;
        @include phone{
          position: static;
+         transform: none;
        }
+        @include tablet{
+          transform: none;
+          position: static;
+        }
       }
       h1 {
         font-size: $font-size-desktop-h1;
-        margin-bottom:0.5em ;
+        margin-bottom:0 ;
 
         @include phone {
           font-size: $font-size-phone-h1;
@@ -64,6 +76,7 @@
 
         @include tablet {
           font-size: $font-size-tablet-h1;
+          margin: 0;
         }
       }
 
@@ -124,8 +137,12 @@
 
         @include phone {
           padding: 1em 1.5em;
-          font-size: 1.5em;
+          font-size: 1.5rem;
           margin-top: 1em;
+        }
+        @include tablet{
+          font-size: 2rem;
+
         }
 
         &:hover {

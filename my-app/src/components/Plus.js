@@ -8,6 +8,7 @@ import health from "../assets/health1.jpg";
 import saivings from "../assets/saivings.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
+import {useMediaQuery} from "react-responsive";
 
 const Plus = () => {
     const carouselData = [
@@ -39,7 +40,7 @@ const Plus = () => {
             text3: "Klimatyzacja może pomóc w ograniczeniu emisji gazów cieplarnianych, ponieważ pozwala utrzymać komfortową temperaturę w budynkach bez konieczności korzystania z ogrzewania lub chłodzenia przy wykorzystaniu innych źródeł energii."
         },
     ];
-
+    const isMobile = useMediaQuery({maxWidth: 1381});
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -85,7 +86,7 @@ const Plus = () => {
         ]
     };
 
-    const {image, heading1, heading2, heading3, text1, text2, text3} = carouselData[currentIndex];
+    const {image} = carouselData[currentIndex];
 
     return (
         <section className="plus" id="plusy">
@@ -94,12 +95,15 @@ const Plus = () => {
                     {carouselData.map((item, index) => (
                         <div className="plus_site_container" key={index}>
                             <div className="plus_site" key={index}>
+                                {!isMobile ? (
                                 <LazyLoadImage
                                     alt={item.heading1}
                                     src={item.image}
                                     height={image.height}
                                     width={image.width}
                                 />
+                                ) : (
+                                    null )}
                                 <div className="plus_site_text_container">
                                     <div className="plus_site_text_box">
                                         <h1>{item.heading1}</h1>

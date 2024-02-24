@@ -43,29 +43,39 @@
       }
       @include tablet{
         margin: 1em 0 0 0 ;
-        padding: 1em;
+        padding: 2em;
         border-radius: 5em;
         width: 80%;
+
       }
       .photos_logo{
         position: absolute;
-        top: -6em;
+        top: -2% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 20%;
         z-index: 1;
         @include phone{
           position: static;
+          transform: none
+        }
+        @include tablet{
+          position: static;
+          width: 15%;
+          transform: none;
         }
       }
       h1 {
         font-size:$font-size-desktop-h1;
         text-align: center;
-        margin-bottom:0.5em ;
+        margin-bottom:0;
         @include phone{
           margin: 0;
           font-size: $font-size-phone-h1;
         }
         @include tablet{
           font-size: $font-size-tablet-h1;
+          margin: 0;
         }
       }
       p {
@@ -80,7 +90,6 @@
       }
     }
       .photos_items {
-
         display: flex;
         margin-left: 2em;
         @include phone {
@@ -95,18 +104,18 @@
         }
         .photos_item {
           width: 100%;
-          max-width: 14em;
+          max-width: 14vw;
           margin: 1em;
           border-radius: 2em;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
           transition: transform 1s;
           @include phone {
-            max-width: 7em;
+            max-width: 35vw;
             margin: 0.5em;
             border-radius: 1em;
           }
           @include tablet{
-            max-width: 25em;
+            max-width: 35vw;
             margin: 2em;
             border-radius: 3em;
           }

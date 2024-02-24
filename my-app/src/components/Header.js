@@ -6,8 +6,10 @@ import {useMediaQuery} from 'react-responsive';
 import logo from "../assets/frozekologo-shading.svg"
 
 const Header = () => {
-    const isMobile = useMediaQuery({maxWidth: 1439});
+    const isMobile = useMediaQuery({maxWidth: 1381});
     const [isMenuVisible, setMenuVisible] = useState(false);
+
+
     const toggleMenu = () => {
         setMenuVisible(!isMenuVisible);
     };
@@ -17,18 +19,18 @@ const Header = () => {
                 {isMobile ? (
                     <>
                         <div className="h1_hamburg">
-
+                            <div className="h1_logo">
                             <img alt={logo} src={logo}/>
                             <h1>Frozeko</h1>
 
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
-                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "2em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "4em"}}/>
                                 ) : (
-                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "4em"}}/>
                                 )}
                             </div>
-
+                            </div>
                         </div>
 
 

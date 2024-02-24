@@ -22,8 +22,11 @@
         justify-content: space-around;
       }
       @include tablet {
+        align-items: center;
+        justify-content: space-around;
       }
       .hamburger-menu {
+
         @include phone {
           font-size: 1em;
         }
@@ -32,14 +35,24 @@
         }
       }
     }
+    .h1_logo {
+      display: flex;
+      justify-content: center;
+      @include phone{
+        justify-content: space-around;
+      }
+      @include tablet{
+        justify-content: space-around;
 
+      }
       img {
-        width: 30%;
+        width: 10%;
         margin-right: 1em;
-        @include phone{
+        @include phone {
           width: 10%;
         }
-        @include tablet{
+        @include tablet {
+
           width: 10%;
         }
       }
@@ -52,10 +65,13 @@
           margin: 0.5em 0;
         }
         @include tablet {
-          font-size:calc($font-size-tablet-h1 + 2rem);
+          font-size: calc($font-size-tablet-h1 + 2rem);
           margin: 0.5em;
         }
+
       }
+    }
+
       .hamburger-menu{
         display: flex;
         align-items: center;
@@ -64,12 +80,13 @@
     .menu.open{
       height: 620px;
       @include tablet{
-        height: 850px;
+        height: 1050px;
       }
     }
     .menu {
       display: flex;
       align-items: center;
+
       @include phone {
         padding: 0;
         background-color: #005e78;
@@ -82,6 +99,7 @@
         flex-direction: column;
       }
       @include tablet {
+        padding: 0;
         height: 0;
         position: fixed;
         background-color: #005e78;
@@ -91,6 +109,7 @@
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
       }
+
     li {
         list-style: none;
         padding: 0.7rem;
@@ -108,7 +127,7 @@
           padding: 1em;
         }
         @include tablet {
-          font-size: 1.5em;
+          font-size: 2rem;
           padding: 1em;
         }
         &:hover {

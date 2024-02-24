@@ -3,7 +3,7 @@
   padding: 2em 0;
   font-family: $font-base;
   @include phone{
-    padding: 5vh 0;
+    padding: 4vh 0;
   }
   .container {
     display: flex;
@@ -15,7 +15,7 @@
         font-size:calc( $font-size-phone-h2);
       }
       @include tablet{
-        font-size: calc($font-size-tablet-h2 - 0.5em);
+        font-size: calc($font-size-tablet-h2);
       }
     }
     p{

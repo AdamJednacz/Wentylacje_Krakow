@@ -5,7 +5,15 @@
 }
 
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 1025px), (min-width: 1026px) and (max-width: 1365px) {
+  @media (min-width: 768px) and (max-width:1381px)  {
+    @content;
+  }
+}
+
+
+
+@mixin tabletR {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1381px) and (orientation: landscape)  {
     @content;
   }
 }
