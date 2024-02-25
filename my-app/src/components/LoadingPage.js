@@ -25,12 +25,12 @@ const LoadingPage = () => {
             <div className="container">
                 <img alt={logo} src={logo}/>
                 {showFrozer && (
-                    <h1 className="h1_Frozer" datatype="Frozeko...">
+                    <h1 lang="en" className="h1_Frozeko" datatype="Frozeko...">
                         Frozeko...
                     </h1>
                 )}
                 {showWitamy && (
-                    <h1 className="h1_Witamy" datatype="Witamy">
+                    <h1 lang="en" className="h1_Witamy" datatype="Witamy">
                         Witamy
                     </h1>
                 )}
