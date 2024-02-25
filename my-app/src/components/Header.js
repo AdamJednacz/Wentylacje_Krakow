@@ -21,7 +21,7 @@ const Header = () => {
                         <div className="h1_hamburg">
                             <div className="h1_logo">
                             <img alt={logo} src={logo}/>
-                            <h1>Frozeko</h1>
+                            <h1 lang="en">Frozeko</h1>
 
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
