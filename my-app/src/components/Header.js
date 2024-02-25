@@ -25,32 +25,24 @@ const Header = () => {
 
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
-                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "4em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "2em"}}/>
                                 ) : (
-                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "4em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2em"}}/>
                                 )}
                             </div>
                             </div>
                         </div>
 
 
-                        <ul className={`menu ${isMenuVisible ? 'open' : ''}`}>
-                            <li><Link to="aboutus" smooth={true} duration={500}><p className="  menu_item">O nas</p>
-                            </Link></li>
-                            <li><Link to="plusy" smooth={true} duration={500}><p className="menu_item">Plusy</p></Link>
-                            </li>
-                            <li><Link to="offer" smooth={true} duration={500}><p className="menu_item">Oferta</p></Link>
-                            </li>
-                            <li><Link to="catalogues" smooth={true} duration={500}><p
-                                className="menu_item">Klimatyzatory</p></Link></li>
-                            <li><Link to="photos" smooth={true} duration={500}><p className="menu_item">Galeria</p>
-                            </Link></li>
-                            <li><Link to="CertyficatesSite" smooth={true} duration={500}><p
-                                className="menu_item">Certyfikaty</p></Link></li>
-                            <li><Link to="form" smooth={true} duration={500}><p className="menu_item">Pytania</p></Link>
-                            </li>
-                            <li><Link to="contact" smooth={true} duration={500}><p className="menu_item">Kontakt</p>
-                            </Link></li>
+                        <ul className={`menu ${isMenuVisible ? 'open' : ''}`} >
+                            <li><Link to="aboutus" smooth={true} duration={500}><p className="  menu_item" onClick={toggleMenu}>O nas</p></Link></li>
+                            <li><Link to="plusy" smooth={true} duration={500} onClick={toggleMenu}><p className="menu_item">Plusy</p></Link></li>
+                            <li><Link to="offer" smooth={true} duration={500} onClick={toggleMenu}><p className="menu_item">Oferta</p></Link></li>
+                            <li><Link to="catalogues" smooth={true} duration={500}  onClick={toggleMenu}><p className="menu_item">Klimatyzatory</p></Link></li>
+                            <li><Link to="photos" smooth={true} duration={500}><p className="menu_item" onClick={toggleMenu}>Galeria</p></Link></li>
+                            <li><Link to="CertyficatesSite" smooth={true} duration={500}><p className="menu_item" onClick={toggleMenu}>Certyfikaty</p></Link></li>
+                            <li><Link to="form" smooth={true} duration={500}><p className="menu_item" onClick={toggleMenu}>Pytania</p></Link></li>
+                            <li><Link to="contact" smooth={true} duration={500}><p className="menu_item" onClick={toggleMenu}>Kontakt</p></Link></li>
                         </ul>
 
 

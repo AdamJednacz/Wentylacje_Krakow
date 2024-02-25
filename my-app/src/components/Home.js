@@ -22,7 +22,12 @@ const HomeSection = styled.section`
         background-position: 135em 10em; // Ustawienie dla większych ekranów
         background-size: 30%;
     }
-
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1381px) and (orientation: landscape){
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 80%;
+  }
   
 `;
 
