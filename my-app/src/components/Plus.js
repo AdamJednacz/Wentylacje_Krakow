@@ -44,15 +44,7 @@ const Plus = () => {
     const isMobile = useMediaQuery({maxWidth: 1381});
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
-        }, 10000);
 
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, [carouselData.length, currentIndex]);
 
     const settings = {
         dots: true,
