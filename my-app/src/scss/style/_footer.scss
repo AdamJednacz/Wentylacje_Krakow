@@ -3,11 +3,15 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 1vw;
   background:#4c5761;
   font-weight: bolder;
   @include phone{
-    padding: 2vh 0;
+    padding: 4vw 0;
+  }
+  @include tablet{
+    font-size: $font-size-tablet-p;
+    padding: 3vw 0;
   }
 
 }

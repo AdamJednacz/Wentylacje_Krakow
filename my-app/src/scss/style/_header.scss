@@ -32,7 +32,15 @@
           font-size: 1vh;
         }
         @include tablet {
-          font-size: 1.5vh;
+          font-size: 2vh;
+        }
+        .icon{
+          @include phone{
+            font-size: 2rem;
+          }
+          @include tablet{
+            font-size: 4rem;
+          }
         }
       }
     }
@@ -67,11 +75,11 @@
         color: #ffffff;
         @include phone {
           font-size: $font-size-phone-h1;
-          margin: 1em;
+          margin: 3vh;
         }
         @include tablet {
           font-size: calc($font-size-tablet-h1 + 1rem);
-          margin: 1em;
+          margin: 3vh;
         }
 
       }
@@ -112,7 +120,6 @@
         background-color: #005e78;
         width: 100%;
         top: 150px;
-        top: 150px;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
@@ -138,8 +145,8 @@
           padding: 1.3vh;
         }
         @include tablet {
-          font-size: 2rem;
-          padding: 1em;
+          font-size: 1.8vh;
+          padding: 3vw;
         }
         &:hover {
           opacity: 0.4;

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   @include phone {
-    padding-top: 10vh;
+    padding-top: 11vh;
     height: auto;
   }
   @include tablet {
@@ -42,12 +42,12 @@
       border-radius: 3em;
       @include phone {
         margin: 2vh 0 0 0 ;
-        padding: 2.5vh;
+        padding: 6vw;
         border-radius: 1em;
         width: 60%;
       }
       @include tablet{
-        padding: 2em;
+        padding: 2vw;
         width: 80%;
       }
       &:hover {

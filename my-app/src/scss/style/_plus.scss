@@ -6,7 +6,7 @@
   font-family: $font-base;
   padding: 10vh 0 0 0;
   @include phone {
-    padding: 16vh 0 0 0 ;
+    padding: 12vh 0 0 0 ;
   }
   @include tablet {
     padding: 14vh 0  0 0;
@@ -64,6 +64,7 @@
                 width: 10px;
                 height: 10px;
               }
+
             }
           }
         }
@@ -111,6 +112,10 @@
             flex-direction: column;
 
           }
+          @include tablet{
+            flex-wrap: wrap;
+            flex-direction: row;
+          }
           @include phone {
             align-items: center;
             flex-wrap: nowrap;
@@ -141,6 +146,8 @@
             }
             @include tablet{
               height: auto;
+              width: auto;
+              padding:3vw ;
             }
             @include plusSpecial{
               flex-direction: column;

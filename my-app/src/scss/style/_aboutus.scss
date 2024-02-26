@@ -8,11 +8,11 @@
 
   @include phone {
 
-    padding: 12vh 2vh 0 2vh;
+    padding: 14vh 2vh 0 2vh;
   }
   @include tablet {
 
-    padding-top:14vh;
+    padding-top:12vh;
   }
   .container{
     justify-content: space-between;
@@ -64,9 +64,9 @@
         max-width: 100%;
       }
       @include tablet {
-        margin-top: 2em;
-        padding: 1em;
-        max-width: 87%;
+        margin-top: 2vh;
+        padding: 4vw;
+        max-width: 87.5%;
       }
       .about_us_logo{
         position: absolute;
@@ -128,13 +128,14 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
         @include phone {
-          padding: 1.5vh 6vh;
-          font-size: 1em;
+          padding: 3vw 10vw;
+          font-size: 1.5vh;
           margin-top: 1em;
         }
         @include tablet {
-          padding: 1.25em 5em;
-          font-size: 1.5em;
+          border-radius:3em ;
+          padding: 3vw 10vw;
+          font-size: 1.5vh;
           margin-top: 1em;
         }
         &:hover {

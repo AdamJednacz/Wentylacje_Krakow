@@ -52,11 +52,12 @@ const Photos = () => {
         cssEase: "linear",
         responsive: [
             {
-                breakpoint: 900, // dla tabletów
+                breakpoint: 1000, // dla tabletów
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    arrows: true // Ukryj strzałki dla tabletów
+                    arrows: true, // Ukryj strzałki dla tabletów
+                    dots:false
                 }
             },
             {

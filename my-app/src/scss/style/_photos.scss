@@ -6,10 +6,10 @@
   font-family: $font-base;
   padding-top: 20vh;
   @include phone {
-    padding-top: 10vh;
+    padding-top: 12vh;
   }
   @include tablet {
-    padding: 0;
+    padding-top: 12.5vh;
   }
   .container {
     display: flex;
@@ -38,8 +38,8 @@
         position: static;
       }
       @include tablet {
-        margin: 1em 0 0 0;
-        padding: 2em;
+        margin: 1vh 0 0 0;
+        padding: 2.5vw;
         border-radius: 5em;
         width: 80%;
 
@@ -114,6 +114,7 @@
             width: 10vw;
             height: 10vw;
           }
+
         }
         .photos_item {
           max-width: 80%;
@@ -128,7 +129,7 @@
             transform: none;
           }
           @include tablet {
-            margin: 2em;
+            margin: 2vw;
             border-radius: 3em;
             box-shadow: none;
             transform: none;

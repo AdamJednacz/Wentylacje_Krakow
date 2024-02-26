@@ -5,12 +5,12 @@
   padding: 15vh 0 0 0;
   color: #ffffff;
   @include phone {
-    height: auto;
-    padding-top: 10vh;
-    padding-bottom: 0;
+
+    padding-top: 12vh;
+
   }
   @include tablet {
-    height: auto;
+    padding-top: 12.5vh;
   }
   .container {
     display: flex;
@@ -44,7 +44,7 @@
           margin: 1vh;
         }
         @include tablet {
-          margin: 2em;
+          margin: 2vh;
         }
         .text {
           text-align: center;
@@ -60,7 +60,7 @@
             margin: 1em;
           }
           @include tablet {
-            width: 11em;
+            max-width: 20vw;
             height: auto;
             margin: 1em;
           }
@@ -86,8 +86,8 @@
         width: 80%;
       }
       @include tablet {
-        margin: 1em 0 0 0 ;
-        padding: 2em;
+        margin: 1vh 0 0 0 ;
+        padding: 2.25vw;
         border-radius: 5em;
         width: 80%;
       }

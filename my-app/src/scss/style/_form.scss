@@ -113,11 +113,11 @@
         height: 80vh;
       }
       @include tablet{
-        margin: 1em 0 0 0 ;
-        padding: 1em;
+        margin: 1vh 0 0 0 ;
+        padding: 4vw ;
         border-radius: 5em;
-        width: 100%;
-
+        width: 50vw;
+        height: auto;
       }
       .form_logo{
         position: absolute;
@@ -135,11 +135,9 @@
         }
       }
       h1 {
-
         font-size: $font-size-desktop-h1;
         text-align: center;
         margin-bottom: 0;
-
         @include phone {
           margin: 0;
           font-size: $font-size-phone-h1;
@@ -190,10 +188,11 @@
           @include phone {
             width: 70%;
             font-size: 1.5vh;
-            font-size: 1.5vh;
+            padding:0 1vw;
           }
           @include tablet{
-            font-size: 1.5rem;
+            font-size: 2vh;
+            padding: 0 1vw ;
           }
         }
 
@@ -212,11 +211,13 @@
           border: solid 3px #D3D3D3;
 
           @include phone {
+            padding: 1vw;
             font-size: 1.5vh;
             width: 70%;
           }
           @include tablet{
-            font-size: 1.5rem;
+            padding: 1vw;
+            font-size: 2vh;
             width: 100%;
           }
         }
@@ -239,7 +240,11 @@
           padding: 5vw 16vw;
           font-size: 2vh;
           margin: 0;
-
+        }
+        @include tablet{
+          padding: 3vw 12vw;
+          font-size: 2vh;
+          margin: 2vh 0 0 0;
         }
 
         &:hover {

@@ -6,11 +6,11 @@
   font-family: $font-base;
   padding: 20vh 0 0 0;
   @include phone {
-    padding-top: 14vh;
+    padding-top: 12vh;
     padding-bottom: 2vh;
   }
   @include tablet{
-    padding-top: 16vh;
+    padding-top: 14vh;
     padding-bottom: 0;
   }
 
@@ -46,8 +46,8 @@
       }
       @include tablet{
         width: 80%;
-        margin: 1em 0 0 0 ;
-        padding: 2em;
+        margin: 1vh 0 0 0 ;
+        padding: 2.5vw;
         border-radius: 2em;
       }
       .certyficatesSite_logo{
@@ -99,8 +99,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-
       @include phone {
         width: auto;
       }
@@ -142,8 +140,8 @@
           margin-top: 1vh;
         }
         @include tablet{
-          font-size: 2rem;
-
+          font-size: 2vh;
+          padding: 3vw 6vw;
         }
 
         &:hover {
