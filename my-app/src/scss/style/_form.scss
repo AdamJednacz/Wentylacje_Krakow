@@ -110,7 +110,7 @@
         padding: 4vw 0;
         border-radius: 2em;
         width: 90vw;
-        height: 80vh;
+        height: auto;
       }
       @include tablet{
         margin: 1vh 0 0 0 ;
@@ -239,7 +239,7 @@
         @include phone {
           padding: 5vw 16vw;
           font-size: 2vh;
-          margin: 0;
+          margin: 4vh 0 2vh 0;
         }
         @include tablet{
           padding: 3vw 12vw;
