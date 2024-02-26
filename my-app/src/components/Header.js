@@ -25,9 +25,9 @@ const Header = () => {
 
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
-                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "2em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faTimes} style={{fontSize: "2rem"}}/>
                                 ) : (
-                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2em"}}/>
+                                    <FontAwesomeIcon className="icon" icon={faBars} style={{fontSize: "2rem"}}/>
                                 )}
                             </div>
                             </div>

@@ -41,8 +41,8 @@
       padding: 2.5vw;
       border-radius: 3em;
       @include phone {
-        margin: 1em 0 0 0 ;
-        padding: 1em;
+        margin: 2vh 0 0 0 ;
+        padding: 2.5vh;
         border-radius: 1em;
         width: 60%;
       }
@@ -58,7 +58,7 @@
         border-radius: 3em;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         @include phone {
-          max-width: 15em;
+          max-width: 50vw;
           border-radius: 1em;
         }
         @include tablet {

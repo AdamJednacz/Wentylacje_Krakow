@@ -9,27 +9,21 @@
     padding-top: 10vh;
     padding-bottom: 0;
   }
-
   @include tablet {
     height: auto;
   }
-
   .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     @include phone {
       flex-direction: column-reverse;
-
       align-items: center;
     }
-
     @include tablet {
       flex-direction: column-reverse;
       flex-wrap: wrap;
     }
-
     .catalogues_items_container {
       display: flex;
       flex-direction: column;
@@ -37,55 +31,45 @@
       @include phone {
         flex-direction: column;
       }
-
       @include tablet {
         flex-direction: column;
       }
-
       .catalogues_items {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-
         @include phone {
-          margin: 1em;
+          margin: 1vh;
         }
-
         @include tablet {
           margin: 2em;
         }
-
         .text {
           text-align: center;
         }
-
         .catalogues_item {
           max-width: 8vw;
           height: auto;
           margin: 2vw;
           transition: transform 0.5s;
-
           @include phone {
-            max-width: 6em;
+            max-width: 20vw;
             height: auto;
             margin: 1em;
           }
-
           @include tablet {
             width: 11em;
             height: auto;
             margin: 1em;
           }
-
           &:hover {
             transform: scale(1.5);
           }
         }
       }
     }
-
     .catalogues_text {
       display: flex;
       flex-direction: column;
@@ -96,8 +80,8 @@
       border-radius: 2em;
       position: relative;
       @include phone {
-        margin: 1em 0 0 0 ;
-        padding: 1em;
+        margin: 1vh 0 0 0 ;
+        padding: 6vw;
         border-radius: 1em;
         width: 80%;
       }
@@ -132,21 +116,17 @@
           font-size: $font-size-phone-h1;
           margin: 0;
         }
-
         @include tablet {
           margin: 0;
           font-size: $font-size-tablet-h1;
         }
       }
-
       p {
         font-size: $font-size-desktop-p;
         text-align: center;
-
         @include phone {
           font-size: $font-size-phone-p;
         }
-
         @include tablet {
           font-size: $font-size-tablet-p;
         }

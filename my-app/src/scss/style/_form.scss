@@ -7,7 +7,6 @@
     opacity: 1; /* Pełna widoczność na końcu animacji */
   }
 }
-
 .Form {
   font-family: $font-base;
   padding: 15vh 0 10vh 0;
@@ -35,7 +34,6 @@
       flex-direction: row;
       align-items: center;
     };
-
     .form_img {
       width: 35vw;
       animation: fadeIn 3s ease forwards;
@@ -45,12 +43,10 @@
       }
        .like {
         width: 100%;
-
         @include phone{
           display: none;
         }
          @include tablet{
-
          }
       }
       .question_img {
@@ -64,7 +60,6 @@
         }
       }
     }
-
     .thank_you {
       display: flex;
       width: 100%;
@@ -76,18 +71,13 @@
       /* Animacja pojawiania się */
       animation: fadeIn 3s ease forwards;
     }
-
-
-
     .thank_you_h1 {
       font-size: 3rem;
-
       @include phone {
         text-align: center;
         font-size: 2rem;
       }
       @include tablet{
-
       }
     }
 
@@ -116,8 +106,8 @@
       border-radius:2em;
       justify-content: space-evenly;
       @include phone{
-        margin: 1em 0 0 0 ;
-        padding: 1em 0;
+        margin: 1vh 0 0 0 ;
+        padding: 4vw 0;
         border-radius: 2em;
         width: 90vw;
         height: 80vh;
@@ -174,8 +164,8 @@
         }
         label {
           width: 100%; // Changed width to 100% for phones
-          font-size: 1.2em;
-          margin: 1em 0 0.5em 0;
+          font-size: 2vh;
+          margin: 1vh 0 0.5vh 0;
           font-weight: bolder;
 
           @include phone{
@@ -245,9 +235,10 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
         @include phone {
-          padding: 0.75em 3em;
-          font-size: 1.5em;
-          margin-top: 1em;
+          padding: 5vw 16vw;
+          font-size: 2vh;
+          margin: 0;
+
         }
 
         &:hover {

@@ -8,7 +8,7 @@
 
   @include phone {
 
-    padding: 10vh 2vh 0 2vh;
+    padding: 12vh 2vh 0 2vh;
   }
   @include tablet {
 
@@ -59,8 +59,8 @@
       padding: 2vw ;
       height: 80%;
       @include phone {
-        margin-top: 2em;
-        padding: 1em;
+        margin-top: 4vh;
+        padding: 6vw;
         max-width: 100%;
       }
       @include tablet {
@@ -102,7 +102,7 @@
         font-size: $font-size-desktop-p;
         text-align: center;
         @include phone {
-          margin: 0.5em;
+          margin: 1vh;
           font-size:calc($font-size-phone-p);
           width: 100%;
         }
@@ -116,12 +116,11 @@
         font-weight: bolder;
       }
       button {
-        margin: 1vw 0;
-        border: none;
         padding: 1vw 4vw;
+        border: none;
+        font-size: 1.5vh;
         border-radius: 2em;
         font-weight: bolder;
-        font-size: 1.5vh;
         background: #05b2e2;
         color: #ffffff;
         font-family: $font-base;
@@ -129,7 +128,7 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
         @include phone {
-          padding: 0.75em 3em;
+          padding: 1.5vh 6vh;
           font-size: 1em;
           margin-top: 1em;
         }
