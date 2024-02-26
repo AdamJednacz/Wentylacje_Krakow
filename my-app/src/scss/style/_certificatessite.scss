@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   font-family: $font-base;
-  padding: 20vh 0;
+  padding: 20vh 0 0 0;
   @include phone {
     padding-top: 10vh;
     padding-bottom: 2vh;

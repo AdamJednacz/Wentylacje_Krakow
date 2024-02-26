@@ -148,7 +148,7 @@
             }
           }
           p {
-            font-size:calc( $font-size-desktop-p);
+            font-size:calc( $font-size-desktop-p - 0.2rem);
             @include phone {
               font-size: $font-size-phone-p;
             }
