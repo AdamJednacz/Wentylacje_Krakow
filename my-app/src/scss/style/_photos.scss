@@ -29,7 +29,7 @@
       flex-direction: column;
       background-color: #005e78;
       border-radius: 2em;
-      padding: 2em;
+      padding: 2vw;
       width: 40%;
       @include phone {
         padding: 4vw;
@@ -88,7 +88,7 @@
     .photos_items {
       align-self: center;
       flex-direction: row;
-      margin-left: 2em;
+      margin-left: 2vh;
       flex-wrap: wrap;
       width: 60%;
       @include phone {
@@ -117,7 +117,7 @@
         }
         .photos_item {
           max-width: 80%;
-          margin: 4em 0 4em 2.5em;
+          margin: 4vw 0 4vw 1.75vw;
           border-radius: 2em;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
           transition: transform 1s;

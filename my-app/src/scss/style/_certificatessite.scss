@@ -37,7 +37,7 @@
       width: 30vw;
       background-color: #005e78;
       border-radius:2em;
-      padding: 2em;
+      padding: 1.5vw;
       @include phone{
         margin: 1vh 0 0 0 ;
         padding: 4vw;
@@ -106,7 +106,7 @@
       }
 
        img{
-        margin: 2em;
+        margin: 2vh;
         width: 30vw;
         border-radius: 4em;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);

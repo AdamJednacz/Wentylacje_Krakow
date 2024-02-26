@@ -44,6 +44,7 @@
       @include phone{
         justify-content: space-evenly;
         width: auto;
+
       }
       @include tablet{
         justify-content: space-around;
@@ -85,7 +86,8 @@
       height: 62vh;
       overflow: scroll;
       @include tablet{
-        height: 62vh;
+        height: 72vh;
+
       }
     }
     .menu {
@@ -110,6 +112,7 @@
         background-color: #005e78;
         width: 100%;
         top: 150px;
+        top: 150px;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
@@ -125,14 +128,14 @@
       }
       .menu_item {
         color: white;
-        padding:  1.5em;
-        margin: 0 1em ;
+        padding:  1.5vw;
+        margin: 0 1vh ;
         border-radius: 2em;
         transition: transform 0.3s ease, opacity 0.3s ease;
         font-size:1.5vh ;
         cursor: pointer;
         @include phone {
-          padding: 1em;
+          padding: 1.3vh;
         }
         @include tablet {
           font-size: 2rem;
@@ -164,6 +167,6 @@
   &.sticky {
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
   }
 }
