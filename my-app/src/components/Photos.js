@@ -8,10 +8,9 @@ import img6 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img7 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import img8 from "../assets/wykalifikowany.jpg"
 import img9 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
-import img10 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-import img11 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
+
 import ImageModal from "./ImageModal";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 import logo from "../assets/frozekologo-shading.svg";
 import Slider from "react-slick";

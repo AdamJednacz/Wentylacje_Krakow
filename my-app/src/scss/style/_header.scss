@@ -91,7 +91,7 @@
       }
 
     .menu.open{
-      height: 62vh;
+      height: 62%;
       overflow: scroll;
       @include tablet{
         height: 72vh;
@@ -119,12 +119,11 @@
         position: fixed;
         background-color: #005e78;
         width: 100%;
-        top: 150px;
+        top: 9%;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
       }
-
     li {
         list-style: none;
         padding: 0.7em;
