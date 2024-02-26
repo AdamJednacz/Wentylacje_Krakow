@@ -65,7 +65,8 @@ const Plus = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false // Ukryj strzałki dla tabletów
+                    arrows: false, // Ukryj strzałki dla tabletów
+                    dots:false
                 }
             },
             {
@@ -73,7 +74,8 @@ const Plus = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: true // Ukryj strzałki dla telefonów
+                    arrows: true, // Ukryj strzałki dla telefonów
+                    dots:false
                 }
             }
         ]
