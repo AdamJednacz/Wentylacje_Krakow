@@ -121,12 +121,13 @@
         padding: 1vw 4vw;
         border-radius: 2em;
         font-weight: bolder;
-        font-size: 1.5rem;
+        font-size: 1.5vh;
         background: #05b2e2;
         color: #ffffff;
         font-family: $font-base;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         transition: opacity ease-in-out 0.3s, transform 0.5s;
+        cursor: pointer;
         @include phone {
           padding: 0.75em 3em;
           font-size: 1em;

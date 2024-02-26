@@ -10,7 +10,7 @@
 
 .Form {
   font-family: $font-base;
-  padding: 12vh 0 10vh 0;
+  padding: 15vh 0 10vh 0;
   display: flex;
   align-items: center;
   @include phone {
@@ -243,7 +243,7 @@
         font-family: $font-base;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         transition: opacity ease-in-out 0.3s, transform 0.5s;
-
+        cursor: pointer;
         @include phone {
           padding: 0.75em 3em;
           font-size: 1.5em;

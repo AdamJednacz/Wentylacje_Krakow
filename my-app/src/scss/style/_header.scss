@@ -130,6 +130,7 @@
         border-radius: 2em;
         transition: transform 0.3s ease, opacity 0.3s ease;
         font-size:1.5vh ;
+        cursor: pointer;
         @include phone {
           padding: 1em;
         }
@@ -152,6 +153,7 @@
       }
       p{
         font-size:1.5vh;
+        cursor: pointer;
         &:hover {
           color: yellow;
         }
