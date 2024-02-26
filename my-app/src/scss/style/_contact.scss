@@ -19,13 +19,13 @@
       }
     }
     p{
-      font-size: calc($font-size-desktop-p - 0.5em);
+      font-size: calc($font-size-desktop-p);
       font-weight: bolder;
       @include phone{
         font-size: calc($font-size-phone-p );
       }
       @include tablet{
-        font-size: calc($font-size-tablet-p - 0.5em);
+        font-size: calc($font-size-tablet-p );
       }
     }
     .contact_text_container {

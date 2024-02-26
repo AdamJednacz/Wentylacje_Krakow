@@ -24,8 +24,9 @@
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
     @include phone {
       flex-direction: column;
       align-items: center;
@@ -36,14 +37,14 @@
     };
 
     .form_img {
-      width: 100%;
+      width: 35vw;
       animation: fadeIn 3s ease forwards;
       @include tablet{
         display: flex;
         align-items: center;
       }
        .like {
-        width: 80%;
+        width: 100%;
 
         @include phone{
           display: none;
@@ -53,7 +54,7 @@
          }
       }
       .question_img {
-        width: 80%;
+        width: 100%;
 
         @include phone{
           display: none;
@@ -106,7 +107,7 @@
     form {
       padding: 2em 0;
       position: relative;
-      width: 60%;
+      width: 25vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -233,10 +234,10 @@
       .form_btn {
         margin: 2em;
         border: none;
-        padding: 1em 6em;
+        padding: 1vw 6vw;
         border-radius: 3em;
         font-weight: bolder;
-        font-size: 1.5em;
+        font-size: 1.5vh;
         background:#05b2e2;
         color: #ffffff;
         font-family: $font-base;
