@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   font-family: $font-base;
-  padding: 15vh 0;
+  padding: 15vh 0 25vh 0;
   color: #ffffff;
   @include phone {
     height: auto;
-    padding: 5vh 0;
+    padding-top: 10vh;
+    padding-bottom: 0;
   }
 
   @include tablet {
@@ -90,36 +91,50 @@
       flex-direction: column;
       align-items: center;
       width: 40%;
-      padding: 4em;
+      padding: 2em;
       background-color: #005e78;
-      border-radius: 7em;
+      border-radius: 2em;
+      position: relative;
       @include phone {
         margin: 1em 0 0 0 ;
         padding: 1em;
-        border-radius: 5em;
+        border-radius: 1em;
         width: 80%;
       }
-
       @include tablet {
         margin: 1em 0 0 0 ;
-        padding: 1em;
+        padding: 2em;
         border-radius: 5em;
-
         width: 80%;
-
       }
-      img{
-        width: 34%;
+      .catalogues_logo{
+        position: absolute;
+        width: 20%;
+        top: -4% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include phone{
+        position: static;
+        width: 15%;
+        transform: none;
+      }
+        @include tablet{
+          position: static;
+          width: 15%;
+          transform: none;
+        }
       }
       h1 {
         font-size: $font-size-desktop-h1;
         text-align: center;
-
+        margin-bottom: 0;
         @include phone {
           font-size: $font-size-phone-h1;
+          margin: 0;
         }
 
         @include tablet {
+          margin: 0;
           font-size: $font-size-tablet-h1;
         }
       }

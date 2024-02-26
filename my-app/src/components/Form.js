@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import like from "../assets/pngwing.com (12).png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo from "../assets/frozeko logo-shading.svg";
+import logo from "../assets/frozekologo-shading.svg";
 const Form = () => {
     const [submitted, setSubmitted] = useState(false);
     const [emailError, setEmailError] = useState(false);
@@ -44,11 +44,11 @@ const Form = () => {
     return (
         <section className="Form" id="form">
             <div className="container">
-                <div className="form_text">
+                <div className="form_img">
                     {submitted ? (
-                        <LazyLoadImage width={like.width} height={like.height} className="like" src={like} alt={like} />
+                        <LazyLoadImage width={like.width} height={like.height}  className="like" src={like} alt={like} />
                     ) : (
-                        <LazyLoadImage width={like.width} height={like.height} src={question} alt={question} />
+                        <LazyLoadImage width={like.width} height={like.height} className="question_img" src={question} alt={question} />
                     )}
                 </div>
                 {submitted ? (
@@ -58,7 +58,7 @@ const Form = () => {
                     </div>
                 ) : (
                     <form ref={form} onSubmit={sendEmail}>
-                        <img src={logo} alt={logo}/>
+                        <img className="form_logo" src={logo} alt={logo}/>
                         <h1>Masz pytania ?</h1>
                         <div className="form_item">
                             <label htmlFor="user_email">Adres e-mail:</label>

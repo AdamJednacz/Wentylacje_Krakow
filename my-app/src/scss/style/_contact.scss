@@ -2,27 +2,30 @@
   background: #66707a;
   padding: 2em 0;
   font-family: $font-base;
+  @include phone{
+    padding: 4vh 0;
+  }
   .container {
     display: flex;
     flex-direction: column;
     h2{
-      font-size: $font-size-desktop-h2;
+      font-size:calc( $font-size-desktop-h2 - 0.5em) ;
       margin: 0;
       @include phone{
-        font-size: $font-size-phone-h2;
+        font-size:calc( $font-size-phone-h2);
       }
       @include tablet{
-        font-size: $font-size-tablet-h2;
+        font-size: calc($font-size-tablet-h2);
       }
     }
     p{
-      font-size: $font-size-desktop-p;
+      font-size: calc($font-size-desktop-p - 0.5em);
       font-weight: bolder;
       @include phone{
-        font-size: $font-size-phone-p;
+        font-size: calc($font-size-phone-p );
       }
       @include tablet{
-        font-size: $font-size-tablet-p;
+        font-size: calc($font-size-tablet-p - 0.5em);
       }
     }
     .contact_text_container {

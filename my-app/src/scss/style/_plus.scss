@@ -4,72 +4,159 @@
   justify-content: center;
   flex-direction: column;
   font-family: $font-base;
-  padding: 20vh 0; // Dostosuj wartość padding dla różnych urządzeń
+  padding: 20vh 0 10vh 0;
   @include phone {
-    padding: 10vh 0; // Dostosuj wartość padding dla telefonów
-    height: auto;
+    padding: 10vh 0;
   }
-
   @include tablet {
-    padding: 10vh 0; // Dostosuj wartość padding dla tabletów, w tym iPad Air
-    height: auto;
+    padding: 14vh 0  0 0;
   }
+  .container {
+    max-width: 90%; /* Dostosowanie do szerokości karuzeli */
+    margin: 0 auto;
 
-  .plus_site {
-    display: flex;
-
-    img {
-      width: 50%;
-      border-radius: 0 2em 2em 0;
-    }
-
-    img.fade-in,
-    .plus_site_text_container.fade-in {
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    img,
-    .plus_site_text_container {
-      opacity: 1;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .plus_site_text_container {
-
+    @include phone {
+      max-width: 80%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include tablet{
 
-      width: 50%;
-
-      .plus_site_text_box {
-        background-color: #005e78;
-        border-radius: 2em;
-        color: #ffffff;
-        font-size: 1.3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 2em;
-        padding: 2em;
+      max-width: 80%;
+    }
+    .slick-slider {
+      position: relative;
 
 
-        width: 33%;
-        height: 33%;
+      .slick-arrow {
+        color: black;
+        width: 50px;
+        height: 50px;
 
-        h1 {
+        @include phone {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: -2em;
+        @include phone{
+          bottom: 20px;
 
         }
 
-        p {
+        li {
+          button {
+            &::before {
+              color: black;
+              line-height: 80px;
+              width: 40px;
+              height: 40px;
+              font-size: 15px;
+              @include phone{
+                font-size: 10px;
+                width: 10px;
+                height: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .plus_site_container {
+      @include phone{
+        display: flex;
+        align-items: center;
+      }
+      .plus_site {
+        display: flex;
+        flex-direction: row;
+        @include phone {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        @include tablet{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        img {
+          scale: (5/6);
+          width: 50%;
+          height: auto;
+          border-radius: 2em;
+          @include phone {
+           display: none;
+          }
+          @include tabletR{
+            display: none;
+          }
 
+        }
+        .plus_site_text_container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+
+          @include phone {
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            width: auto;
+            padding:2vh;
+          }
+
+          .plus_site_text_box {
+            background-color: #005e78;
+            border-radius: 2em;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 2em;
+            padding: 2em;
+            width: 33%;
+            height: 33%;
+            @include phone {
+              height: auto;
+              width: 80%;
+              border-radius: 1em;
+              margin: 0.5em;
+              padding: 0.5em;
+            }
+            @include tablet{
+              height: auto;
+            }
+
+          }
+          h1 {
+            font-size: calc($font-size-desktop-h1 - 1.5rem);
+            @include phone {
+              font-size: $font-size-phone-h2-plus;
+              margin-bottom: 0;
+            }
+            @include tablet{
+              font-size:calc($font-size-tablet-h1 - 0.5rem) ;
+              margin-bottom: 0;
+            }
+          }
+          p {
+            font-size:calc( $font-size-desktop-p - 0.3rem);
+            @include phone {
+              font-size: $font-size-phone-p;
+            }
+            @include tablet{
+            font-size: calc($font-size-tablet-p - 0.5rem);
+            }
+          }
         }
       }
     }
   }
-
-
 }

@@ -4,13 +4,13 @@ import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo from "../assets/frozeko logo-shading.svg"
+import logo from "../assets/frozekologo-shading.svg"
 const Offer = () => {
     return (
         <section className="offer" id="offer">
             <div className="container">
-                <img className="logo" alt={logo} src={logo}/>
-                <h1>Oferta</h1>
+
+
                 <div className="offer_items">
                     <div className="offer_item">
                         <h2>Montaż</h2>

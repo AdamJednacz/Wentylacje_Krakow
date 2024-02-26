@@ -4,24 +4,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 2vh;
+  padding: 23vh 2vh 15vh 2vh;
 
   @include phone {
     height: auto;
-    padding: 3vh;
+    padding: 10vh 2vh 0 2vh;
   }
   @include tablet {
     height: auto;
-    padding: 2vh;
+    padding-top:14vh;
   }
   .container{
     max-width: 2100px;
     justify-content: space-between;
+
   }
   .about_us_items {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+
     @include phone {
       flex-direction: column;
       align-items: center;
@@ -32,9 +34,6 @@
     }
     .about_us_img{
       transform: scaleX(-1);
-      position: relative;
-      right: 0;
-      top: 0;
       width: 100%;
       max-width:50% ;
       height: auto;
@@ -42,43 +41,51 @@
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.5s ease,opacity 0.3s;
       @include phone {
-        border-radius: 4em;
         max-width: 100%;
       }
       @include tablet {
-        border-radius: 6em;
-        max-width: 100%;
+
+        max-width: 90%;
       }
 
     }
     .about_us_text_item {
+      position: relative;
       color: white;
       background-color: #005e78;
       border-radius: 2em;
       display: flex;
       flex-direction: column;
-      position: relative;
       align-items: center;
       justify-content: space-evenly;
-      left: 2em;
       max-width: 40%;
       padding: 2em 0;
       @include phone {
-        margin-top: 1em;
+        margin-top: 2em;
         padding: 1em;
-        border-radius: 5em;
         max-width: 100%;
-        left: 0;
       }
       @include tablet {
-        margin-top: 1em;
+        margin-top: 2em;
         padding: 1em;
-        border-radius: 5em;
-        left: 0;
-        max-width: 100%;
+        max-width: 87%;
       }
-      .logo{
+      .about_us_logo{
+        position: absolute;
+        width: 20%;
+        top: -5% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include phone {
+        position: static;
         width: 15%;
+        transform: none;
+      }
+        @include tablet{
+          position: static;
+          width: 15%;
+          transform: none;
+        }
       }
       h1 {
         font-size: $font-size-desktop-h1;
@@ -86,6 +93,7 @@
         margin-bottom: 0;
         @include phone {
           font-size: $font-size-phone-h1;
+          margin: 0;
         }
         @include tablet {
          margin-top: 0;
@@ -98,12 +106,12 @@
         text-align: center;
         @include phone {
           margin: 0.5em;
-          font-size:$font-size-phone-p;
+          font-size:calc($font-size-phone-p);
           width: 100%;
         }
         @include tablet {
           width: 100%;
-          font-size: $font-size-tablet-p;
+          font-size:calc( $font-size-tablet-p );
           margin-bottom: 0;
         }
       }
@@ -124,7 +132,7 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         @include phone {
           padding: 0.75em 3em;
-          font-size: 1.5em;
+          font-size: 1em;
           margin-top: 1em;
         }
         @include tablet {

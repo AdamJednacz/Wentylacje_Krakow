@@ -36,12 +36,12 @@
 }
 .container {
   margin: 0 auto;
-  max-width: 2000px;
+  max-width: 90%;
   @include tablet{
-    max-width: 700px;
+    max-width: 90%;
   }
   @include phone{
-    max-width: 300px;
+    max-width: 80%;
   }
 
 }

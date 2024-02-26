@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
 import LG from "../assets/LG_certyfikat.jpg";
-import logo from "../assets/frozeko logo-shading.svg";
+import logo from "../assets/frozekologo-shading.svg";
 
 const CertificatesSite = () => {
     return (
         <section className="CertyficatesSite" id="CertyficatesSite">
             <div className="container">
 
-                <div className="certyficatesSite_text_container">
-                    <img alt={logo} src={logo}/>
+                <div className="certyficatesSite_text">
+                    <img className="certyficatesSite_logo" alt={logo} src={logo}/>
                     <h1>Certyfikaty</h1>
                     <p>
                         Jesteśmy dumni z licznych certyfikatów, które potwierdzają najwyższą jakość naszych produktów
