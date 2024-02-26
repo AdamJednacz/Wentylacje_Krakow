@@ -37,8 +37,6 @@ const Catalogues = () => {
                         <CatalogueItem imageUrl={LG} link="https://www.lg.com/pl/business/klimatyzacja?utm_source=google&utm_medium=cpc&utm_campaign=2023HQSEM_HA_PL_Google_AS-HVAC-HVAC-Brand-LC&utm_content=Broad-HVAC-LC-RSA&gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZhj1GzwNPeLsYQpEG05seDsXIBwaw6JEo6kVs5OQqwIubJCFwu1J_xoCNpsQAvD_BwE" />
                         <CatalogueItem imageUrl={Daikin} link="https://www.daikin.pl/pl_pl/strona.html?gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZuZw94Hcerko1CD3eclkSW8MQBjXcKs0QykFnHG3IK22kiBdis9TNhoCOFAQAvD_BwE" />
                         <CatalogueItem imageUrl={Haier} link="https://www.haier-europe.com/pl_PL/" />
-                    </div>
-                    <div className="catalogues_items">
                         <CatalogueItem imageUrl={Panasonic} link="https://www.aircon.panasonic.eu/PL_pl/ranges/domestic/" />
                         <CatalogueItem imageUrl={Rotenso} link="https://rotenso.com/pl/?gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZm_R_BU2-uGCjtm13yWUDg_gOI-8v0q8qPjLd1KxeL5wXJmxFNQppRoC9AoQAvD_BwE" />
                         <CatalogueItem imageUrl={Gree} link="https://gree.pl/?gad_source=1&gclid=CjwKCAiAx_GqBhBQEiwAlDNAZjGpoxd-VBxX48OsOuowvSq_OuhLWPw7VF8thywePHi_wqhTWRzrbxoCPYoQAvD_BwE" />

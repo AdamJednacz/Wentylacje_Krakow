@@ -6,23 +6,19 @@
   font-family: $font-base;
   display: flex;
   align-items: center;
-
   @include phone {
     padding-top: 10vh;
     height: auto;
   }
-
   @include tablet {
     padding-top: 14vh ;
     height: auto;
   }
   .container{
-    max-width: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .offer_items {
     display: flex;
     justify-content: space-evenly;
@@ -33,17 +29,16 @@
     @include tablet {
       flex-wrap: wrap;
     }
-
     .offer_item {
       background-color: #005e78;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
-      width: 25%;
-      margin: 1em;
+      width: 20vw;
+      margin: 1vw;
       transition: transform 0.5s;
-      padding: 3em;
+      padding: 2.5vw;
       border-radius: 3em;
       @include phone {
         margin: 1em 0 0 0 ;
@@ -55,53 +50,39 @@
         padding: 2em;
         width: 80%;
       }
-
       &:hover {
         transform: scale(1.1);
       }
-
-
       img {
         width: 100%;
-        max-width: 30em;
         border-radius: 3em;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-
         @include phone {
           max-width: 15em;
           border-radius: 1em;
         }
-
         @include tablet {
           max-width: 30em;
         }
       }
-
       h2 {
         font-size:$font-size-desktop-h2;
-
         @include phone {
           font-size: $font-size-phone-h2-offer;
           margin-top: 0;
         }
-
         @include tablet {
           font-size: calc($font-size-phone-h2 + 1rem);
           margin-top: 0;
         }
       }
-
       p {
         text-align: center;
         font-size: $font-size-desktop-p;
-
         @include phone {
           font-size: $font-size-phone-p;
-
         }
-
         @include tablet {
-
           font-size: $font-size-tablet-p;
         }
       }

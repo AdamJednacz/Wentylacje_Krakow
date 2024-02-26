@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   font-family: $font-base;
-  padding: 15vh 0 25vh 0;
+  padding: 15vh 0 10vh 0;
   color: #ffffff;
   @include phone {
     height: auto;
@@ -15,7 +15,6 @@
   }
 
   .container {
-    max-width: 1800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -49,6 +48,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
         @include phone {
           margin: 1em;
         }
@@ -62,9 +62,9 @@
         }
 
         .catalogues_item {
-          max-width: 12em;
+          max-width: 8vw;
           height: auto;
-          margin: 2em;
+          margin: 2vw;
           transition: transform 0.5s;
 
           @include phone {

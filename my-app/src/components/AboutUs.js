@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import logo from "../assets/frozekologo-shading.svg"
 const AboutUs = () => {
     return (
-        <section id="aboutus" className="about_us"  >
+        <section id="aboutus" className="about_us">
             <div className="container">
                 <div className="about_us_items">
                     <LazyLoadImage
