@@ -74,7 +74,6 @@ const Form = () => {
                             <textarea
                                 name="message"
                                 className="message"
-                                type="text"
                                 id="message"
                             />
                             {messageError && <p className="error-message">Musisz napisać Wiadomość!</p>}

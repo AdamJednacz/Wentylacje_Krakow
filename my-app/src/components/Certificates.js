@@ -15,10 +15,10 @@ import Haier from "../assets/Certyfikat autoryzowany HAIER_page-0001.jpg";
 import ImageModal from './ImageModal';
 
 const Certificates = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = (imageSrc, index) => {
         setSelectedImage(imageSrc);
         setCurrentIndex(index);// Aktualizacja imageIndex na podstawie indeksu klikniętego obrazka

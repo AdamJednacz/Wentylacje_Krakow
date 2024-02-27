@@ -43,6 +43,9 @@ const Plus = () => {
 
     const isMobile = useMediaQuery({maxWidth: 1381});
     const [currentIndex, setCurrentIndex] = useState(0);
+    const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
+        <span {...props}>{children}</span>
+    );
 
 
 
@@ -53,28 +56,28 @@ const Plus = () => {
         speed: 600,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <FontAwesomeIcon  icon={faAngleLeft}/>,
-        nextArrow: <FontAwesomeIcon  icon={faAngleRight}/>,
+        prevArrow:<SlickButtonFix><FontAwesomeIcon style={{fontSize:"3rem"}}  icon={faAngleLeft}/></SlickButtonFix>,
+        nextArrow: <SlickButtonFix><FontAwesomeIcon  style={{fontSize:"3rem"}}  icon={faAngleRight}/></SlickButtonFix>,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 10000,
         cssEase: "linear",
         responsive: [
             {
-                breakpoint: 768, // dla tabletów
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false, // Ukryj strzałki dla tabletów
+                    arrows: false,
                     dots:false
                 }
             },
             {
-                breakpoint: 480, // dla telefonów
+                breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: true, // Ukryj strzałki dla telefonów
+                    arrows: true,
                     dots:false
                 }
             }
@@ -86,19 +89,17 @@ const Plus = () => {
     return (
         <section className="plus" id="plusy">
             <div className="container">
-                <Slider {...settings}>
+                <Slider {...settings} >
                     {carouselData.map((item, index) => (
                         <div className="plus_site_container" key={index}>
                             <div className="plus_site" key={index}>
-                                {!isMobile ? (
                                 <LazyLoadImage
                                     alt={item.heading1}
                                     src={item.image}
-                                    height={image.height}
-                                    width={image.width}
+                                    height={item.image.height}
+                                    width={item.image.width}
+                                    style={!isMobile ? {} : { display: "none" }} // Render image only if not in mobile view
                                 />
-                                ) : (
-                                    null )}
                                 <div className="plus_site_text_container">
                                     <div className="plus_site_text_box">
                                         <h1>{item.heading1}</h1>

@@ -1,3 +1,9 @@
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
 .photos {
   color: #ffffff;
   display: flex;
@@ -103,12 +109,17 @@
         justify-content: center;
         width: 80%;
       }
+
       .slick-slider {
         width: 100%;
+        .slick-prev{
+          left:1px
+        }
         .slick-arrow {
           color: black;
           width: 50px;
           height: 50px;
+
           z-index: 1;
           @include phone {
             width: 10vw;
