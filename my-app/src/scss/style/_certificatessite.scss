@@ -6,11 +6,11 @@
   font-family: $font-base;
   padding: 20vh 0 0 0;
   @include phone {
-    padding-top: 10vh;
+    padding-top: 12vh;
     padding-bottom: 2vh;
   }
   @include tablet{
-    padding-top: 16vh;
+    padding-top: 14vh;
     padding-bottom: 0;
   }
 
@@ -34,21 +34,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
       width: 30vw;
       background-color: #005e78;
       border-radius:2em;
-      padding: 2em;
+      padding: 1.5vw;
       @include phone{
-        margin: 1em 0 0 0 ;
-        padding: 1em;
+        margin: 1vh 0 0 0 ;
+        padding: 4vw;
         border-radius: 2em;
         width: 100%;
       }
       @include tablet{
         width: 80%;
-        margin: 1em 0 0 0 ;
-        padding: 2em;
+        margin: 1vh 0 0 0 ;
+        padding: 2.5vw;
         border-radius: 2em;
       }
       .certyficatesSite_logo{
@@ -100,14 +99,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-
       @include phone {
         width: auto;
       }
 
        img{
-        margin: 2em;
+        margin: 2vh;
         width: 30vw;
         border-radius: 4em;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -115,6 +112,7 @@
 
         @include phone {
           border-radius: 2em;
+          width: 100%;
         }
         @include tablet{
           width: 70%;
@@ -126,7 +124,7 @@
 
       button {
         border: none;
-        padding: 1.5vw 4vw;
+        padding: 1vw 3vw;
         border-radius: 3em;
         font-size: 1.5vh;
         font-weight: bolder;
@@ -137,13 +135,13 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
         @include phone {
-          padding: 1em 1.5em;
-          font-size: 1.5rem;
-          margin-top: 1em;
+          padding: 6vw 12vw;
+          font-size: 2vh;
+          margin-top: 1vh;
         }
         @include tablet{
-          font-size: 2rem;
-
+          font-size: 2vh;
+          padding: 3vw 6vw;
         }
 
         &:hover {

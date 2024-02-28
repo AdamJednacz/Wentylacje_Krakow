@@ -8,10 +8,9 @@ import img6 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img7 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import img8 from "../assets/wykalifikowany.jpg"
 import img9 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
-import img10 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-import img11 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
+
 import ImageModal from "./ImageModal";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 import logo from "../assets/frozekologo-shading.svg";
 import Slider from "react-slick";
@@ -20,6 +19,9 @@ import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+
+
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -36,6 +38,12 @@ const Photos = () => {
         setIsModalOpen(false);
     };
 
+    const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
+        <span {...props}>{children}</span>
+    );
+
+
+
     const images = [img2, img3, img4, img5,img6,img7,img8,img9]; // Lista obrazków do przeglądania
     const settings = {
         dots: true,
@@ -44,19 +52,20 @@ const Photos = () => {
         speed: 600,
         slidesToShow: 3,
         slidesToScroll: 3,
-        prevArrow: <FontAwesomeIcon  icon={faAngleLeft}/>,
-        nextArrow: <FontAwesomeIcon  icon={faAngleRight}/>,
+        prevArrow:<SlickButtonFix><FontAwesomeIcon style={{fontSize:"3rem"}}  icon={faAngleLeft}/></SlickButtonFix>,
+        nextArrow: <SlickButtonFix><FontAwesomeIcon  style={{fontSize:"3rem"}}  icon={faAngleRight}/></SlickButtonFix>,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 10000,
         cssEase: "linear",
         responsive: [
             {
-                breakpoint: 900, // dla tabletów
+                breakpoint: 768, // dla tabletów
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    arrows: true // Ukryj strzałki dla tabletów
+                    arrows: true, // Ukryj strzałki dla tabletów
+                    dots:false
                 }
             },
             {
@@ -88,7 +97,7 @@ const Photos = () => {
                 </div>
 
                 <div className="photos_items">
-                    <Slider {...settings}>
+                    <Slider {...settings} >
                 {images.map((image, index) => (
                         <LazyLoadImage
                             className="photos_item"

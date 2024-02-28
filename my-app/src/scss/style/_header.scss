@@ -32,7 +32,15 @@
           font-size: 1vh;
         }
         @include tablet {
-          font-size: 1.5vh;
+          font-size: 2vh;
+        }
+        .icon{
+          @include phone{
+            font-size: 2rem;
+          }
+          @include tablet{
+            font-size: 4rem;
+          }
         }
       }
     }
@@ -42,8 +50,9 @@
       justify-content: center;
       align-items: center;
       @include phone{
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: auto;
+
       }
       @include tablet{
         justify-content: space-around;
@@ -51,7 +60,7 @@
       }
       img {
         width: 20%;
-        margin-right: 1em;
+        margin-right:1em ;
         @include phone {
           width: 10%;
         }
@@ -60,17 +69,17 @@
         }
       }
       h1 {
-       margin: 1vw;
+        margin: 1.5vw 0;
         font-size: $font-size-desktop-h1-header;
         font-style: italic;
         color: #ffffff;
         @include phone {
           font-size: $font-size-phone-h1;
-          margin: 0.5em 0;
+          margin: 3vh;
         }
         @include tablet {
           font-size: calc($font-size-tablet-h1 + 1rem);
-          margin: 0.5em;
+          margin: 3vh;
         }
 
       }
@@ -82,16 +91,17 @@
       }
 
     .menu.open{
-      height: 72vh;
+      height: 62%;
       overflow: scroll;
       @include tablet{
-        height: 60vh;
+        height: 72vh;
+
       }
     }
     .menu {
       display: flex;
       align-items: center;
-
+      justify-content: center;
       @include phone {
         padding: 0;
         background-color: #005e78;
@@ -109,12 +119,11 @@
         position: fixed;
         background-color: #005e78;
         width: 100%;
-        top: 145px;
+        top: 9%;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
       }
-
     li {
         list-style: none;
         padding: 0.7em;
@@ -125,18 +134,18 @@
       }
       .menu_item {
         color: white;
-        padding:  1.5em;
-        margin: 0 1em ;
+        padding:  1.5vw;
+        margin: 0 1vh ;
         border-radius: 2em;
         transition: transform 0.3s ease, opacity 0.3s ease;
         font-size:1.5vh ;
         cursor: pointer;
         @include phone {
-          padding: 1em;
+          padding: 1.3vh;
         }
         @include tablet {
-          font-size: 2rem;
-          padding: 1em;
+          font-size: 1.8vh;
+          padding: 3vw;
         }
         &:hover {
           opacity: 0.4;
@@ -164,6 +173,6 @@
   &.sticky {
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
   }
 }

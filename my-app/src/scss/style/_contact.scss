@@ -1,15 +1,15 @@
 .contact {
   background: #66707a;
-  padding: 2em 0;
+  padding: 2vh 0;
   font-family: $font-base;
   @include phone{
-    padding: 4vh 0;
+    padding: 5vh 0 2vh 0;
   }
   .container {
     display: flex;
     flex-direction: column;
     h2{
-      font-size:calc( $font-size-desktop-h2 - 0.5em) ;
+      font-size:calc( $font-size-desktop-h2) ;
       margin: 0;
       @include phone{
         font-size:calc( $font-size-phone-h2);
@@ -47,6 +47,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
       }
     }
   }
