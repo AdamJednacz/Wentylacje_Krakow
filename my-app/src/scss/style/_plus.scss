@@ -38,21 +38,27 @@
     .slick-slider {
       position: relative;
       .slick-prev{
+        @include tablet{
+          right: 100%;
+        }
         @include tabletR{
           left:-50px
         }
         @include phone{
-
+          right: 95%;
         }
 
       }
       .slick-next{
+        @include tablet {
+          left: 100%;
+        }
 
         @include tabletR{
           right: -50px;
         }
         @include phone{
-          right:  0;
+          left: 95%;
         }
 
       }
@@ -99,17 +105,23 @@
     }
     .plus_site_container {
       display: flex;
-      justify-content: space-between;
-     
+
+      @include plusSpecial{
+        display: flex;
+        justify-content: center;
+      }
+
 
       @include phone{
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
       .plus_site {
         display: flex;
         flex-direction: row;
         align-items: center;
+
         @include phone {
           flex-direction: column;
           align-items: center;
@@ -119,6 +131,10 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+        }
+        @include plusSpecial{
+          justify-content: space-between;
+          width: 95%;
         }
         .plus_site_img_info_container{
           display: flex;
@@ -219,7 +235,7 @@
             @include plusSpecial{
               flex-direction: column;
               padding:3vh ;
-              height: 15vh;
+              height: 17vh;
               width: 33vw;
             }
           }
