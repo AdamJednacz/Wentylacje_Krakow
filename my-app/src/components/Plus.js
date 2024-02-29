@@ -14,6 +14,7 @@ const Plus = () => {
     const carouselData = [
         {
             image: feather,
+            text0:"Wykorzystanie klimatyzacji do ogrzewania pomieszczeń stało się coraz bardziej popularne z uwagi na szereg korzyści, jakie niesie to rozwiązanie. Oto kilka aspektów związanych z zastosowaniem klimatyzacji do ogrzewania:",
             heading1: "Komfort termiczny na życzenie:",
             text1: "Klimatyzacja umożliwia dostosowanie temperatury w domu do własnych preferencji. W gorące dni można schłodzić pomieszczenia, a w chłodniejsze dni podgrzać je, co zapewnia wyjątkowy komfort dla mieszkańców.",
             heading2: "Lepszy sen i wydajność:",
@@ -23,6 +24,7 @@ const Plus = () => {
         },
         {
             image: saivings,
+            text0:"",
             heading1: "Ochrona przed przegrzaniem:",
             text1: "Klimatyzacja zapobiega przegrzaniu pomieszczeń, co ma kluczowe znaczenie szczególnie podczas upalnych dni. Jest to istotne dla osób starszych, dzieci i osób o słabym zdrowiu, zapewniając im komfort i bezpieczeństwo w domu.",
             heading2: "Regulacja wilgotności powietrza:",
@@ -32,6 +34,7 @@ const Plus = () => {
         },
         {
             image: health,
+            text0:"",
             heading1: "Oszczędne zużycie energii:",
             text1: "Nowoczesne klimatyzatory są zaprojektowane z myślą o efektywnym zużyciu energii, co pozwala obniżyć rachunki za prąd i korzystać z zasobów energetycznych w bardziej ekonomiczny sposób.",
             heading2: "Alternatywa dla otwierania okien:",
@@ -59,7 +62,7 @@ const Plus = () => {
         prevArrow:<SlickButtonFix><FontAwesomeIcon style={{fontSize:"3rem"}}  icon={faAngleLeft}/></SlickButtonFix>,
         nextArrow: <SlickButtonFix><FontAwesomeIcon  style={{fontSize:"3rem"}}  icon={faAngleRight}/></SlickButtonFix>,
         initialSlide: 0,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 10000,
         cssEase: "linear",
         responsive: [
@@ -68,7 +71,7 @@ const Plus = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
+                    arrows: true,
                     dots:false
                 }
             },
@@ -93,6 +96,7 @@ const Plus = () => {
                     {carouselData.map((item, index) => (
                         <div className="plus_site_container" key={index}>
                             <div className="plus_site" key={index}>
+                                <div className="plus_site_img_info_container">
                                 <LazyLoadImage
                                     alt={item.heading1}
                                     src={item.image}
@@ -100,6 +104,10 @@ const Plus = () => {
                                     width={item.image.width}
                                     style={!isMobile ? {} : { display: "none" }} // Render image only if not in mobile view
                                 />
+                                <div className="plus_site_img_info">
+                                    <p>{item.text0}</p>
+                                </div>
+                                </div>
                                 <div className="plus_site_text_container">
                                     <div className="plus_site_text_box">
                                         <h1>{item.heading1}</h1>
