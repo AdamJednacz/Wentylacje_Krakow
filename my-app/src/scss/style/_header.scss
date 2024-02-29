@@ -97,6 +97,9 @@
         height: 72vh;
 
       }
+      @include tabletR{
+        height: 100vh;
+      }
     }
     .menu {
       display: flex;
@@ -123,6 +126,10 @@
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
+      }
+      @include tabletR{
+        overflow: hidden;
+
       }
     li {
         list-style: none;
