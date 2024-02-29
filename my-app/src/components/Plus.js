@@ -15,18 +15,18 @@ const Plus = () => {
         {
             image: feather,
             text0:"Wykorzystanie klimatyzacji do ogrzewania pomieszczeń stało się coraz bardziej popularne z uwagi na szereg korzyści, jakie niesie to rozwiązanie. Oto kilka aspektów związanych z zastosowaniem klimatyzacji do ogrzewania:",
-            heading1: "Komfort termiczny na życzenie:",
-            text1: "Klimatyzacja umożliwia dostosowanie temperatury w domu do własnych preferencji. W gorące dni można schłodzić pomieszczenia, a w chłodniejsze dni podgrzać je, co zapewnia wyjątkowy komfort dla mieszkańców.",
+            heading1: "Zrównoważony komfort przez cały rok:",
+            text1: "Dzięki funkcji ogrzewania, klimatyzatory zapewniają użytkownikom komfortowe warunki pomieszczeniowe zarówno w ciepłe, jak i zimne dni. Bez potrzeby instalowania oddzielnych systemów grzewczych, użytkownicy mogą cieszyć się zrównoważonym komfortem cieplnym przez cały rok.",
             heading2: "Lepszy sen i wydajność:",
             text2: "Optymalna temperatura zapewniana przez klimatyzację sprzyja lepszemu snu oraz zwiększa wydajność w codziennych czynnościach. Komfortowy klimat sprzyja zarówno odpoczynkowi, jak i skupieniu, co przekłada się na lepszą jakość życia.",
-            heading3: "Poprawa jakości powietrza:",
-            text3: "Nowoczesne klimatyzatory wyposażone są w filtry powietrza, które eliminują zanieczyszczenia, takie jak kurz czy pyłki roślin, co pozwala cieszyć się lepszą jakością powietrza w domu, co jest szczególnie istotne dla alergików."
+            heading3: "Czyste powietrze:",
+            text3: "Wiele nowoczesnych klimatyzatorów wyposażonych jest w zaawansowane filtry, które usuwają zanieczyszczenia z powietrza. Ogrzewanie za pomocą klimatyzacji pozwala więc nie tylko na utrzymanie odpowiedniej temperatury, ale również na poprawę jakości powietrza w pomieszczeniu."
         },
         {
             image: saivings,
-            text0:"",
-            heading1: "Ochrona przed przegrzaniem:",
-            text1: "Klimatyzacja zapobiega przegrzaniu pomieszczeń, co ma kluczowe znaczenie szczególnie podczas upalnych dni. Jest to istotne dla osób starszych, dzieci i osób o słabym zdrowiu, zapewniając im komfort i bezpieczeństwo w domu.",
+            text0:"Ogólnie rzecz biorąc, zastosowanie klimatyzacji do ogrzewania pomieszczeń jest rozwiązaniem wygodnym, efektywnym i przyjaznym dla środowiska, które spełnia potrzeby użytkowników przez cały rok.",
+            heading1: "Precyzyjna kontrola temperatury:",
+            text1: "Klimatyzatory pozwalają na precyzyjną regulację temperatury w pomieszczeniu. Za pomocą termostatów można łatwo dostosować ustawienia ogrzewania do indywidualnych preferencji, zapewniając optymalny komfort termiczny.",
             heading2: "Regulacja wilgotności powietrza:",
             text2: "Klimatyzacja usuwa nadmierną wilgoć z powietrza, co przeciwdziała rozwojowi pleśni i grzybów, poprawiając jakość powietrza w domu i dbając o zdrowie mieszkańców.",
             heading3: "Poprawa koncentracji i bezpieczeństwa:",
@@ -34,11 +34,11 @@ const Plus = () => {
         },
         {
             image: health,
-            text0:"",
-            heading1: "Oszczędne zużycie energii:",
-            text1: "Nowoczesne klimatyzatory są zaprojektowane z myślą o efektywnym zużyciu energii, co pozwala obniżyć rachunki za prąd i korzystać z zasobów energetycznych w bardziej ekonomiczny sposób.",
-            heading2: "Alternatywa dla otwierania okien:",
-            text2: "W niektórych przypadkach klimatyzacja może być preferowaną opcją w porównaniu z otwieraniem okien, szczególnie w obszarach o dużym zanieczyszczeniu powietrza lub głośnym otoczeniu, zapewniając ciszę i czyste powietrze w domu.",
+            text0:"Coraz więcej klimatyzatorów jest wyposażanych w funkcje inteligentnego sterowania, które umożliwiają zdalne zarządzanie systemem grzewczym za pomocą smartfonów lub innych urządzeń. To pozwala użytkownikom na optymalne wykorzystanie systemu oraz oszczędność energii.",
+            heading1: "Efektywność energetyczna:",
+            text1: "Nowoczesne klimatyzatory są projektowane z myślą o efektywności energetycznej. Dzięki zaawansowanym technologiom, takim jak inwerterowe kompresory, systemy te mogą osiągać wysoką efektywność nawet podczas ogrzewania, co przekłada się na niższe rachunki za energię.",
+            heading2: "Oszczędność miejsca:",
+            text2: "Tradycyjne systemy ogrzewania, takie jak piece gazowe czy piece na paliwo stałe, zajmują sporo miejsca w pomieszczeniu. Zastosowanie klimatyzacji do ogrzewania eliminuje potrzebę instalacji dodatkowych urządzeń grzewczych, co pozwala zaoszczędzić cenną przestrzeń.",
             heading3: "Redukcja emisji gazów cieplarnianych:",
             text3: "Klimatyzacja pozwala utrzymać komfortową temperaturę w domu, co może zmniejszyć potrzebę korzystania z ogrzewania lub chłodzenia za pomocą źródeł energii emitujących szkodliwe substancje, przyczyniając się tym samym do ograniczenia emisji gazów cieplarnianych."
         },
