@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -45,7 +45,7 @@ const Plus = () => {
     ];
 
     const isMobile = useMediaQuery({maxWidth: 1381});
-    const [currentIndex, setCurrentIndex] = useState(0);
+
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <span {...props}>{children}</span>
     );
@@ -87,7 +87,7 @@ const Plus = () => {
         ]
     };
 
-    const {image} = carouselData[currentIndex];
+
 
     return (
         <section className="plus" id="plusy">

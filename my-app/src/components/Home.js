@@ -18,7 +18,7 @@ const HomeSection = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed; // Ustawienie tła na środku w poziomie i pionie
   @media (min-width: 1381px) {
-    background-position: 120% 50%; // Ustawienie dla większych ekranów, tło po prawej stronie
+    background-position: 120% 70%; // Ustawienie dla większych ekranów, tło po prawej stronie
     background-size: 29%
   }
   @media (min-width: 768px) and (max-width: 1381px) and (orientation: landscape) {
