@@ -7,7 +7,7 @@ import Offer from './components/Offer';
 import Contact from './components/Contact';
 import Plus from './components/Plus';
 import Certificates from "./components/Certificates";
-import Modal from 'react-modal';
+
 import LoadingPage from "./components/LoadingPage";
 function App() {
     const [isLoading, setIsLoading] = useState(true);
