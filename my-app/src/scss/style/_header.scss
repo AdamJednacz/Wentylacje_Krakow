@@ -78,7 +78,7 @@
       }
     .menu.open{
       height: 62%;
-      overflow: scroll;
+      overflow: hidden;
       @include tablet{
         height: 72vh
       }
@@ -90,6 +90,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       @include phone {
         padding: 0;
         background-color: #005e78;
@@ -113,7 +114,7 @@
         flex-direction: column;
       }
       @include tabletR{
-        overflow: hidden;
+
 
       }
     li {
@@ -123,6 +124,9 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+      @include tabletR{
+        padding: 0;
+      }
       }
       .menu_item {
         color: white;
