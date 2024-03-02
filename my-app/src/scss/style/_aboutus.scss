@@ -5,17 +5,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20vh 2vh 5vh 2vh;
-
   @include phone {
     padding: 14vh 2vh 0 2vh;
   }
   @include tablet {
-
     padding-top:12vh;
   }
   .container{
     justify-content: space-between;
-
   }
   .about_us_items {
     display: flex;
@@ -24,11 +21,9 @@
     align-items: center;
     @include phone {
       flex-direction: column;
-      align-items: center;
     }
     @include tablet {
       flex-direction: column;
-      align-items: center;
     }
     .about_us_img{
       transform: scaleX(-1);
@@ -115,12 +110,11 @@
         font-weight: bolder;
       }
       button {
-        padding: 1vw 4vw;
+        padding: 2vh 4vw;
         border: none;
         font-size: 1.5vh;
         border-radius: 2em;
         font-weight: bolder;
-        font-size: 1.5vh;
         background: #05b2e2;
         color: #ffffff;
         font-family: $font-base;
@@ -128,14 +122,12 @@
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
         @include phone {
-          padding: 3vw 10vw;
-          font-size: 1.5vh;
+          padding: 2vh 10vw;
           margin-top: 1em;
         }
         @include tablet {
           border-radius:3em ;
-          padding: 3vw 10vw;
-          font-size: 1.5vh;
+          padding: 3vh 10vw;
           margin-top: 1em;
         }
         &:hover {

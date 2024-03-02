@@ -9,7 +9,6 @@ import saivings from "../assets/saivings.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 import {useMediaQuery} from "react-responsive";
-
 const Plus = () => {
     const carouselData = [
         {
@@ -43,15 +42,10 @@ const Plus = () => {
             text3: "Klimatyzacja pozwala utrzymać komfortową temperaturę w domu, co może zmniejszyć potrzebę korzystania z ogrzewania lub chłodzenia za pomocą źródeł energii emitujących szkodliwe substancje, przyczyniając się tym samym do ograniczenia emisji gazów cieplarnianych."
         },
     ];
-
     const isMobile = useMediaQuery({maxWidth: 1381});
-
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <span {...props}>{children}</span>
     );
-
-
-
     const settings = {
         dots: true,
         arrows: true,
@@ -66,8 +60,7 @@ const Plus = () => {
         autoplaySpeed: 10000,
         cssEase: "linear",
         responsive: [
-            {
-                breakpoint: 768,
+            {   breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -75,8 +68,7 @@ const Plus = () => {
                     dots:false
                 }
             },
-            {
-                breakpoint: 480,
+            {   breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -86,9 +78,6 @@ const Plus = () => {
             }
         ]
     };
-
-
-
     return (
         <section className="plus" id="plusy">
             <div className="container">
@@ -130,6 +119,4 @@ const Plus = () => {
         </section>
     );
 };
-
-
 export default Plus;

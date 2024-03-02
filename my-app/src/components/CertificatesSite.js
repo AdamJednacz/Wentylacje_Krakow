@@ -7,7 +7,6 @@ const CertificatesSite = () => {
     return (
         <section className="CertyficatesSite" id="CertyficatesSite">
             <div className="container">
-
                 <div className="certyficatesSite_text">
                     <img className="certyficatesSite_logo" alt={logo} src={logo}/>
                     <h1>Certyfikaty</h1>

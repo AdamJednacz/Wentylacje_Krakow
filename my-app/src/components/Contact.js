@@ -1,9 +1,9 @@
 import React from 'react';
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-const center = [50.022270, 19.926915]; // Współrzędne geograficzne Krakowa
-const markerPosition = [50.022270, 19.926915]; // Współrzędne geograficzne markera
-const zoom = 15; // Poziom przybliżenia
+const center = [50.022270, 19.926915];
+const markerPosition = [50.022270, 19.926915];
+const zoom = 15;
 const Contact = () => {
     return (
         <section className="contact" id="contact">

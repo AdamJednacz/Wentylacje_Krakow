@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import img2 from "../assets/wykalifikowany.jpg"
 import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
@@ -8,42 +7,30 @@ import img6 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img7 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import img8 from "../assets/wykalifikowany.jpg"
 import img9 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
-
 import ImageModal from "./ImageModal";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-
 import logo from "../assets/frozekologo-shading.svg";
 import Slider from "react-slick";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-
     const openModal = (imageSrc, index) => {
         setSelectedImage(imageSrc);
         setCurrentIndex(index);
         setIsModalOpen(true);
     };
-
     const closeModal = () => {
         setSelectedImage(null);
         setIsModalOpen(false);
     };
-
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <span {...props}>{children}</span>
     );
-
-
-
     const images = [img2, img3, img4, img5,img6,img7,img8,img9]; // Lista obrazków do przeglądania
     const settings = {
         dots: true,
@@ -59,29 +46,24 @@ const Photos = () => {
         autoplaySpeed: 10000,
         cssEase: "linear",
         responsive: [
-            {
-                breakpoint: 768, // dla tabletów
+            {   breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    arrows: true, // Ukryj strzałki dla tabletów
+                    arrows: true,
                     dots:false
                 }
             },
-            {
-                breakpoint: 480, // dla telefonów
+            {   breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    arrows: true, // Ukryj strzałki dla telefonów
+                    arrows: true,
                     dots:false
                 }
             }
         ]
     };
-
-
-
     return (
         <section className="photos" id="photos">
             <div className="container">
@@ -95,7 +77,6 @@ const Photos = () => {
                         Dołącz do naszego świata i zobacz, jak wspólnie tworzymy sukces!
                     </p>
                 </div>
-
                 <div className="photos_items">
                     <Slider {...settings} >
                 {images.map((image, index) => (
@@ -111,7 +92,6 @@ const Photos = () => {
                 ))}
                     </Slider>
                 </div>
-
                 <ImageModal
                     isOpen={isModalOpen}
                     closeModal={closeModal}
@@ -124,5 +104,4 @@ const Photos = () => {
         </section>
     );
 };
-
 export default Photos;

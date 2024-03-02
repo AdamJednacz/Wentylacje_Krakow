@@ -1,17 +1,14 @@
-
-
 .slick-prev::before,
 .slick-next::before {
   display: none;
 }
-
 .plus {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: $font-base;
-  padding: 18vh 0 0 0;
+  padding: 12vh 0 0 0;
   @include phone {
     padding: 12vh 0 0 0 ;
   }
@@ -24,7 +21,6 @@
   .container {
     max-width: 90%; /* Dostosowanie do szerokości karuzeli */
     margin: 0 auto;
-
     @include phone {
       max-width: 80%;
       display: flex;
@@ -32,7 +28,6 @@
       justify-content: center;
     }
     @include tablet{
-
       max-width: 80%;
     }
     .slick-slider {
@@ -60,30 +55,23 @@
         @include phone{
           left: 95%;
         }
-
       }
       .slick-arrow {
-
         z-index: 1;
         color: black;
         width: 50px;
         height: 50px;
-
         @include phone {
           width: 10vw;
           height: 10vw;
         }
-
       }
-
       .slick-dots {
         position: absolute;
         bottom: 2em;
         @include phone{
           bottom: 20px;
-
         }
-
         li {
           button {
             &::before {
@@ -97,7 +85,6 @@
                 width: 10px;
                 height: 10px;
               }
-
             }
           }
         }
@@ -105,15 +92,10 @@
     }
     .plus_site_container {
       display: flex;
-
       @include plusSpecial{
-        display: flex;
         justify-content: center;
       }
-
-
       @include phone{
-        display: flex;
         align-items: center;
         justify-content: space-between;
       }
@@ -121,16 +103,12 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-
+        justify-content: center;
         @include phone {
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
         }
         @include tablet{
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
         }
         @include plusSpecial{
           justify-content: space-between;
@@ -143,14 +121,11 @@
           @include phone {
             display: none;
           }
-
           @include tablet{
             display: none;
           }
           img {
-
             width: 40vw;
-
             border-radius: 2em;
             @include phone {
               display: none;
@@ -161,7 +136,6 @@
             @include tabletR{
               height: auto;
             }
-
           }
           .plus_site_img_info{
             background-color: #005e78;
@@ -184,16 +158,13 @@
             }
           }
         }
-
         .plus_site_text_container {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
-
           @include plusSpecial{
             flex-wrap: nowrap;
             flex-direction: column;
-
           }
           @include tablet{
             flex-wrap: wrap;
@@ -206,7 +177,6 @@
             width: auto;
             padding:2vw;
           }
-
           .plus_site_text_box {
             background-color: #005e78;
             border-radius: 2em;

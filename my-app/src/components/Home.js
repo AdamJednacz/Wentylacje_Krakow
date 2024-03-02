@@ -11,10 +11,8 @@ import Catalogues from "./Catalogues";
 import CertificatesSite from "./CertificatesSite";
 import Form from "./Form";
 import imgTlo3 from "../assets/logo_shading_tło_2.png";
-
 const HomeSection = styled.section`
   background-image: url(${imgTlo3});
- 
   background-repeat: no-repeat;
   background-attachment: fixed; // Ustawienie tła na środku w poziomie i pionie
   @media (min-width: 1381px) {

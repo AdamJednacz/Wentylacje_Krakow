@@ -1,8 +1,6 @@
-
 import './scss/App.scss';
 import React, {useEffect, useState} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Offer from './components/Offer';
@@ -11,20 +9,15 @@ import Plus from './components/Plus';
 import Certificates from "./components/Certificates";
 import Modal from 'react-modal';
 import LoadingPage from "./components/LoadingPage";
-
 function App() {
     const [isLoading, setIsLoading] = useState(true);
-
     useEffect(() => {
-        // Symulacja ładowania przez 5 sekund
         setTimeout(() => {
             setIsLoading(false);
-        }, 8000);
+        }, 4000);
     }, []);
-
     return (
         <BrowserRouter>
-
                 {isLoading ? (
                     <Routes>
                       <Route path="/" element={<LoadingPage />} />
@@ -39,7 +32,6 @@ function App() {
                         <Route path="/certyfikaty" element={<Certificates />} />
                     </Routes>
                 )}
-
         </BrowserRouter>
     );
 }

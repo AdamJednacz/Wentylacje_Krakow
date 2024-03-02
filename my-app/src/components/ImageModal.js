@@ -2,7 +2,6 @@ import React from 'react';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-
 const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCurrentIndex }) => {
     const customStyles = {
         content: {
@@ -24,15 +23,12 @@ const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCur
             zIndex: "100"
         },
     };
-
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
     };
-
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     };
-
     return (
         <Modal
             isOpen={isOpen}
@@ -44,7 +40,6 @@ const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCur
             <button className="ImageModalClose" onClick={closeModal}>
                 &#x2715;
             </button>
-
                 <img
                     src={images[currentIndex]}
                     alt="Powiększony obrazek"
@@ -52,9 +47,7 @@ const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCur
                 />
                 <FontAwesomeIcon icon={faAngleLeft} className="modal_icons modal_left_icon" onClick={handlePrev} />
                 <FontAwesomeIcon icon={faAngleRight} className="modal_icons modal_right_icon" onClick={handleNext} />
-
         </Modal>
     );
 };
-
 export default ImageModal;

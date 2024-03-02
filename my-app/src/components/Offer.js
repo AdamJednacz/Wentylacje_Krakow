@@ -4,13 +4,10 @@ import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemysl
 import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 const Offer = () => {
     return (
         <section className="offer" id="offer">
             <div className="container">
-
-
                 <div className="offer_items">
                     <div className="offer_item">
                         <h2>Montaż</h2>

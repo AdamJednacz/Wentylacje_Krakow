@@ -15,7 +15,6 @@ import Haier from "../assets/Certyfikat autoryzowany HAIER_page-0001.jpg";
 import ImageModal from './ImageModal';
 
 const Certificates = () => {
-
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,14 +23,12 @@ const Certificates = () => {
         setCurrentIndex(index);// Aktualizacja imageIndex na podstawie indeksu klikniętego obrazka
         setIsModalOpen(true);
     };
-
     const closeModal = () => {
         setSelectedImage(null);
         setIsModalOpen(false);
     };
 
     const images = [RotensoH2, RotensoS5, RotensoI3, RotensoP4, GreeP6, GreeS7, Sinclair9, LG11 ,dyplom1,Gazy8, Mitsubishi10,Samsung,Haier ];
-
     return (
         <section className="Certificates" id="certyfikaty">
             <div className="container">
@@ -59,5 +56,4 @@ const Certificates = () => {
         </section>
     );
 };
-
 export default Certificates;

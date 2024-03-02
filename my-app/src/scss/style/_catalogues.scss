@@ -5,12 +5,10 @@
   padding: 15vh 0 0 0;
   color: #ffffff;
   @include phone {
-
     padding-top: 12vh;
-
   }
   @include tablet {
-    padding-top: 12.5vh;
+    padding-top: 12vh;
   }
   .container {
     display: flex;
@@ -28,12 +26,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include phone {
-        flex-direction: column;
-      }
-      @include tablet {
-        flex-direction: column;
-      }
       .catalogues_items {
         display: flex;
         flex-direction: row;
@@ -51,18 +43,15 @@
         }
         .catalogues_item {
           max-width: 8vw;
-          height: auto;
           margin: 2vw;
           transition: transform 0.5s;
           @include phone {
             max-width: 20vw;
-            height: auto;
-            margin: 1em;
+            margin: 1vw;
           }
           @include tablet {
             max-width: 20vw;
-            height: auto;
-            margin: 1em;
+            margin: 1vw;
           }
           &:hover {
             transform: scale(1.5);
@@ -88,7 +77,7 @@
       @include tablet {
         margin: 1vh 0 0 0 ;
         padding: 2.25vw;
-        border-radius: 5em;
+        border-radius: 2em;
         width: 80%;
       }
       .catalogues_logo{

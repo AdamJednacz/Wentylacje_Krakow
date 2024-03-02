@@ -40,7 +40,7 @@
         -webkit-text-stroke: 0 #383d52;
         border-right: 4px solid #005e78 ;
         overflow: hidden;
-        animation: animate 4s linear infinite;
+        animation: animate 2s linear infinite;
       }
       @include phone{
         font-size: 7vh;
@@ -58,7 +58,7 @@
       -webkit-text-stroke: 0.3vw #005e78;
       text-transform: uppercase;
       animation-name: appear;
-      animation-duration:5s ;
+      animation-duration:2.5s ;
       -webkit-box-reflect: below 1px linear-gradient(transparent , #0004);
       line-height: 1em;
       outline: none;
