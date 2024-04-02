@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import img2 from "../assets/wykalifikowany.jpg"
-import img3 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
-import img4 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-import img5 from "../assets/wykalifikowany.jpg"
-import img6 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
-import img7 from "../assets/brodaty-mezczyzna-w-ogolnej-uzyciu-tabletu.jpg"
-import img8 from "../assets/wykalifikowany.jpg"
-import img9 from "../assets/zblizenie-pracownika-fizycznego-w-zakladzie-przemyslowej-linii-produkcyjnej.jpg"
+import img2 from "../assets/galeriafot(1).jpg"
+import img3 from "../assets/galeriafot(2).jpg"
+import img4 from "../assets/galeriafot(3).jpg"
+import img5 from "../assets/galeriafot(4).jpg"
+import img6 from "../assets/galeriafot(5).jpg"
+import img7 from "../assets/galeriafot(6).jpg"
+import img8 from "../assets/galeriafot(7).jpg"
+import img9 from "../assets/galeriafot(8).jpg"
+import img10 from "../assets/galeriafot(9).jpg"
+import img11 from "../assets/galeriafot(10).jpg"
+import img12 from "../assets/galeriafot(11).jpg"
+import img13 from "../assets/galeriafot(12).jpg"
+import img14 from "../assets/galeriafot(13).jpg"
 import ImageModal from "./ImageModal";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import logo from "../assets/frozekologo-shading.svg";
@@ -31,7 +36,7 @@ const Photos = () => {
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <span {...props}>{children}</span>
     );
-    const images = [img2, img3, img4, img5,img6,img7,img8,img9]; // Lista obrazków do przeglądania
+    const images = [img14, img3, img4, img5,img6,img7,img8,img9,img10,img11,img12,img13,img2]; // Lista obrazków do przeglądania
     const settings = {
         dots: true,
         arrows: true,

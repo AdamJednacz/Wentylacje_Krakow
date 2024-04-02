@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import question from "../assets/pngwing.com (11).png";
+import question from "../assets/question.png";
 import emailjs from '@emailjs/browser';
-import like from "../assets/pngwing.com (12).png";
+import like from "../assets/like.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import logo from "../assets/frozekologo-shading.svg";

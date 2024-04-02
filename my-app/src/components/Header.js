@@ -8,16 +8,18 @@ import logo from "../assets/frozekologo-shading.svg"
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 1381});
     const [isMenuVisible, setMenuVisible] = useState(false);
+
     const toggleMenu = () => {
         setMenuVisible(!isMenuVisible);
     };
+
     return (
         <section className="header sticky">
             <div className="container">
                         <div className="h1_hamburg">
                             <div className="h1_logo">
                             <img alt={logo} src={logo}/>
-                            <h1 lang="en">Frozeko</h1>
+                                <h1 lang="pl">Frozeko</h1>
                                 {isMobile &&(
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (

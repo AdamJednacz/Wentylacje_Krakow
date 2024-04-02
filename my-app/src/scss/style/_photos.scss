@@ -95,6 +95,7 @@
       margin-left: 2vh;
       flex-wrap: wrap;
       width: 60%;
+
       @include phone {
         flex-wrap: wrap;
         margin: 0;
@@ -108,8 +109,11 @@
         width: 80%;
       }
       .slick-slider {
+        display: flex;
+
         width: 100%;
         .slick-prev{
+          left: -10px;
           @include tablet{
             right: 100%;
           }
@@ -122,7 +126,7 @@
         }
         .slick-next{
           @include tablet {
-            left: 100%;
+            right: -20px;
           }
           @include tabletR{
             right: -50px;
@@ -243,4 +247,10 @@
           left: 85%;
         }
       }
+    }
+
+
+
+    .slick-list{
+
     }
