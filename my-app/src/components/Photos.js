@@ -36,7 +36,7 @@ const Photos = () => {
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <span {...props}>{children}</span>
     );
-    const images = [img14, img3, img4, img5,img6,img7,img8,img9,img10,img11,img12,img13,img2]; // Lista obrazków do przeglądania
+    const images = [img14, img13, img4, img5,img6,img7,img8,img9,img10,img11,img3,img12,img2]; // Lista obrazków do przeglądania
     const settings = {
         dots: true,
         arrows: true,
