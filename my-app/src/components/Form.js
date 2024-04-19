@@ -13,7 +13,7 @@ const Form = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const email = e.target.user_email.value;
+        const email = e.target.email.value;
         const message = e.target.message.value;
 
         if (!email) {
@@ -29,7 +29,7 @@ const Form = () => {
         }
 
         if (email && message) {
-            emailjs.sendForm('service_rcjmzdo', 'template_7x3bq3c', form.current, 'tEednpm6egOrAf3CJ')
+            emailjs.sendForm('service_vxuujbm', 'template_fa5inpn', form.current, 'a-oKgUVxUxk9T4IUJ')
                 .then((result) => {
                     console.log(result.text);
                     console.log("message sent");
@@ -61,11 +61,11 @@ const Form = () => {
                         <img className="form_logo" src={logo} alt={logo}/>
                         <h1>Masz pytania ?</h1>
                         <div className="form_item">
-                            <label htmlFor="user_email">Adres e-mail:</label>
+                            <label htmlFor="email">Adres e-mail:</label>
                             <input
-                                name="user_email"
+                                name="email"
                                 type="email"
-                                id="user_email"
+                                id="email"
                             />
                             {emailError && <p className="error-message">Potrzebny jest Email!</p>}
                         </div>
