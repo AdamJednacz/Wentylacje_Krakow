@@ -50,6 +50,7 @@ const Header = () => {
                     </div>
                 </div>
                 <ul className={`menu ${isMenuVisible ? 'open' : ''}`}>
+                    <h1 className="menu_title">Menu Główne</h1>
                     <li><Link to="top" smooth={true} duration={250} offset={-window.innerHeight / 2} onClick={toggleMenu}><p className="menu_item">O nas</p></Link></li>
                     <li><Link to="offer" smooth={true} duration={250} offset={-window.innerHeight / 2} onClick={toggleMenu}><p className="menu_item">Oferta</p></Link></li>
                     <li><Link to="catalogues" smooth={true} duration={250} offset={-window.innerHeight / 5} onClick={toggleMenu}><p className="menu_item">Klimatyzatory</p></Link></li>

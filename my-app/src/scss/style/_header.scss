@@ -136,3 +136,11 @@
     z-index: 3;
   }
 }
+.menu_title{
+  display: none;
+  @include phone{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}
