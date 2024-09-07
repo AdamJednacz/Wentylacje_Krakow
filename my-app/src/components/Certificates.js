@@ -13,7 +13,7 @@ import LG11 from "./assets/LG_certyfikat.jpg";
 import Samsung from "./assets/Certyfikat_Samsung_page-0001.jpg";
 import Haier from "./assets/Certyfikat autoryzowany HAIER_page-0001.jpg";
 import ImageModal from './ImageModal';
-
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 const Certificates = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,12 +35,13 @@ const Certificates = () => {
                 <h1>Certyfikaty</h1>
                 <div className="Certificates_items">
                     {images.map((image, index) => (
-                        <img
+                        <LazyLoadImage
                             key={index}
                             src={image}
                             alt={image}
                             className="Certificates_item"
                             onClick={() => openModal(image, index)}
+                            effect="blur"
                         />
                     ))}
                 </div>

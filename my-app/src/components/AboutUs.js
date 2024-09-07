@@ -11,7 +11,7 @@ const AboutUs = () => {
             <div className="container">
                 <LazyLoadImage
                     className="about_us_img"
-
+                    effect="blur"
                     src={img1}
                     alt={img1}
 

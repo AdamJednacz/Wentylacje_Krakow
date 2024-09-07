@@ -10,17 +10,17 @@ const Plus = () => {
             <div className="container">
                 <div className="box">
                     <h1>Jakość Pracy</h1>
-                    <LazyLoadImage className="icon" src={star} alt="star"/>
+                    <LazyLoadImage className="icon" src={star} alt="star" effect='blur'/>
                     <p>Najlepsze techniki i produkty</p>
                 </div>
                 <div className="box">
                     <h1>Doświadczenie</h1>
-                    <LazyLoadImage className="icon" src={calendar} alt="caledna"/>
+                    <LazyLoadImage className="icon" src={calendar} alt="caledna" effect='blur'/>
                     <p>Ponad <span>+100</span> wykonanych realizacji</p>
                 </div>
                 <div className="box">
                     <h1>Zaufanie</h1>
-                    <LazyLoadImage className="icon" src={shield} alt="shield"/>
+                    <LazyLoadImage className="icon" src={shield} alt="shield" effect='blur'/>
                     <p>Wiele rekomendacji</p>
                 </div>
             </div>

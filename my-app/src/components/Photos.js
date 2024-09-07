@@ -89,6 +89,7 @@ const Photos = () => {
                             className="photos_item"
                             height={image.height}
                             width={image.width}
+                            effect="blur"
                             src={image}
                             alt={image}
                             key={index}
