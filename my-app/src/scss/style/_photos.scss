@@ -4,135 +4,65 @@
   display: none;
 }
 .photos {
-  color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $font-base;
-  padding-top: 20vh;
-  @include phone {
-    padding-top: 12vh;
-  }
-  @include tablet {
-    padding-top: 12vh;
-  }
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     @include phone {
       flex-direction: column;
     }
-    @include tablet {
-      flex-direction: column;
-    }
     .photos_text {
-      position: relative;
       display: flex;
       align-items: center;
       flex-direction: column;
-      background-color: #005e78;
-      border-radius: 2em;
-      padding: 2vw;
       width: 40%;
       @include phone {
-        padding: 4vw;
-        border-radius: 2em;
-        width: 100%;
-        position: static;
-      }
-      @include tablet {
-        margin: 1vh 0 0 0;
-        padding: 2.5vw;
-        border-radius: 2em;
-        width: 80%;
-      }
-      .photos_logo {
-        position: absolute;
-        top: -5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 15%;
-        z-index: 1;
-        @include phone {
-          position: static;
-          transform: none
-        }
-        @include tablet {
-          position: static;
-          width: 15%;
-          transform: none;
-        }
+        width: 90%;
       }
       h1 {
-        font-size: $font-size-desktop-h1;
+        font-size: 2rem;
         text-align: center;
-        margin-bottom: 0;
-        @include phone {
-          margin: 0;
-          font-size: $font-size-phone-h1;
-        }
-        @include tablet {
-          font-size: $font-size-tablet-h1;
-          margin: 0;
-        }
+        font-weight: 600;
       }
       p {
-        font-size: $font-size-desktop-p;
+        font-size: 1rem;
         text-align: center;
-        @include phone {
-          font-size: $font-size-phone-p;
-        }
-        @include tablet {
-          font-size: $font-size-tablet-p;
-        }
+        margin: 16px 0;
+        line-height: 20px;
       }
     }
     .photos_items {
       align-self: center;
       flex-direction: row;
-      margin-left: 2vh;
+      margin-left: 16px;
       flex-wrap: wrap;
-      width: 60%;
+      width: 100%;
 
       @include phone {
-        flex-wrap: wrap;
         margin: 0;
         width: 100%;
         justify-content: center;
-      }
-      @include tablet {
-        flex-wrap: wrap;
-        margin: 0;
-        justify-content: center;
-        width: 80%;
       }
       .slick-slider {
         display: flex;
-
         width: 100%;
         .slick-prev{
           left: -10px;
-          @include tablet{
-            right: 100%;
-          }
-          @include tabletR{
-            left:-50px
-          }
+
           @include phone{
-            right: 95%;
+            left: inherit;
+            right: 90%;
           }
         }
         .slick-next{
-          @include tablet {
-            right: -20px;
-          }
-          @include tabletR{
-            right: -50px;
-          }
+
           @include phone{
-            left: 95%;
+            left: 90%;
           }
         }
         .slick-arrow {
@@ -141,30 +71,22 @@
           height: 50px;
           z-index: 1;
           @include phone {
-            width: 10vw;
-            height: 10vw;
+            width: 25px;
+            height: 25px;
           }
         }
         .photos_item {
           max-width: 80%;
-          margin: 4vw 0 4vw 1.75vw;
-          border-radius: 2em;
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-          transition: transform 1s;
+          margin: 32px 0 32px 32px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          transition: transform 0.5s ease;
           @include phone {
-            margin: 4vw;
-            border-radius: 1em;
             box-shadow: none;
             transform: none;
-          }
-          @include tablet {
-            margin: 2vw;
-            border-radius: 3em;
-            box-shadow: none;
-            transform: none;
+            margin-left: 36px;
           }
           &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
       }
@@ -249,8 +171,3 @@
       }
     }
 
-
-
-    .slick-list{
-
-    }

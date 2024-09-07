@@ -19,7 +19,7 @@ const Contact = () => {
                     <MapContainer
                         center={center}
                         zoom={zoom}
-                        style={{height: '300px', width: 'auto', borderRadius: "3em",zIndex:"1"}}
+                        style={{height: '200px', width: 'auto',zIndex:"1"}}
                     >
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

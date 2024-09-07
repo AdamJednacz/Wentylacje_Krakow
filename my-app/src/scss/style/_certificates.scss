@@ -1,17 +1,12 @@
 .Certificates {
   text-align: center;
-  padding: 2vh 0;
-  font-family: $font-base;
-  background: #d8e3ed;
+  padding: 32px 0;
+
+  background:#F5F8FE;
   h1 {
-    font-size: $font-size-desktop-h1;
-    margin: 0;
-    @include phone{
-      font-size: $font-size-phone-h1;
-    }
-    @include tablet{
-      font-size: $font-size-tablet-h1;
-    }
+    font-size: 2.5rem;
+    margin: 16px 0  ;
+    font-weight: 600;
   }
   .Certificates_items {
     display: flex;
@@ -24,10 +19,8 @@
     .Certificates_item {
       margin: 2em;
       width: 20%;
-      border-radius: 4em;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       @include phone{
-        border-radius: 2em;
         width:70%;
       }
     }

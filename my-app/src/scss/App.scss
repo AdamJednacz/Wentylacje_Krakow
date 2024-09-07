@@ -1,17 +1,7 @@
 @import "settings/_all.scss";
 @import "style/_all.scss";
-@keyframes appear {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.home{
-  animation-name: appear;
-  animation-duration:5s ;
-}
+
+
 @keyframes slide {
   100% { top: 70px; }
 }
@@ -31,12 +21,43 @@
   animation-duration:3s ;
 }
 .container {
+
   margin: 0 auto;
-  max-width: 90vw;
-  @include tablet{
-    max-width: 90%;
-  }
+  max-width: 90%;
+
   @include phone{
-    max-width: 80%;
+   max-width: 100%;
+  }
+}
+
+body{
+  font-family: $font-base;
+}
+html {
+  scroll-behavior: smooth;
+}
+section{
+  margin-bottom: 64px;
+  @include phone{
+    margin-bottom: 48px;
+  }
+}
+
+section .header{
+  margin-bottom: 0;
+}
+.contact{
+  margin-bottom: 0;
+}
+.home{
+  margin-bottom: 0;
+}
+
+section .Form{
+  @include phone{
+    background-color: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 48px;
+    padding-top: 16px;
   }
 }

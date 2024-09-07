@@ -1,5 +1,4 @@
-footer{
-  font-family: $font-base;
+.footer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +8,6 @@ footer{
   @include phone{
     padding: 4vw 0;
   }
-  @include tablet{
-    font-size: $font-size-tablet-p;
-    padding: 3vw 0;
-  }
+
 
 }

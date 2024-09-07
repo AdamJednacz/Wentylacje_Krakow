@@ -1,27 +1,15 @@
 .catalogues {
   display: flex;
   align-items: center;
-  font-family: $font-base;
-  padding: 15vh 0 0 0;
+  background:#F5F8FE;
   color: #ffffff;
-  @include phone {
-    padding-top: 12vh;
-  }
-  @include tablet {
-    padding-top: 12vh;
-  }
+  padding-bottom: 32px;
   .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    @include phone {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    @include tablet {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
-    }
+    flex-direction: column-reverse;
+
     .catalogues_items_container {
       display: flex;
       flex-direction: column;
@@ -32,27 +20,17 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        @include phone {
-          margin: 1vh;
-        }
-        @include tablet {
-          margin: 2vh;
-        }
+        gap: 32px;
         .text {
           text-align: center;
         }
         .catalogues_item {
-          max-width: 8vw;
-          margin: 2vw;
+          width: 125px;
           transition: transform 0.5s;
           @include phone {
-            max-width: 20vw;
-            margin: 1vw;
+            width: 77.5px;
           }
-          @include tablet {
-            max-width: 20vw;
-            margin: 1vw;
-          }
+
           &:hover {
             transform: scale(1.5);
           }
@@ -64,61 +42,28 @@
       flex-direction: column;
       align-items: center;
       width: 40%;
-      padding: 2vw;
-      background-color: #005e78;
-      border-radius: 2em;
+      padding: 32px;
+      color: #000000;
       position: relative;
       @include phone {
-        margin: 1vh 0 0 0 ;
-        padding: 6vw;
-        border-radius: 1em;
-        width: 80%;
-      }
-      @include tablet {
-        margin: 1vh 0 0 0 ;
-        padding: 2.25vw;
-        border-radius: 2em;
-        width: 80%;
-      }
-      .catalogues_logo{
-        position: absolute;
-        width: 20%;
-        top: -4% ;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include phone{
-        position: static;
-        width: 15%;
-        transform: none;
-      }
-        @include tablet{
-          position: static;
-          width: 15%;
-          transform: none;
-        }
+      width: 90%;
+        padding: 32px 0 ;
       }
       h1 {
-        font-size: $font-size-desktop-h1;
+        font-size: 2rem;
         text-align: center;
-        margin-bottom: 0;
+        font-weight: 600;
+        margin-top: 32px;
         @include phone {
-          font-size: $font-size-phone-h1;
           margin: 0;
-        }
-        @include tablet {
-          margin: 0;
-          font-size: $font-size-tablet-h1;
         }
       }
       p {
-        font-size: $font-size-desktop-p;
+        font-size: 1rem;
         text-align: center;
-        @include phone {
-          font-size: $font-size-phone-p;
-        }
-        @include tablet {
-          font-size: $font-size-tablet-p;
-        }
+        margin: 32px 0;
+        line-height: 20px;
+        color: #9F9F9F;
       }
     }
   }

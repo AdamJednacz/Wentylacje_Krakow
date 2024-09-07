@@ -1,134 +1,78 @@
 
 .about_us {
-  font-family: $font-base;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20vh 2vh 5vh 2vh;
-  @include phone {
-    padding: 14vh 2vh 0 2vh;
-  }
-  @include tablet {
-    padding-top:12vh;
-  }
-  .container{
-    justify-content: space-between;
-  }
-  .about_us_items {
+  justify-content: center;
+  width: 100%;
+  color: #000000;
+
+  .container {
     display: flex;
-    justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    @include phone {
+    justify-content: center;
+    @include phone{
       flex-direction: column;
-    }
-    @include tablet {
-      flex-direction: column;
+
     }
     .about_us_img{
-      transform: scaleX(-1);
-      width: 100%;
-      max-width:50% ;
-      border-radius: 2em;
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-      transition: transform 0.5s ease,opacity 0.3s;
-      @include phone {
-        max-width: 100%;
+    width: 50%;
+      @include phone{
+        width: 100%;
       }
-      @include tablet {
-
-        max-width: 90%;
-      }
-
     }
     .about_us_text_item {
       position: relative;
-      color: white;
-      background-color: #005e78;
-      border-radius: 2em;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      max-width: 40%;
-      padding: 2vw ;
-      height: 80%;
-      @include phone {
-        margin-top: 4vh;
-        padding: 6vw;
-        max-width: 100%;
-      }
-      @include tablet {
-        margin-top: 2vh;
-        padding: 4vw;
-        max-width: 87.5%;
-      }
-      .about_us_logo{
-        position: absolute;
-        width: 15%;
-        top: -5% ;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include phone {
-        position: static;
-        width: 15%;
-        transform: none;
-      }
-        @include tablet{
-          position: static;
-          width: 15%;
-          transform: none;
-        }
-      }
-      h1 {
-        font-size: $font-size-desktop-h1;
+      align-items: flex-start;
+
+      width: auto;
+      @include phone{
         text-align: center;
+        justify-content: center;
+        max-width: 80%;
+        width: 100%;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-family: Plus Jakarta Sans, sans-serif;
+        font-weight: 500;
+        line-height: 72px;
         margin-bottom: 0;
         @include phone {
-          font-size: $font-size-phone-h1;
-          margin: 0;
-        }
-        @include tablet {
-         margin-top: 0;
-          font-size: $font-size-tablet-h1;
+          font-size: 2rem;
+          line-height: 24px;
+          margin-top: 32px;
+
         }
       }
       p {
-        font-size: $font-size-desktop-p;
-        text-align: center;
+        font-size: 1rem;
+        margin: 16px 0;
+        width: 50%;
+        line-height: 20px;
         @include phone {
-          margin: 1vh;
-          font-size:calc($font-size-phone-p);
           width: 100%;
         }
-        @include tablet {
-          width: 100%;
-          font-size:calc( $font-size-tablet-p );
-          margin-bottom: 0;
-        }
-      }
-      p:nth-of-type(2) {
-        font-weight: bolder;
       }
       button {
-        padding: 2vh 4vw;
         border: none;
-        font-size: 1.5vh;
-        border-radius: 2em;
+        padding: 15px 50px;
+        font-size: 1rem;
         font-weight: bolder;
         background: #05b2e2;
         color: #ffffff;
-        font-family: $font-base;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         transition: opacity ease-in-out 0.3s, transform 0.5s;
         cursor: pointer;
+        margin-top: 16px;
+        white-space: nowrap;
         @include phone {
-          padding: 2vh 10vw;
-          margin-top: 1em;
-        }
-        @include tablet {
-          border-radius:3em ;
-          padding: 3vh 10vw;
-          margin-top: 1em;
+          padding: 15px 35px;
         }
         &:hover {
           opacity: 0.4;
@@ -136,5 +80,6 @@
         }
       }
     }
+
   }
 }

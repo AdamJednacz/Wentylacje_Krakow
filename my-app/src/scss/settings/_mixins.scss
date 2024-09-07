@@ -1,20 +1,5 @@
 @mixin phone {
-  @media (max-width: 700px) {
+  @media (max-width: 1381px) {
     @content;
-  }
-}
-@mixin tablet {
-  @media (min-width: 701px) and (max-width:1381px)  {
-    @content;
-  }
-}
-@mixin tabletR {
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1381px) and (orientation: landscape)  {
-    @content;
-  }
-}
-@mixin plusSpecial{
-  @media (min-width: 1381px) and (max-width:1881px) {
-    @content
   }
 }

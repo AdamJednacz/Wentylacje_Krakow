@@ -1,7 +1,7 @@
 import React from 'react';
 const Footer = () => {
     return (
-        <footer>
+        <footer className="footer">
             &copy; 2023 Frozeko
         </footer>
     );

@@ -1,38 +1,30 @@
 import './scss/App.scss';
-import React, {useEffect, useState} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Offer from './components/Offer';
-import Contact from './components/Contact';
-import Plus from './components/Plus';
-import Certificates from "./components/Certificates";
+import React, { Suspense, lazy } from 'react';
 
-import LoadingPage from "./components/LoadingPage";
+// Lazy load components
+const Home = lazy(() => import('./components/Home'));
+const AboutUs = lazy(() => import('./components/AboutUs'));
+const Offer = lazy(() => import('./components/Offer'));
+const Contact = lazy(() => import('./components/Contact'));
+const Plus = lazy(() => import('./components/Plus'));
+const Certificates = lazy(() => import('./components/Certificates'));
+
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 4000);
-    }, []);
     return (
         <BrowserRouter>
-                {isLoading ? (
-                    <Routes>
-                      <Route path="/" element={<LoadingPage />} />
-                    </Routes>
-                ) : (
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/aboutus" element={<AboutUs />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/plusy" element={<Plus />} />
-                        <Route path="/oferta" element={<Offer />} />
-                        <Route path="/certyfikaty" element={<Certificates />} />
-                    </Routes>
-                )}
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/aboutus" element={<AboutUs />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/plusy" element={<Plus />} />
+                    <Route path="/oferta" element={<Offer />} />
+                    <Route path="/certyfikaty" element={<Certificates />} />
+                </Routes>
+            </Suspense>
         </BrowserRouter>
     );
 }
+
 export default App;

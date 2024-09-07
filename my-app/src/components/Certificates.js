@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import dyplom1 from "../assets/dyplom_page-0001.jpg";
-import RotensoH2 from "../assets/Rotenso_handlowy_certyfikat.jpg";
-import RotensoI3 from "../assets/Rotenso_instalacja_certyfikat.jpg";
-import RotensoP4 from "../assets/Rotenso_pompy_certyfikat.jpg";
-import RotensoS5 from "../assets/Rotenso_serwis_certyfikat.jpg";
-import GreeP6 from "../assets/Gree_pompy_certyfikat.jpg";
-import GreeS7 from "../assets/Gree_serwis_certyfikat.jpg";
-import Gazy8 from "../assets/gazy_certyfikat.jpg";
-import Sinclair9 from "../assets/Sinclair_montaż_i_serwis_certyfikat.jpg";
-import Mitsubishi10 from "../assets/Mitsubishi_montaż_i_serwis_certyfikat.jpg";
-import LG11 from "../assets/LG_certyfikat.jpg";
-import Samsung from "../assets/Certyfikat_Samsung_page-0001.jpg";
-import Haier from "../assets/Certyfikat autoryzowany HAIER_page-0001.jpg";
+import dyplom1 from "./assets/dyplom_page-0001.jpg";
+import RotensoH2 from "./assets/Rotenso_handlowy_certyfikat.jpg";
+import RotensoI3 from "./assets/Rotenso_instalacja_certyfikat.jpg";
+import RotensoP4 from "./assets/Rotenso_pompy_certyfikat.jpg";
+import RotensoS5 from "./assets/Rotenso_serwis_certyfikat.jpg";
+import GreeP6 from "./assets/Gree_pompy_certyfikat.jpg";
+import GreeS7 from "./assets/Gree_serwis_certyfikat.jpg";
+import Gazy8 from "./assets/gazy_certyfikat.jpg";
+import Sinclair9 from "./assets/Sinclair_montaż_i_serwis_certyfikat.jpg";
+import Mitsubishi10 from "./assets/Mitsubishi_montaż_i_serwis_certyfikat.jpg";
+import LG11 from "./assets/LG_certyfikat.jpg";
+import Samsung from "./assets/Certyfikat_Samsung_page-0001.jpg";
+import Haier from "./assets/Certyfikat autoryzowany HAIER_page-0001.jpg";
 import ImageModal from './ImageModal';
 
 const Certificates = () => {
