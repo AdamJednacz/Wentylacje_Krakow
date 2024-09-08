@@ -41,11 +41,8 @@
 
       width: 40%;
       @include phone{
-        text-align: center;
-        justify-content: center;
         max-width: 80%;
         width: 100%;
-        align-items: center;
         margin-top: 64px;
         color: #ffffff;
       }

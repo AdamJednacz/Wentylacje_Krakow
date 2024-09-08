@@ -32,22 +32,15 @@ const HomeSection = styled.section`
         background-position: 120% 70%;
         background-size: 29%;
     }
-    @media (min-width: 768px) and (max-width: 1381px) and (orientation: landscape) {
-        background-position: center center;
-        background-size: 50%;
-    }
-    @media (min-width: 768px) and (max-width: 1381px) {
-        background-position: center center;
-        background-size: 70%;
-    }
     @media (max-width: 767px) {
         background-position: center center;
-        background-size: 100%;
+        background-size: 40%;
     }
 `;
 
 const Home = () => {
     return (
+        <>
         <HomeSection className="home" id="top">
             <Header/>
             <AboutUs/>
@@ -60,6 +53,7 @@ const Home = () => {
             <Contact/>
             <Footer/>
         </HomeSection>
+        </>
     );
 };
 
