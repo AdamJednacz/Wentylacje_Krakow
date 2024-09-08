@@ -4,7 +4,7 @@
   z-index: 3;
   transition: all ease-in-out 0.5s;
   padding: 16px 0;
-  position: relative;
+
   background-color: #ffffff;
   @include phone{
     background-color: transparent;
@@ -137,7 +137,6 @@
     }
   }
   &.sticky {
-    position: sticky;
     top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
