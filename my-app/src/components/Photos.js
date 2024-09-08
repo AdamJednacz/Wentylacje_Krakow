@@ -14,7 +14,7 @@ import img13 from "./assets/galeriafot12.jpg"
 import img14 from "./assets/galeriafot13.jpg"
 import ImageModal from "./ImageModal";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-import logo from "./assets/frozekologo-shading.svg";
+
 import Slider from "react-slick";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";

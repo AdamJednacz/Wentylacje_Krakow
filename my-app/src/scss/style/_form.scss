@@ -57,7 +57,10 @@
       .checkbox_p{
         margin: 0 0.5rem;
         font-size: 0.5rem;
-
+        @include phone{
+          width: 50%;
+          white-space: wrap;
+        }
       }
     }
 

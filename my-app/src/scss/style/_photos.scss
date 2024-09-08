@@ -50,31 +50,33 @@
       }
       .slick-slider {
         display: flex;
+        align-items: center;
         width: 100%;
-        .slick-prev{
-          left: -10px;
 
-          @include phone{
-            left: inherit;
-            right: 90%;
-          }
-        }
         .slick-next{
-
-          @include phone{
-            left: 90%;
-          }
+          display: none;
         }
         .slick-arrow {
           color: black;
-          width: 50px;
-          height: 50px;
+          position: relative;
+          left: 0;
+          top: 0;
+          right: 0;
           z-index: 1;
-          @include phone {
-            width: 25px;
-            height: 25px;
+          &:last-of-type{
+            left: -20px;
           }
+          @include phone {
+            &:first-of-type{
+              left: 10px;
+            }
+            &:last-of-type{
+              left: -20px;
+            }
+          }
+
         }
+
         .photos_item {
           max-width: 80%;
           margin: 32px 0 32px 32px;
@@ -83,7 +85,7 @@
           @include phone {
             box-shadow: none;
             transform: none;
-            margin-left: 36px;
+            margin: 0 auto;
           }
           &:hover {
             transform: scale(1.1);

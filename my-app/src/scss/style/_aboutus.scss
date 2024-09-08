@@ -6,20 +6,31 @@
   justify-content: center;
   width: 100%;
   color: #000000;
+@include phone{
 
+}
   .container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    position: relative;
     @include phone{
       flex-direction: column;
       justify-content: space-around;
+      padding-bottom: 32px;
     }
     .about_us_img{
     width: 40%;
       @include phone{
         width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(30%);
+
       }
     }
     .about_us_text_item {
@@ -35,6 +46,8 @@
         max-width: 80%;
         width: 100%;
         align-items: center;
+        margin-top: 64px;
+        color: #ffffff;
       }
 
       h1 {
