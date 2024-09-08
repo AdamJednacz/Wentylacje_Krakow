@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
 import LG from "./assets/LG_certyfikat.jpg";
-import logo from "./assets/frozekologo-shading.svg";
+
 
 const CertificatesSite = () => {
     return (

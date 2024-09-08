@@ -1,6 +1,7 @@
 import './scss/App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
+import Loading from "./components/Loading";
 
 // Lazy load components
 const Home = lazy(() => import('./components/Home'));
@@ -13,7 +14,7 @@ const Certificates = lazy(() => import('./components/Certificates'));
 function App() {
     return (
         <BrowserRouter>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/aboutus" element={<AboutUs />} />

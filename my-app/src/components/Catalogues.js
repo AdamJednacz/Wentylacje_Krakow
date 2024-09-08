@@ -1,7 +1,7 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo from "./assets/frozekologo-shading.svg";
+
 const images = [
     { src: require("./assets/Samsung.png"), link: "https://www.samsung.com/pl/business/climate/" },
     { src: require("./assets/Mitsubishi.png"), link: "https://pl.mitsubishielectric.com/pl/products-solutions/air-conditioning/index.html" },
