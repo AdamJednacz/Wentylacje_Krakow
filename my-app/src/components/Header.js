@@ -41,7 +41,7 @@ const Header = () => {
                         {isMobile && (
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (
-                                    <FontAwesomeIcon className="icon" icon={faTimes} />
+                                    <FontAwesomeIcon className="icon x " icon={faTimes} />
                                 ) : (
                                     <FontAwesomeIcon className="icon" icon={faBars} />
                                 )}

@@ -32,6 +32,7 @@
           z-index: 2;
           @include phone{
             font-size: 2rem;
+
           }
         }
       }
@@ -92,6 +93,7 @@
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
+        color: #000000;
       }
 
     li {
@@ -150,4 +152,7 @@
     font-size: 2rem;
     margin-bottom: 32px;
   }
+}
+.x{
+  color: #000000;
 }
