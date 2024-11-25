@@ -21,13 +21,8 @@
   animation-duration:3s ;
 }
 .container {
-
   margin: 0 auto;
   max-width: 90%;
-
-  @include phone{
-   max-width: 100%;
-  }
 }
 
 body{
@@ -43,7 +38,7 @@ section{
   }
 }
 
-section .header{
+.header{
   margin-bottom: 0;
 }
 .contact{

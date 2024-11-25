@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
-import logo from "./assets/frozekologo-shading.svg";
+import logo from "../assets/frozekologo-shading.svg";
 
 const Header = () => {
     const isMobile = useMediaQuery({ maxWidth: 1381 });
@@ -51,7 +51,7 @@ const Header = () => {
                 </div>
                 <ul className={`menu ${isMenuVisible ? 'open' : ''}`}>
                     <h1 className="menu_title">Menu Główne</h1>
-                    <li><Link to="top" smooth={true} duration={250} offset={-window.innerHeight / 2} onClick={toggleMenu}><p className="menu_item">O nas</p></Link></li>
+                    <li><Link to="about_us" smooth={true} duration={250} offset={-window.innerHeight / 2} onClick={toggleMenu}><p className="menu_item">O nas</p></Link></li>
                     <li><Link to="offer" smooth={true} duration={250} offset={-window.innerHeight / 2} onClick={toggleMenu}><p className="menu_item">Oferta</p></Link></li>
                     <li><Link to="catalogues" smooth={true} duration={250} offset={-window.innerHeight / 5} onClick={toggleMenu}><p className="menu_item">Klimatyzatory</p></Link></li>
                     <li><Link to="photos" smooth={true} duration={250} offset={-window.innerHeight / 5} onClick={toggleMenu}><p className="menu_item">Galeria</p></Link></li>

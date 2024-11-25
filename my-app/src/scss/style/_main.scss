@@ -1,0 +1,62 @@
+.main{
+  color: #ffffff;
+  padding: 64px 0 126px;
+  @include phone{
+    padding: 96px 0;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span{
+
+    }
+    h1{
+      text-align: center;
+      font-size: 4rem;
+      font-family: Plus Jakarta Sans, sans-serif;
+      font-weight: 600;
+      line-height: 80px;
+      margin-bottom: 0;
+      @include phone {
+        font-size: 2rem;
+        line-height: 38px;
+        margin-top: 32px;
+      }
+    }
+    p{
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 32px 0;
+      width: 70%;
+      line-height: 24px;
+      @include phone {
+        font-size: 1rem;
+        line-height: 1.25;
+        width: 100%;
+      }
+    }
+    button {
+      border: solid 1px #ffffff;
+      padding: 15px 50px;
+      font-size: 1rem;
+      font-weight: bolder;
+      background: transparent;
+      color: #ffffff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition:  all 0.5s ease-in-out;
+      cursor: pointer;
+      white-space: nowrap;
+      @include phone {
+        padding: 15px 35px;
+      }
+      &:hover {
+        color: #000000;
+        background: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

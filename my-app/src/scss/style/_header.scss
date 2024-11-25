@@ -1,22 +1,27 @@
 .header {
-  color: #000000;
+  color: #ffffff;
   font-weight: bolder;
-  z-index: 3;
-  transition: all ease-in-out 0.5s;
+  z-index: 4;
   padding: 16px 0;
-
-  background-color: #ffffff;
+  position: relative;
   @include phone{
     background-color: transparent;
     position: fixed;
     width: 100%;
     color: #ffffff;
-    transition: all ease-in-out 2s;
+    transition: all ease-in-out 0.5s;
+    &.sticky {
+      top: 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      color: #000000;
+      z-index: 3;
+    }
   }
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .h1_hamburg {
       display: flex;
@@ -87,9 +92,10 @@
         padding: 0;
         background-color: #ffffff;
         height: 0;
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 0;
+        left: 0;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         flex-direction: column;
@@ -120,7 +126,7 @@
       }
     }
     .contact_header {
-      border: solid 1px  #4c5761;
+      border: solid 1px  #ffffff;
       padding: 12px 32px;
       transition: all ease-in-out 0.5s;
       @include phone {
@@ -131,18 +137,12 @@
         cursor: pointer;
       }
       &:hover {
-        color: #ffffff;
-        background-color: #4c5761;
+        color: #000000;
+        background-color: #ffffff;
       }
     }
   }
-  &.sticky {
-    top: 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    color: #000000;
-    z-index: 3;
-  }
+
 }
 .menu_title{
   display: none;

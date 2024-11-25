@@ -1,8 +1,8 @@
 import React from 'react';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-import star from "./assets/star.gif";
-import calendar from "./assets/calendar.gif";
-import shield from "./assets/shield.gif";
+import star from "../assets/star.gif";
+import calendar from "../assets/calendar.gif";
+import shield from "../assets/shield.gif";
 
 const Plus = () => {
     return (

@@ -1,6 +1,7 @@
 import React, { lazy} from 'react';
 import styled from 'styled-components';
-import imgTlo3 from "./assets/logo_shading_tło_2.png";
+import imgTlo3 from "../assets/logo_shading_tło_2.png";
+import Main from "./Main";
 // import Header from "./Header";
 // import AboutUs from "./AboutUs";
 // import Offer from "./Offer";
@@ -24,27 +25,19 @@ const Catalogues = lazy(() => import("./Catalogues"));
 const CertificatesSite = lazy(() => import("./CertificatesSite"));
 const Form = lazy(() => import("./Form"));
 
-const HomeSection = styled.section`
-    background-image: url(${imgTlo3});
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    @media (min-width: 1381px) {
-        background-position: 120% 70%;
-        background-size: 29%;
-    }
-    @media (max-width: 767px) {
-        background-position: center center;
-        background-size: 40%;
-    }
-`;
+
 
 const Home = () => {
     return (
         <>
-        <HomeSection className="home" id="top">
+
+            <div className="bg">
             <Header/>
+            <Main/>
+            </div>
             <AboutUs/>
             <Plus/>
+
             <Offer/>
             <Catalogues/>
             <Photos/>
@@ -52,7 +45,7 @@ const Home = () => {
             <Form/>
             <Contact/>
             <Footer/>
-        </HomeSection>
+
         </>
     );
 };
