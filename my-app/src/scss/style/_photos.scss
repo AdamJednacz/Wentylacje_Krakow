@@ -10,7 +10,7 @@
   justify-content: center;
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     @include phone {
@@ -18,7 +18,7 @@
     }
     .photos_text {
       display: flex;
-      align-items: center;
+
       flex-direction: column;
       width: 40%;
       @include phone {
@@ -26,63 +26,39 @@
       }
       h1 {
         font-size: 2rem;
-        text-align: center;
+
         font-weight: 600;
       }
       p {
         font-size: 1rem;
-        text-align: center;
+
         margin: 16px 0;
-        line-height: 20px;
+        line-height: 24px;
         @include phone{
           text-align: left;
         }
       }
     }
     .photos_items {
+      display: flex;
       align-self: center;
       flex-direction: row;
       margin-left: 16px;
       flex-wrap: wrap;
-      width: 100%;
+      width: 50%;
 
       @include phone {
         margin: 0;
         width: 100%;
         justify-content: center;
       }
-      .slick-slider {
-        display: flex;
-        align-items: center;
-        width: 100%;
 
-        .slick-next{
-          display: none;
-        }
-        .slick-arrow {
-          color: black;
-          position: relative;
-          left: 0;
-          top: 0;
-          right: 0;
-          z-index: 1;
-          &:last-of-type{
-            left: -40px;
-          }
-          @include phone {
-            &:first-of-type{
-              left: 10px;
-            }
-            &:last-of-type{
-              left: -20px;
-            }
-          }
 
-        }
+
 
         .photos_item {
-          max-width: 80%;
-          margin: 32px 0 32px 32px;
+          width: 100%;
+
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           transition: transform 0.5s ease;
           @include phone {
@@ -97,7 +73,7 @@
       }
     }
   }
-}
+
     .ImageModal {
       position: absolute;
       top: 50%;
@@ -115,10 +91,11 @@
         bottom: 0;
         transform: none;
         padding: 10px; /* Dostosuj wielkość paddingu do preferencji */
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
         overflow: auto;
       }
+
     }
     .ImageModalOverlay {
       position: fixed;
@@ -137,6 +114,7 @@
         align-items: center;
       }
     }
+
     .ImageModalClose {
       position: absolute;
       top: 1em;
@@ -176,3 +154,11 @@
       }
     }
 
+.ReactModal__Content {
+  width: 100%;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

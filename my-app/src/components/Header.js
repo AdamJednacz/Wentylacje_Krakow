@@ -36,8 +36,10 @@ const Header = () => {
             <div className="container">
                 <div className="h1_hamburg">
                     <div className="h1_logo">
+
                         <img alt={logo} src={logo} />
                         <h1 lang="pl">Frozeko</h1>
+
                         {isMobile && (
                             <div className="hamburger-menu" onClick={toggleMenu}>
                                 {isMenuVisible ? (

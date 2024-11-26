@@ -13,67 +13,37 @@ import img12 from "../assets/galeriafot11.jpg"
 import img13 from "../assets/galeriafot12.jpg"
 import img14 from "../assets/galeriafot13.jpg"
 import ImageModal from "./ImageModal";
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import Slider from "react-slick";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
+
     const openModal = (imageSrc, index) => {
         setSelectedImage(imageSrc);
         setCurrentIndex(index);
         setIsModalOpen(true);
     };
+
     const closeModal = () => {
         setSelectedImage(null);
         setIsModalOpen(false);
     };
-    const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
-        <span {...props}>{children}</span>
-    );
-    const images = [img14, img13, img4, img5,img6,img7,img8,img9,img10,img11,img3,img12,img2]; // Lista obrazków do przeglądania
-    const settings = {
-        dots: true,
-        arrows: true,
-        infinite: true,
-        speed: 600,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        prevArrow:<SlickButtonFix><FontAwesomeIcon style={{fontSize:"3rem"}}  icon={faAngleLeft}/></SlickButtonFix>,
-        nextArrow: <SlickButtonFix><FontAwesomeIcon  style={{fontSize:"3rem"}}  icon={faAngleRight}/></SlickButtonFix>,
-        initialSlide: 0,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        cssEase: "linear",
-        responsive: [
-            {   breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    dots:false
-                }
-            },
-            {   breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    dots:false
-                }
-            }
-        ]
-    };
+
+    const images = [img14, img13, img4, img5, img6, img7, img8, img9, img10, img11, img3, img12, img2];
+
     return (
         <section className="photos" id="photos">
             <div className="container">
                 <div className="photos_text">
-
                     <h1>Galeria</h1>
                     <p>
                         Odkryj niezwykłe chwile z naszej codziennej pracy w naszej galerii. Przejrzyj zdjęcia,
@@ -83,20 +53,36 @@ const Photos = () => {
                     </p>
                 </div>
                 <div className="photos_items">
-                    <Slider {...settings} >
-                {images.map((image, index) => (
-                        <LazyLoadImage
-                            className="photos_item"
-                            height={image.height}
-                            width={image.width}
-                            effect="blur"
-                            src={image}
-                            alt={image}
-                            key={index}
-                            onClick={() => openModal(image, index)}
-                        />
-                ))}
-                    </Slider>
+                    <Swiper
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        navigation
+
+                        autoplay={{ delay: 5000 }}
+                        loop={true}
+                        modules={[Navigation,  Scrollbar, A11y]}
+                        breakpoints={{
+                            320:{slidesPerView:1,spaceBetween:50},
+                            640: { slidesPerView: 1, spaceBetween: 50 },
+                            768: { slidesPerView: 1, spaceBetween: 30 },
+                            1024: { slidesPerView: 2, spaceBetween: 40 },
+                            1280: { slidesPerView: 2, spaceBetween: 50 },
+                        }}
+                    >
+                        {images.map((image, index) => (
+                            <SwiperSlide key={index}>
+                                <LazyLoadImage
+                                    className="photos_item"
+                                    height={image.height}
+                                    width={image.width}
+                                    effect="blur"
+                                    src={image}
+                                    alt={image}
+                                    onClick={() => openModal(image, index)}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
                 <ImageModal
                     isOpen={isModalOpen}
@@ -110,4 +96,5 @@ const Photos = () => {
         </section>
     );
 };
+
 export default Photos;
