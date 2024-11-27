@@ -76,7 +76,7 @@
         }
         &:nth-of-type(2){
 
-          width: 10%;
+          min-width: 110px;
           @include phone{
             width: auto;
           }
