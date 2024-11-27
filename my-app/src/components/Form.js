@@ -4,9 +4,12 @@ import emailjs from '@emailjs/browser';
 import like from "../assets/like.png";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import useScrollAnimation from "./useScroolAnimation";
 
 
 const Form = () => {
+
+    useScrollAnimation(".Form .container");
     const [submitted, setSubmitted] = useState(false);
     const form = useRef();
 
