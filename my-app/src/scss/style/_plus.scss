@@ -27,7 +27,7 @@
       width: 300px;
       padding: 32px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      transition: all ease-in-out 0.3s;
+      //transition: scale ease-in-out 0.3s;
       background-color: #ffffff;
       @include phone{
         width: 200px;

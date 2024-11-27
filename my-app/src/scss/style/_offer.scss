@@ -26,9 +26,9 @@
       justify-content: space-evenly;
       width: 400px;
       margin: 16px;
-      transition: transform 0.5s ease;
+      transition: scale 0.5s ease;
       &:hover {
-        transform: scale(1.1); // Powiększenie do 110% rozmiaru
+        scale:1.1; // Powiększenie do 110% rozmiaru
       }
       @include phone {
         width: 300px;

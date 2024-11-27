@@ -1,9 +1,13 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
 import LG from "../assets/LG_certyfikat.jpg";
+import useScroolAnimation from "./useScroolAnimation";
 
 
 const CertificatesSite = () => {
+
+    useScroolAnimation(".CertyficatesSite .container")
+
     return (
         <section className="CertyficatesSite" id="CertyficatesSite">
             <div className="container">

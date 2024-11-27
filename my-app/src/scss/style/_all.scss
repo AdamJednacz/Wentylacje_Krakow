@@ -5,13 +5,15 @@
 @import "certificates.scss";
 @import "photos.scss";
 @import "footer.scss";
-@import "contact.scss";
+
 @import "catalogues.scss";
 @import "certificatessite.scss";
 @import "form.scss";
 @import "loading";
 @import "reset";
 @import "main";
+@import "_useScroolAnimation.scss";
+
 
 .bg{
   background-image: url("../../assets/about_us.webp");
@@ -19,7 +21,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+
   // Add a pseudo-element for the dimmed overlay
   &::before {
     content: '';
@@ -38,3 +41,15 @@
     z-index: 2;
   }
 }
+@keyframes animate {
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+

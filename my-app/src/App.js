@@ -7,7 +7,7 @@ import Loading from "./components/Loading";
 const Home = lazy(() => import('./components/Home'));
 const AboutUs = lazy(() => import('./components/AboutUs'));
 const Offer = lazy(() => import('./components/Offer'));
-const Contact = lazy(() => import('./components/Contact'));
+const Form = lazy(() => import('./components/Form'));
 const Plus = lazy(() => import('./components/Plus'));
 const Certificates = lazy(() => import('./components/Certificates'));
 
@@ -18,7 +18,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/aboutus" element={<AboutUs />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/contact" element={<Form />} />
                     <Route path="/plusy" element={<Plus />} />
                     <Route path="/oferta" element={<Offer />} />
                     <Route path="/certyfikaty" element={<Certificates />} />

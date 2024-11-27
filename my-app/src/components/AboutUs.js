@@ -4,9 +4,11 @@ import {Link} from "react-scroll";
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import logo from "../assets/frozekologo-shading.svg";
+import useScrollAnimation from "./useScroolAnimation";
 
 
 const AboutUs = () => {
+    useScrollAnimation(".about_us_text");
     return (
         <section id="aboutus" className="about_us" >
             <div className="container">

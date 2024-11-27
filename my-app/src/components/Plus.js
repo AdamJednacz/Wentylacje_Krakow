@@ -3,8 +3,10 @@ import {LazyLoadImage} from 'react-lazy-load-image-component';
 import star from "../assets/star.gif";
 import calendar from "../assets/calendar.gif";
 import shield from "../assets/shield.gif";
+import useScrollAnimation from "./useScroolAnimation";
 
 const Plus = () => {
+    useScrollAnimation(".home_icons .box");
     return (
         <section className="home_icons">
             <div className="container">
@@ -24,7 +26,8 @@ const Plus = () => {
                     <p>Wiele rekomendacji</p>
                 </div>
             </div>
-        </section>);
+        </section>
+    );
 };
 
 export default Plus;

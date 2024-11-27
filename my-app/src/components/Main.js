@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from "react-scroll";
+import useScrollAnimation from "./useScroolAnimation";
+
 
 const Main = () => {
+
     return (
         <section className="main">
             <div className="container">

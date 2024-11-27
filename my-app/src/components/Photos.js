@@ -21,6 +21,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import useScroolAnimation from "./useScroolAnimation";
 
 const Photos = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,6 +41,8 @@ const Photos = () => {
 
     const images = [img14, img13, img4, img5, img6, img7, img8, img9, img10, img11, img3, img12, img2];
 
+
+    useScroolAnimation(".photos .container")
     return (
         <section className="photos" id="photos">
             <div className="container">
@@ -57,7 +60,6 @@ const Photos = () => {
                         spaceBetween={10}
                         slidesPerView={1}
                         navigation
-
                         autoplay={{ delay: 5000 }}
                         loop={true}
                         modules={[Navigation,  Scrollbar, A11y]}

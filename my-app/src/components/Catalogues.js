@@ -1,6 +1,7 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import useScrollAnimation from "./useScroolAnimation";
 
 const images = [
     { src: require("../assets/Samsung.png"), link: "https://www.samsung.com/pl/business/climate/" },
@@ -28,6 +29,7 @@ const CatalogueItem = ({ imageUrl, link }) => (
 );
 
 const Catalogues = () => {
+    useScrollAnimation(".catalogues .container")
     return (
         <section className="catalogues" id="catalogues">
             <div className="container">

@@ -19,7 +19,6 @@ const AboutUs = lazy(() => import("./AboutUs"));
 const Offer = lazy(() => import("./Offer"));
 const Plus = lazy(() => import("./Plus"));
 const Photos = lazy(() => import("./Photos"));
-const Contact = lazy(() => import("./Contact"));
 const Footer = lazy(() => import("./Footer"));
 const Catalogues = lazy(() => import("./Catalogues"));
 const CertificatesSite = lazy(() => import("./CertificatesSite"));
@@ -37,13 +36,12 @@ const Home = () => {
             </div>
             <AboutUs/>
             <Plus/>
-
             <Offer/>
             <Catalogues/>
             <Photos/>
             <CertificatesSite/>
             <Form/>
-            <Contact/>
+
             <Footer/>
 
         </>

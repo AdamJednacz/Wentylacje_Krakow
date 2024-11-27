@@ -1,11 +1,12 @@
 import React from 'react';
 import img1 from "../assets/about_us.webp";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-// import img2 from
-// import img3 from
-// import img4 from
+import useScrollAnimation from "./useScroolAnimation";
+
 
 const Offer = () => {
+    useScrollAnimation(".offer .container");
+
     return (
         <section className="offer" id="offer">
             <div className="container">
