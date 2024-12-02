@@ -11,7 +11,7 @@ const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCur
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-            maxWidth: '65%',
+            maxWidth: '90%',
             zIndex: "100",
             padding: "0",
             overflow: "auto",
@@ -40,12 +40,13 @@ const ImageModal = ({ isOpen, closeModal, imageSrc, images, currentIndex, setCur
             <button className="ImageModalClose" onClick={closeModal}>
                 &#x2715;
             </button>
+            <FontAwesomeIcon icon={faAngleLeft} className="modal_icons modal_left_icon" onClick={handlePrev} />
                 <img
                     src={images[currentIndex]}
                     alt="Powiększony obrazek"
-                    style={{ width: '100%', height: 'auto' }}
+
                 />
-                <FontAwesomeIcon icon={faAngleLeft} className="modal_icons modal_left_icon" onClick={handlePrev} />
+
                 <FontAwesomeIcon icon={faAngleRight} className="modal_icons modal_right_icon" onClick={handleNext} />
         </Modal>
     );
